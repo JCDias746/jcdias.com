@@ -285,4 +285,12 @@ function submitForm(){
     alert('Please fill in your name, email and message.');
     return;
   }
-  if(!email.
+  if(!email.includes("@")||email.indexOf(".")===- 1){alert("Please enter a valid email address.");return;}
+  document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>";
+}
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
+document.querySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
+const nav=document.querySelector(".nav");
+window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>80)});
+function toggleMenu(){const m=document.getElementById("mobileMenu");m.classList.toggle("open");}
+</script></body></html>

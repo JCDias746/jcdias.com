@@ -450,4 +450,8 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
-document
+documentquerySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
+const nav=document.querySelector(".nav");
+window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>80)});
+function toggleMenu(){const m=document.getElementById("mobileMenu");m.classList.toggle("open");}
+</script></body></html>
