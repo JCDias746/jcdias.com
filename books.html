@@ -39,7 +39,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.2rem 4rem;backgrou
 .page-hero-content{position:relative;z-index:2;padding:0 4rem 6rem;max-width:780px}
 .hero-tag{font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.9rem}
 .hero-tag::before{content:'';display:block;width:2rem;height:0.5px;background:var(--gold)}
-.page-hero-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,5rem);word-break:break-word;overflow-wrap:break-word;font-weight:300;line-height:1.08;color:var(--cream);margin-bottom:2rem}
+.page-hero-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5.5vw,5rem);font-weight:300;line-height:1.08;color:var(--cream);margin-bottom:2rem}
 .page-hero-heading em{font-style:italic;color:var(--blue-soft)}
 .page-hero-intro{font-size:1.1rem;color:rgba(240,235,229,0.68);line-height:1.9;max-width:600px;border-left:2px solid var(--gold);padding-left:1.5rem}
 
@@ -61,14 +61,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.2rem 4rem;backgrou
 /* BOOKS — full detail alternating */
 .books-section{background:var(--darker);padding:8rem 4rem}
 
-.book-full{display:grid;grid-template-columns:1fr 1.6fr;gap:7rem;align-items:center;padding:7rem 0;border-bottom:0.5px solid var(--border-dark)}
+.book-full{display:grid;grid-template-columns:1fr 1.6fr;gap:7rem;align-items:flex-start;padding:7rem 0;border-bottom:0.5px solid var(--border-dark)}
 .book-full:first-child{padding-top:0}
 .book-full:last-child{border-bottom:none}
 .book-full:nth-child(even){grid-template-columns:1.6fr 1fr}
 .book-full:nth-child(even) .book-cover-col{order:2}
 .book-full:nth-child(even) .book-info-col{order:1}
 
-.book-cover-col{display:flex;justify-content:center;align-items:flex-start}
+.book-cover-col{display:flex;justify-content:center;align-items:flex-start;padding-top:0.5rem}
 .book-cover-wrap{position:relative}
 .book-cover-wrap img{width:100%;max-width:280px;display:block;box-shadow:0 30px 80px rgba(0,0,0,0.7);transition:transform .4s ease}
 .book-cover-wrap:hover img{transform:translateY(-8px)}
@@ -146,7 +146,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 @media(max-width:960px){
   nav{padding:1rem 1.5rem}
   .nav-links{display:none}
-  .page-hero-content{padding:0 1.5rem 4rem;max-width:100%}
+  .page-hero-content{padding:0 2rem 5rem}
   .trilogy{grid-template-columns:1fr;padding:5rem 2rem;gap:3rem}
   .books-section{padding:5rem 2rem}
   .book-full,.book-full:nth-child(even){grid-template-columns:1fr;gap:3rem;padding:5rem 0}
