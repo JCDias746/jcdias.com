@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>J.C. Dias — Author · Coach · Speaker · Operations Director</title>
-<meta name="description" content="J.C. Dias — Executive coach, board-level strategist, operations director and author helping UK leaders unlock performance, build resilience, and lead with purpose."/>
+<title>J.C. Dias — Author · Executive Coach · Speaker</title>
+<meta name="description" content="J.C. Dias — Executive coach, author and speaker helping UK leaders unlock performance, build resilience, and lead with purpose."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow+Condensed:wght@700;800&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -87,7 +87,7 @@ nav.scrolled .nav-brand{opacity:1}
 .fact-desc{font-size:0.92rem;color:var(--muted-light);line-height:1.75}
 
 /* ── SERVICES ── */
-.services{background:var(--darker);padding:9rem 4rem}
+.services{background:var(--darker);padding:9rem 4rem 4rem}
 .services-header{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-bottom:5rem;align-items:end}
 .dsl{font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem;display:flex;align-items:center;gap:0.9rem}
 .dsl::before{content:'';display:block;width:2rem;height:0.5px;background:var(--gold)}
@@ -248,6 +248,10 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 @media(max-width:1024px){
   .hamburger{display:flex}
   .nav-cta{display:none}
+  .nav-social{display:none}
+}
+@media(max-width:960px){
+  .testimonials-grid{grid-template-columns:1fr!important;gap:2rem!important}
 }
 </style>
 </head>
@@ -338,7 +342,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
     <p class="story-body">What I found on the other side wasn't just survival. It was a level of clarity, resilience and strategic thinking that no MBA, no mentor, no corporate career could have given me. Today I bring that truth into rooms where polished advice has stopped working.</p>
     <a href="my-story.html" class="btn-dark">Read My Full Story →</a>
     <div class="fact-rows">
-      <div class="fact-row"><div class="fact-n">20+</div><div><div class="fact-title">Years leading businesses</div><div class="fact-desc">Built and scaled companies across Europe. Currently Operations Director &amp; Board Member at Marshall Tufflex Ltd.</div></div></div>
+      <div class="fact-row"><div class="fact-n">20+</div><div><div class="fact-title">Years leading businesses</div><div class="fact-desc">Built and scaled companies across Europe. Twenty years of board-level operational experience across manufacturing, logistics and investment.</div></div></div>
       <div class="fact-row"><div class="fact-n">0</div><div><div class="fact-title">Days of self-pity</div><div class="fact-desc">When the walls closed in, every hour became a masterclass. Every setback became a framework.</div></div></div>
       <div class="fact-row"><div class="fact-n">1</div><div><div class="fact-title">Question that changed everything</div><div class="fact-desc">"Who do I become now?" Not what do I do — who do I become. That is the question I help leaders answer.</div></div></div>
     </div>
@@ -382,7 +386,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
       <div class="svc-num">04</div>
       <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
       <h3 class="svc-title">Corporate Consulting</h3>
-      <p class="svc-body">Board-level advisory for manufacturing, operations and supply chain businesses. Strategic and operational consulting from a sitting Operations Director who understands how businesses really run.</p>
+      <p class="svc-body">Board-level advisory for manufacturing, operations and supply chain businesses. Strategic and operational consulting from someone who understands how businesses really run.</p>
       <a href="coaching.html" class="svc-cta">Enquire →</a>
     </div>
     <div class="service-card">
@@ -405,14 +409,14 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 <!-- OPS STRIP -->
 <div class="ops-strip">
   <div class="ops-inner">
-    <span class="ops-label">Operational expertise</a>
+    <span class="ops-label">Operational Expertise</span>
     <div class="ops-divider"></div>
     <div class="ops-tags">
-      <span class="ops-tag">Manufacturing</a>
-      <span class="ops-tag">Procurement</a>
-      <span class="ops-tag">Logistics</a>
-      <span class="ops-tag">Investment Plan</a>
-      <span class="ops-tag">Board Level</a>
+      <span class="ops-tag">Manufacturing</span>
+      <span class="ops-tag">Procurement</span>
+      <span class="ops-tag">Logistics</span>
+      <span class="ops-tag">Investment Planning</span>
+      <span class="ops-tag">Board Level</span>
     </div>
   </div>
 </div>
@@ -477,7 +481,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
   <div style="max-width:1100px;margin:0 auto;position:relative;z-index:1">
     <p class="dsl" style="justify-content:center">Testimonials</p>
     <h2 class="dsh" style="text-align:center;margin-bottom:5rem">What leaders say<br>after working with <em>J.C.</em></h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5rem">
+    <div class="testimonials-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5rem">
 
       <div style="border-left:2px solid var(--gold);padding:2rem 2rem 2rem 2.5rem">
         <p style="font-size:0.95rem;line-height:1.9;color:rgba(240,235,229,0.8);margin-bottom:1.8rem">&ldquo;J.C. brought something to our leadership team that no consultant had managed before &mdash; the weight of real experience. He didn&rsquo;t teach resilience from a slide deck. He lived it. Our people left that room changed.&rdquo;</p>

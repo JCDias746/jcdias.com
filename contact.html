@@ -176,7 +176,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
           </div>
           <div>
             <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-val"><a href="/cdn-cgi/l/email-protection#6c06090d02085b585a2c0b010d0500420f0301"><span class="__cf_email__" data-cfemail="1d77787c73792a292b5d7a707c7471337e7270">[email&#160;protected]</span></a></div>
+            <div class="contact-detail-val"><a href="mailto:jeand746@gmail.com" style="color:inherit;text-decoration:none">jeand746@gmail.com</a></div>
           </div>
         </div>
         <div class="contact-detail">
@@ -276,15 +276,22 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function submitForm(){
   const name = document.getElementById('fname').value.trim();
   const email = document.getElementById('femail').value.trim();
   const msg = document.getElementById('fmessage').value.trim();
-  if(!name || !email || !msg){
-    alert('Please fill in your name, email and message.');
-    return;
-  }
+  if(!name || !email || !msg){ alert('Please fill in your name, email and message.'); return; }
+  if(!email.includes("@")||email.indexOf(".")=== -1){ alert("Please enter a valid email address."); return; }
+  const subject = encodeURIComponent("Website Enquiry from " + name);
+  const body = encodeURIComponent("Name: " + name + "
+Email: " + email + "
+
+Message:
+" + msg);
+  window.location.href = "mailto:jeand746@gmail.com?subject=" + subject + "&body=" + body;
+  setTimeout(function(){ document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>"; }, 500);
+}
   if(!email.includes("@")||email.indexOf(".")===- 1){alert("Please enter a valid email address.");return;}
   document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>";
 }
