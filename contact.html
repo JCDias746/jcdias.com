@@ -176,7 +176,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
           </div>
           <div>
             <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-val"><a href="mailto:jeand746@gmail.com" style="color:inherit;text-decoration:none">jeand746@gmail.com</a></div>
+            <div class="contact-detail-val"><a href="/cdn-cgi/l/email-protection#670d0206090350535127000a060e0b4904080a" style="color:inherit;text-decoration:none"><span class="__cf_email__" data-cfemail="f79d92969993c0c3c1b7909a969e9bd994989a">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="contact-detail">
@@ -276,28 +276,23 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
   </ul>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function submitForm(){
   const name = document.getElementById('fname').value.trim();
   const email = document.getElementById('femail').value.trim();
   const msg = document.getElementById('fmessage').value.trim();
   if(!name || !email || !msg){ alert('Please fill in your name, email and message.'); return; }
-  if(!email.includes("@")||email.indexOf(".")=== -1){ alert("Please enter a valid email address."); return; }
+  if(!email.includes("@")||email.indexOf(".")===-1){ alert("Please enter a valid email address."); return; }
   const subject = encodeURIComponent("Website Enquiry from " + name);
-  const body = encodeURIComponent("Name: " + name + "
-Email: " + email + "
-
-Message:
-" + msg);
+  const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + msg);
   window.location.href = "mailto:jeand746@gmail.com?subject=" + subject + "&body=" + body;
   setTimeout(function(){ document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>"; }, 500);
 }
-  if(!email.includes("@")||email.indexOf(".")===- 1){alert("Please enter a valid email address.");return;}
-  document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>";
+function toggleMenu(){
+  const m=document.getElementById("mobileMenu");
+  const isOpen=m.classList.toggle("open");
+  m.style.display=isOpen?"flex":"none";
+  document.body.style.overflow=isOpen?"hidden":"";
 }
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
 document.querySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
-const nav=document.querySelector(".nav");
-window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>80)});
-function toggleMenu(){const m=document.getElementById("mobileMenu");m.classList.toggle("open");}
-</script></body></html>
