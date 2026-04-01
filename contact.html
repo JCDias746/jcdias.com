@@ -276,6 +276,14 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
   </ul>
 </footer>
 
+<script>
+function toggleMenu(){
+  const m=document.getElementById("mobileMenu");
+  const isOpen=m.classList.toggle("open");
+  m.style.display=isOpen?"flex":"none";
+  document.body.style.overflow=isOpen?"hidden":"";
+}
+</script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function submitForm(){
   const name = document.getElementById('fname').value.trim();
@@ -287,12 +295,6 @@ function submitForm(){
   const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + msg);
   window.location.href = "mailto:jeand746@gmail.com?subject=" + subject + "&body=" + body;
   setTimeout(function(){ document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>"; }, 500);
-}
-function toggleMenu(){
-  const m=document.getElementById("mobileMenu");
-  const isOpen=m.classList.toggle("open");
-  m.style.display=isOpen?"flex":"none";
-  document.body.style.overflow=isOpen?"hidden":"";
 }
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
 document.querySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
