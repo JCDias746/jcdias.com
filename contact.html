@@ -294,10 +294,17 @@ async function submitForm(){
   btn.textContent = 'Sending…';
   btn.disabled = true;
   try {
-    const res = await fetch('https://formspree.io/f/jeand746@gmail.com', {
+    const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-      body: JSON.stringify({name: name, email: email, interest: type, message: msg})
+      body: JSON.stringify({
+        access_key: '5f765753-f83d-4bdf-a09c-8e71c85c7654',
+        name: name,
+        email: email,
+        interest: type,
+        message: msg,
+        subject: 'New enquiry from jcdias.com — ' + name
+      })
     });
     if(res.ok){
       document.getElementById('contact-form').style.display='none';
