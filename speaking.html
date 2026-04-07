@@ -258,7 +258,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
     <div class="why-point">
       <div class="why-point-num">02</div>
       <div class="why-point-title">Still in the arena</div>
-      <div class="why-point-desc">Operations Director at Marshall Tufflex. Board member. Author. Coach. J.C. is not speaking from retirement — he is speaking from the front line.</div>
+      <div class="why-point-desc">Board-level executive. Author. Coach. J.C. is not speaking from retirement — he is speaking from the front line.</div>
     </div>
     <div class="why-point">
       <div class="why-point-num">03</div>
@@ -448,7 +448,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 </section>
 
 <footer>
-  <p class="footer-copy">© 2025 J.C. Dias · London, United Kingdom</p>
+  <p class="footer-copy">© 2026 J.C. Dias · London, United Kingdom · Turning Adversity Into Leadership</p>
   <ul class="footer-nav">
     <li><a href="index.html">Home</a></li>
     <li><a href="my-story.html">Story</a></li>
@@ -459,10 +459,17 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
   </ul>
 </footer>
 
+<script>
+function toggleMenu(){
+  const m=document.getElementById("mobileMenu");
+  const isOpen=m.classList.toggle("open");
+  m.style.display=isOpen?"flex":"none";
+  document.body.style.overflow=isOpen?"hidden":"";
+}
+</script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
-documentquerySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
+document.querySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
 const nav=document.querySelector(".nav");
 window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>80)});
-function toggleMenu(){const m=document.getElementById("mobileMenu");const isOpen=m.classList.toggle("open");m.style.display=isOpen?"flex":"none";document.body.style.overflow=isOpen?"hidden":"";}
 </script></body></html>
