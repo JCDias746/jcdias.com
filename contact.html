@@ -119,7 +119,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 .mobile-menu ul li:first-child{border-top:0.5px solid var(--border-dark)}
 .mobile-menu ul li a{font-size:1.8rem;font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--cream);text-decoration:none;letter-spacing:0.05em;transition:color .25s}
 .mobile-menu ul li a:hover{color:var(--gold)}
-@media(max-width:960px){
+@media(max-width:1024px){
   .hamburger{display:flex}
   .nav-cta{display:none}
 }
@@ -176,7 +176,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
           </div>
           <div>
             <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-val"><a href="/cdn-cgi/l/email-protection#1e747b7f707a292a285e79737f7772307d7173" style="color:inherit;text-decoration:none"><span class="__cf_email__" data-cfemail="6f050a0e010b585b592f08020e0603410c0002">[email&#160;protected]</span></a></div>
+            <div class="contact-detail-val"><a href="/cdn-cgi/l/email-protection#6a000f0b040e5d5e5c2a0d070b030644090507" style="color:inherit;text-decoration:none"><span class="__cf_email__" data-cfemail="e18b84808f85d6d5d7a1868c80888dcf828e8c">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="contact-detail">
@@ -266,7 +266,7 @@ footer{padding:2.5rem 4rem;display:flex;justify-content:space-between;align-item
 </div>
 
 <footer>
-  <p class="footer-copy">© 2025 J.C. Dias · London, United Kingdom · Operations Director, Marshall Tufflex Ltd</p>
+  <p class="footer-copy">© 2026 J.C. Dias · London, United Kingdom · Turning Adversity Into Leadership</p>
   <ul class="footer-nav">
     <li><a href="index.html">Home</a></li>
     <li><a href="my-story.html">Story</a></li>
@@ -283,18 +283,37 @@ function toggleMenu(){
   m.style.display=isOpen?"flex":"none";
   document.body.style.overflow=isOpen?"hidden":"";
 }
-</script>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function submitForm(){
+async function submitForm(){
   const name = document.getElementById('fname').value.trim();
   const email = document.getElementById('femail').value.trim();
+  const type = document.getElementById('ftype').value;
   const msg = document.getElementById('fmessage').value.trim();
   if(!name || !email || !msg){ alert('Please fill in your name, email and message.'); return; }
   if(!email.includes("@")||email.indexOf(".")===-1){ alert("Please enter a valid email address."); return; }
-  const subject = encodeURIComponent("Website Enquiry from " + name);
-  const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + msg);
-  window.location.href = "mailto:jeand746@gmail.com?subject=" + subject + "&body=" + body;
-  setTimeout(function(){ document.querySelector(".contact-form-wrap").innerHTML="<div style=\"text-align:center;padding:3rem 0\"><p style=\"font-size:1.4rem;font-family:Cormorant Garamond,serif;color:var(--gold)\">Thank you.</p><p style=\"color:rgba(240,235,229,0.7);margin-top:1rem\">Your message has been received. I will be in touch shortly.</p></div>"; }, 500);
+  const btn = document.querySelector('.fsub');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify({name: name, email: email, interest: type, message: msg})
+    });
+    if(res.ok){
+      document.getElementById('contact-form').style.display='none';
+      document.getElementById('success-msg').style.display='block';
+    } else {
+      alert('Something went wrong. Please email jeand746@gmail.com directly.');
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }
+  } catch(e){
+    alert('Something went wrong. Please email jeand746@gmail.com directly.');
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+  }
 }
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.transition="opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1)";e.target.style.opacity="1";e.target.style.transform="translateY(0)";io.unobserve(e.target)}})},{threshold:0.06});
 document.querySelectorAll(".fu").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(24px)";io.observe(el)});
+</script>
+</body></html>
