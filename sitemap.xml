@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ao publicar, troque https://jcdias.com/ pelo domínio real -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jcdias.com/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/artigos/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/artigos/como-recomecar-depois-de-um-erro/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/artigos/me-sinto-morto-por-dentro/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/artigos/o-que-resta-quando-voce-perde-tudo/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/privacidade/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://jcdias.com/termos/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.3</priority>
+  </url>
+</urlset>
