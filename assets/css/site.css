@@ -282,6 +282,43 @@ a{color:inherit}
 .cta-livro .preco{font-size:34px;margin:0 0 16px}
 .cta-livro .btn{max-width:360px;margin:0 auto}
 
+/* bloco do programa dentro do artigo */
+.cta-programa{
+  background:var(--azul);
+  border-radius:2px;
+  padding:30px 24px 28px;margin:38px 0 6px;
+  text-align:center;color:#FFFFFF;
+}
+.cta-programa .chapeu{
+  font-family:var(--head);font-weight:400;
+  font-size:13px;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.72);margin-bottom:14px;
+}
+.cta-programa h2{
+  font-family:var(--head);font-weight:500;text-transform:uppercase;
+  font-size:clamp(23px,6vw,27px);line-height:1.18;letter-spacing:.04em;
+  color:#FFFFFF;margin:0 0 14px;text-wrap:balance;
+}
+.cta-programa p{
+  color:rgba(255,255,255,.88);font-size:18.5px;line-height:1.55;
+  max-width:440px;margin:0 auto 18px;text-wrap:pretty;
+}
+.cta-programa .datas{
+  font-family:var(--head);font-weight:400;font-size:14.5px;
+  letter-spacing:.08em;color:rgba(255,255,255,.72);
+  margin:0 auto 22px;
+}
+.cta-programa .btn-programa{
+  display:block;max-width:380px;margin:0 auto;
+  background:#FFFFFF;color:var(--azul);border:1px solid #FFFFFF;
+  font-family:var(--head);font-weight:500;
+  font-size:17px;letter-spacing:.1em;text-transform:uppercase;
+  padding:17px 14px;border-radius:2px;
+  text-decoration:none;text-align:center;
+  transition:opacity .18s ease;
+}
+.cta-programa .btn-programa:active{opacity:.85}
+
 /* relacionados */
 .relacionados{
   border-top:1px solid var(--linha);
@@ -365,6 +402,8 @@ a{color:inherit}
     padding:30px 30px 30px;
   }
   .cta-livro .chapeu{grid-column:1 / -1;margin:0 0 4px;text-align:left;max-width:none}
+  .cta-programa{padding:38px 34px 36px}
+  .cta-programa .btn-programa:hover{opacity:.9}
   .cta-livro .capa{margin:0}
   .cta-livro p,.cta-livro .btn{margin-left:0;margin-right:0}
 }
