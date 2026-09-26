@@ -53,6 +53,8 @@ a{text-decoration:none;color:inherit}
 /* faixa de capas (card livros) */
 .covers{position:absolute;inset:0;display:flex;gap:10px;align-items:center;justify-content:center;padding:0 14px}
 .covers img{height:128px;width:auto;border-radius:3px;box-shadow:0 12px 22px -10px rgba(0,0,0,.8)}
+.ytbadge{position:absolute;top:12px;right:12px;z-index:2;width:42px;height:30px;background:#FF0000;border-radius:7px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.45)}
+.ytbadge svg{width:22px;height:22px;fill:#fff}
 .body{padding:18px 20px 20px}
 .eyebrow{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:var(--gold)}
 .title{font-family:var(--head);font-weight:700;font-size:26px;line-height:1.05;margin:5px 0 6px;letter-spacing:.01em}
@@ -130,12 +132,21 @@ a{text-decoration:none;color:inherit}
     </div>
   </a>
 
-  <footer class="foot">
-    <div class="social">
-      <a href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener" aria-label="Canal de J. C. Dias no YouTube">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
-      </a>
+  <!-- CARD 4: YOUTUBE -->
+  <a class="card" href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener">
+    <div class="media">
+      <picture><source srcset="/assets/img/desk-1.webp" type="image/webp"><img class="cover" src="/assets/img/desk-1.jpg" alt="J. C. Dias gravando vídeos" loading="lazy" style="object-position:center 32%"></picture>
+      <span class="ytbadge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></span>
     </div>
+    <div class="body">
+      <span class="eyebrow">No YouTube</span>
+      <h2 class="title">Vídeos toda semana</h2>
+      <p class="desc">Todo dia um vídeo sobre recomeço, disciplina e reconstrução. Se inscreva e venha comigo.</p>
+      <span class="btn btn-1">Inscrever no canal <span class="arw">&rarr;</span></span>
+    </div>
+  </a>
+
+  <footer class="foot">
     <nav>
       <a href="/livros/">Livros</a>
       <a href="/artigos/">Artigos</a>
