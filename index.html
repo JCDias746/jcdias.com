@@ -65,6 +65,22 @@ a{text-decoration:none;color:inherit}
 .covers img:nth-child(4){transform:rotate(9deg) translateY(-2px)}
 .card:hover .covers img:nth-child(1){transform:rotate(-12deg) translateY(-4px)}
 .card:hover .covers img:nth-child(4){transform:rotate(12deg) translateY(-4px)}
+/* dupla de produtos (card lideranca): livro + treino */
+.media:has(.duo){height:208px;background:linear-gradient(180deg,#F3EEE4,#FBF8F3)}
+.media:has(.duo)::after{display:none}
+.duo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.duo img{height:162px;width:auto;border-radius:4px;box-shadow:0 18px 32px -12px rgba(42,40,41,.6);transition:transform .25s}
+.duo img:first-child{transform:rotate(-6deg) translateX(16px);z-index:2}
+.duo img:last-child{transform:rotate(6deg) translateX(-16px)}
+.card:hover .duo img:first-child{transform:rotate(-8deg) translateX(20px) translateY(-3px)}
+.card:hover .duo img:last-child{transform:rotate(8deg) translateX(-20px) translateY(-3px)}
+/* card do youtube: play limpo, sem foto cortada */
+.media.ytcard{height:176px;background:linear-gradient(180deg,#F3EEE4,#FBF8F3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+.media.ytcard::after{display:none}
+.ytplay{width:70px;height:49px;background:#FF0000;border-radius:13px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 28px -10px rgba(255,0,0,.55);transition:transform .2s}
+.card:hover .ytplay{transform:scale(1.06)}
+.ytplay svg{width:28px;height:28px;fill:#fff}
+.ythandle{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:var(--ink)}
 .ytbadge{position:absolute;top:12px;right:12px;z-index:2;width:42px;height:30px;background:#FF0000;border-radius:7px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .ytbadge svg{width:22px;height:22px;fill:#fff}
 .body{padding:18px 20px 20px}
@@ -107,7 +123,10 @@ a{text-decoration:none;color:inherit}
   <!-- CARD 1: LIDERANÇA (livro + treino) -->
   <a class="card" href="/lideranca/">
     <div class="media">
-      <img class="cover" src="/liderando/img/palestra.jpg" alt="J. C. Dias liderando" loading="eager" style="object-position:center 26%">
+      <div class="duo">
+        <img src="/stripped/img/cover.jpg" alt="Livro STRIPPED" loading="eager">
+        <img src="/liderando/img/curso.jpg" alt="Treinamento Liderando Sem Título" loading="eager">
+      </div>
     </div>
     <div class="body">
       <span class="eyebrow">Liderança</span>
@@ -150,9 +169,9 @@ a{text-decoration:none;color:inherit}
 
   <!-- CARD 4: FÉ (YouTube) -->
   <a class="card" href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener">
-    <div class="media">
-      <picture><source srcset="/assets/img/desk-1.webp" type="image/webp"><img class="cover" src="/assets/img/desk-1.jpg" alt="J. C. Dias gravando vídeos" loading="lazy" style="object-position:center 32%"></picture>
-      <span class="ytbadge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></span>
+    <div class="media ytcard">
+      <span class="ytplay" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <span class="ythandle">@jcdiasautor</span>
     </div>
     <div class="body">
       <span class="eyebrow">No YouTube</span>
