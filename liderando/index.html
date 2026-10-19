@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>STRIPPED · Liderando Sem Título</title>
+<meta name="description" content="STRIPPED · Liderando Sem Título, o treinamento gravado de J.C. Dias. Em 9 aulas, pare de liderar pelo cargo e comece a liderar pelo que é seu. Por R$297, acesso imediato.">
+<meta property="og:title" content="STRIPPED · Liderando Sem Título, treinamento de J.C. Dias">
+<meta property="og:description" content="Leia a sua própria liderança. 9 aulas gravadas + caderno. Por R$297.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+/* STRIPPED · Liderando Sem Título (R$297). Estilo Hyper Island: condensada pesada (Anton), neutro claro, foto escura no hero, laranja de destaque. */
+:root{
+  --bg:#F5F3EF; --bg2:#FFFFFF; --band:#EFEDE7;
+  --ink:#191714; --muted:#726D64; --soft:#403B34;
+  --accent:#E0601C; --accent-dk:#C8521A; --accent-l:#F2843A;
+  --line:#E4E0D7;
+  color-scheme: light;
+  --disp:"Anton", Impact, "Arial Narrow", sans-serif;
+  --sans:"Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+.wrap{max-width:740px;margin:0 auto;padding-inline:22px}
+section{padding-block:52px}
+.disp{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.96}
+h2{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.98;font-size:clamp(1.9rem,6.8vw,3rem);margin:0 0 18px}
+.accent{color:var(--accent)}
+p{margin:0 0 16px;color:var(--soft)}
+p.big{font-size:clamp(1.05rem,3.4vw,1.2rem);color:#34302a}
+b{color:var(--ink);font-weight:700}
+.lab{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:flex;align-items:center;gap:10px}
+.lab::before{content:"";width:26px;height:2px;background:var(--accent);flex:0 0 auto}
+.lab.c{justify-content:center}
+
+.topbar{border-bottom:1px solid var(--line);background:var(--bg2)}
+.logo{display:flex;align-items:center;justify-content:center;padding-block:14px}
+.logo img{height:36px;width:auto}
+
+/* HERO foto escura */
+.hero{position:relative;background:#14110d;overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img,.hero .bg video{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,11,.42) 0%,rgba(18,15,11,.6) 46%,rgba(12,10,7,.9) 100%);z-index:1}
+.hero .inner{position:relative;z-index:3;max-width:1160px;margin:0 auto;padding:88px 22px 56px}
+.hero .col{max-width:500px}
+@media (min-width:880px){
+  .hero .bg img,.hero .bg video{transform:scale(1.12);transform-origin:28% 20%}
+  .hero .bg::after{background:linear-gradient(95deg,rgba(14,11,7,.92) 0%,rgba(14,11,7,.62) 36%,rgba(14,11,7,.2) 64%,rgba(14,11,7,.06) 100%)}
+}
+@media (max-width:879px){.hero .col{max-width:none}}
+.hero .eyebrow{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#E6C9A6;margin:0 0 22px;display:flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent-l);flex:0 0 auto}
+.hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(2.9rem,12vw,5.4rem);line-height:1.04;letter-spacing:.01em;margin:0 0 22px;color:#fff}
+.hero h1 .accent{color:var(--accent-l)}
+.hero .sub{font-size:clamp(1.04rem,3.5vw,1.2rem);color:#E7DECF;max-width:46ch;margin:0 0 32px}
+.hero .sub b{color:#fff;font-weight:600}
+.cta{display:inline-block;font-family:var(--sans);font-size:1.02rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#fff;background:var(--accent);border:0;border-radius:4px;padding:17px 32px;cursor:pointer;text-decoration:none;box-shadow:0 14px 26px -12px rgba(224,96,28,.7);transition:transform .12s ease, background .15s ease}
+.cta:hover{background:var(--accent-dk)}
+.cta:active{transform:translateY(1px)}
+.cta-note{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+.hero .cta-note{color:#B7A994}
+.center{text-align:center}
+
+/* autoridade */
+.trust{background:var(--bg2);border-bottom:1px solid var(--line)}
+.trust .th{margin:0 0 34px;max-width:640px}
+.trust .th h2{margin:0}
+.trust .g{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 0;border-top:1px solid var(--line);padding-top:34px}
+.trust .t{text-align:left;padding-left:22px;border-left:1px solid var(--line)}
+.trust .t:first-child{padding-left:0;border-left:none}
+.trust .big{font-family:var(--disp);font-weight:400;font-size:clamp(2.1rem,6.4vw,3rem);color:var(--accent);line-height:.95}
+.trust .lbl{font-size:.8rem;color:var(--soft);margin-top:10px;line-height:1.35;text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:520px){.trust .g{grid-template-columns:repeat(2,1fr);gap:26px 0}.trust .t:nth-child(odd){padding-left:0;border-left:none}.trust .t:nth-child(even){padding-left:22px}}
+
+/* video */
+.video{text-align:center;background:var(--band)}
+.vbox{position:relative;width:320px;max-width:84%;margin:16px auto 0;aspect-ratio:9/16;border-radius:10px;overflow:hidden;box-shadow:0 26px 50px -24px rgba(20,14,6,.5);background:#14110d}
+.vbox>img{width:100%;height:100%;object-fit:cover;display:block}
+.vbox .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,14,6,.2)}
+.vbox .play i{width:70px;height:70px;border-radius:50%;background:rgba(224,96,28,.95);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 26px -6px rgba(0,0,0,.55)}
+.vbox .play i::after{content:"";border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px}
+.video .vcap{font-size:.84rem;color:var(--muted);margin-top:14px}
+
+/* jornada */
+.trilha .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+.trilha .step{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:24px 20px;position:relative}
+.trilha .step.on{border-color:var(--accent);border-width:2px}
+.trilha .no{font-family:var(--disp);font-weight:400;font-size:2.4rem;color:var(--line);line-height:.9}
+.trilha .step.on .no{color:var(--accent)}
+.trilha h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.3rem;letter-spacing:.01em;margin:8px 0 8px;color:var(--ink)}
+.trilha p{margin:0;font-size:.92rem}
+.trilha .tag{display:inline-block;margin-top:14px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
+.trilha .tag.here{background:var(--accent);color:#fff}
+.trilha .tag.later{background:#E7E2D8;color:#8a7256}
+@media (max-width:620px){.trilha .steps{grid-template-columns:1fr}}
+
+/* aulas cards */
+.aulas .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:4px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.aulas .card{background:var(--bg2);padding:20px}
+.aulas .card:last-child{grid-column:1 / -1}
+.aulas .tag{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+.aulas h3{font-family:var(--sans);font-weight:700;font-size:1.08rem;margin:0 0 5px;color:var(--ink)}
+.aulas p{margin:0;font-size:.9rem}
+@media (max-width:560px){.aulas .grid{grid-template-columns:1fr}}
+
+/* listas */
+.rowlist .row{display:flex;gap:14px;align-items:flex-start;margin-bottom:15px}
+.rowlist .row:last-child{margin-bottom:0}
+.rowlist .ck{color:var(--accent);font-weight:800;flex:0 0 auto;font-size:1.1rem;line-height:1.5}
+.rowlist b{color:var(--ink)}
+.band{background:var(--band)}
+.fw{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.fwcol{border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+.fwcol.yes{background:var(--bg2)}
+.fwcol.no{background:transparent}
+.fwh{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 18px}
+.fwcol.yes .fwh{color:var(--accent)}
+.fwcol.no .fwh{color:var(--muted)}
+.fwcol .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.fwcol .row:last-child{margin-bottom:0}
+.fwcol .ck{flex:0 0 auto;font-weight:800;font-size:1rem;line-height:1.5}
+.fwcol.yes .ck{color:var(--accent)}
+.fwcol.no .ck{color:var(--muted)}
+.fwcol p{margin:0;font-size:.95rem}
+.fwcol.no p{color:var(--muted)}
+@media(max-width:640px){.fw{grid-template-columns:1fr}}
+
+/* depoimentos */
+.depo{text-align:center;background:var(--band)}
+.depo .g{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;text-align:left}
+.depo .card{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px}
+.depo .stars{color:var(--accent);letter-spacing:3px;margin-bottom:10px}
+.depo .quote{font-size:1.02rem;color:var(--ink);margin:0 0 12px;line-height:1.5;font-weight:500}
+.depo .who{font-size:.85rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.depo .ph{border:1px dashed #D9B778;background:#FBF6EC}
+.depo .ph .quote{color:#9a7a30}
+@media (max-width:560px){.depo .g{grid-template-columns:1fr}}
+
+/* autor */
+.author .card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:start}
+.author .aphoto img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
+.author .name{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.7rem;letter-spacing:.01em;color:var(--ink);margin:0}
+.author .role{color:var(--muted);font-size:.88rem;margin:4px 0 0;text-transform:uppercase;letter-spacing:.04em}
+.author .abio{margin-top:18px}
+.author .abio p{margin:0 0 14px;font-size:.99rem;color:var(--soft)}
+.author .abio p:last-child{margin-bottom:0}
+.author .abio b{color:var(--ink);font-weight:700}
+@media(max-width:640px){.author .card{grid-template-columns:1fr;gap:20px;padding:24px}.author .aphoto img{max-width:200px}}
+
+/* oferta */
+.offer{background:var(--band);border-block:1px solid var(--line)}
+.offerbox{position:relative;display:grid;grid-template-columns:258px 1fr;gap:44px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:42px;box-shadow:0 34px 64px -30px rgba(40,30,10,.42)}
+.stamp{position:absolute;top:22px;left:22px;z-index:6;transform:rotate(-11deg);background:rgba(178,58,46,.05);color:#B23A2E;border:3px solid #B23A2E;border-radius:10px;padding:9px 18px 7px;text-align:center;box-shadow:0 12px 26px -16px rgba(178,58,46,.6);pointer-events:none}
+.stamp b{display:block;font-family:var(--disp);font-weight:400;font-size:1.9rem;letter-spacing:.07em;line-height:.88;text-transform:uppercase;color:#B23A2E}
+.stamp span{display:block;font-family:var(--sans);font-weight:700;font-size:.6rem;letter-spacing:.17em;text-transform:uppercase;margin-top:6px;color:#B23A2E}
+.cta-off{background:#E6E2DA !important;color:#8A837A !important;cursor:default;box-shadow:none !important;pointer-events:none}
+@media(max-width:720px){.stamp{top:12px;left:12px;transform:rotate(-9deg)}.stamp b{font-size:1.5rem}}
+.offerbox .ocov{width:100%;border-radius:4px;box-shadow:0 34px 56px -22px rgba(0,0,0,.6),0 0 0 1px rgba(0,0,0,.05)}
+.offerbox .otag{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.offerbox .ttl{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:2rem;margin:0 0 6px;letter-spacing:.01em;line-height:1}
+.offerbox .desc{color:var(--muted);margin:0 0 20px;font-size:.98rem}
+.price{font-family:var(--disp);font-weight:400;font-size:3.3rem;color:var(--ink);line-height:.9}
+.price small{font-size:1.05rem;color:var(--muted);vertical-align:top;margin-right:2px}
+.parc{color:var(--muted);font-size:.9rem;margin:4px 0 20px}
+.inc{list-style:none;padding:0;margin:0 0 22px}
+.inc li{display:flex;gap:10px;padding:7px 0;color:var(--soft);font-size:.97rem;line-height:1.4}
+.inc li::before{content:"✓";color:var(--accent);font-weight:800;flex:0 0 auto}
+.offer .cta{width:100%;text-align:center}
+.otrust{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 0 0;font-size:.82rem;color:var(--soft)}
+.otrust span{display:flex;align-items:center}
+.otrust span::before{content:"✓";color:var(--accent);font-weight:800;margin-right:6px}
+@media(max-width:720px){.offerbox{grid-template-columns:1fr;gap:24px;padding:30px 24px;text-align:center}.offerbox .ocov{width:178px;margin:0 auto}.inc{text-align:left;max-width:360px;margin-inline:auto}.otrust{justify-content:center}}
+.abate{background:#FBEEDD;border:1px solid #EFCE9C;border-radius:8px;padding:12px 16px;font-size:.92rem;color:#7a5a16;margin:0 auto 22px;max-width:400px}
+
+.guarantee{display:flex;gap:18px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px}
+.seal{flex:0 0 auto;width:66px;height:66px;border-radius:50%;border:2px solid var(--accent);color:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--disp);font-weight:400;line-height:1;text-align:center}
+.seal .num{font-size:1.7rem}
+.seal .lbl{font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+.guarantee h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.25rem;margin:0 0 5px;letter-spacing:.01em}
+.guarantee p{margin:0;font-size:.95rem}
+
+.faq details{border-top:1px solid var(--line);padding:16px 0}
+.faq details:first-of-type{border-top:0}
+.faq summary{font-weight:700;font-size:1.05rem;cursor:pointer;list-style:none;color:var(--ink);display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-weight:700;font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:12px 0 0}
+
+/* closer */
+.closer{position:relative;background:#14110d;color:#fff;overflow:hidden;text-align:center}
+.closer .bg{position:absolute;inset:0}
+.closer .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.closer .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,14,9,.75),rgba(10,8,5,.92))}
+.closer .inner{position:relative;max-width:640px;margin:0 auto;padding:60px 22px}
+.closer h2{color:#fff;font-size:clamp(2.1rem,7vw,3.2rem)}
+.closer p{color:#E7DECF}
+
+footer{text-align:center;color:var(--muted);padding-block:40px;background:var(--bg2);border-top:1px solid var(--line)}
+footer .line{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.25rem;color:var(--ink);margin:0 0 8px;letter-spacing:.01em}
+footer small{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
+footer .legal{margin:16px 0 0;font-size:.82rem}
+footer .legal a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+footer .legal a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo"><img src="img/logo-preta.png" alt="J.C. Dias" width="145" height="36"></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="bg">
+    <!-- HERO: video do J.C. no palco, sem som, em loop. hero-poster.jpg = primeiro quadro, aparece antes do video carregar. -->
+    <video autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg"><source src="img/hero.mp4" type="video/mp4"></video>
+  </div>
+  <div class="inner">
+    <div class="col">
+      <p class="eyebrow">Transformando o líder que você já é</p>
+      <h1>Lidere pelo que é <span class="accent">seu</span>,<br>não pelo cargo.</h1>
+      <p class="sub"><b>STRIPPED · Liderando Sem Título</b> é o treinamento gravado que transforma a forma como você lidera. Em 9 aulas, você olha a sua liderança como um piloto olha a telemetria, e passa a liderar pelo que é seu de verdade, não pelo cargo.</p>
+      <a class="cta" href="#oferta">Nova turma em breve</a>
+      <p class="cta-note">As inscrições abrem em breve. Em primeira mão por aqui.</p>
+    </div>
+  </div>
+</header>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="th">
+      <p class="lab">Trajetória</p>
+      <h2>De diretor executivo à queda. Da queda, <span class="accent">reconstruiu tudo</span>.</h2>
+    </div>
+    <div class="g">
+      <div class="t"><div class="big">26</div><div class="lbl">anos de liderança no Brasil e na Europa</div></div>
+      <div class="t"><div class="big">4</div><div class="lbl">empresas construídas depois da prisão</div></div>
+      <div class="t"><div class="big">6</div><div class="lbl">livros publicados</div></div>
+      <div class="t"><div class="big">Fé</div><div class="lbl">a base de toda a reconstrução</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lab">O problema</p>
+    <h2>Quase nenhum líder olha a própria <span class="accent">telemetria</span></h2>
+    <p class="big">Você cobra o time, resolve, decide. Mas quase nunca para pra olhar, com honestidade, como você lidera de verdade.</p>
+    <p>É por isso que tanta gente repete o mesmo padrão a vida inteira sem enxergar: explode sempre na mesma situação, foge sempre da mesma conversa, controla demais sempre o mesmo tipo de pessoa. Enquanto você não vê o padrão, ele te pilota.</p>
+    <p>No kart, o piloto não evolui no achismo. Ele olha a telemetria, os dados frios da volta, e vê onde freou tarde, onde teve medo, onde perdeu tempo. Este treinamento faz isso com a sua liderança. Sem desculpa, com método.</p>
+  </div>
+</section>
+
+<section class="trilha band">
+  <div class="wrap">
+    <p class="lab">A jornada</p>
+    <h2>Três fases. Você começa pela <span class="accent">primeira</span></h2>
+    <div class="steps">
+      <div class="step on">
+        <div class="no">01</div>
+        <h3>Despir</h3>
+        <p>Quem você é sem o cargo. Você lê a sua liderança e monta o seu Mapa de Identidade e Influência.</p>
+        <span class="tag here">Você está aqui</span>
+      </div>
+      <div class="step">
+        <div class="no">02</div>
+        <h3>Reconstruir</h3>
+        <p>Por que e como você lidera. Propósito, coragem de falar a verdade e a confiança do time.</p>
+        <span class="tag later">Em breve</span>
+      </div>
+      <div class="step">
+        <div class="no">03</div>
+        <h3>Liberar</h3>
+        <p>O que você constrói e deixa nas pessoas. Cultura, consistência e formar quem vem depois.</p>
+        <span class="tag later">Em breve</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="aulas">
+  <div class="wrap">
+    <p class="lab">O conteúdo</p>
+    <h2>As 9 aulas do treinamento</h2>
+    <p>Aulas curtas, pela lente da pista, no seu ritmo. Cada uma termina com uma parte do seu Mapa pra preencher no Caderno.</p>
+    <div class="grid">
+      <div class="card"><div class="tag">Aula 1 · Gravado</div><h3>O Macacão</h3><p>Identidade sem cargo: o que é seu e o que é do crachá.</p></div>
+      <div class="card"><div class="tag">Aula 2 · Gravado</div><h3>A Lição do Silêncio</h3><p>Escuta e autocontrole: ler a pista antes de atacar.</p></div>
+      <div class="card"><div class="tag">Aula 3 · Gravado</div><h3>O Atalho</h3><p>Integridade: os atalhos que corroem a confiança.</p></div>
+      <div class="card"><div class="tag">Aula 4 · Gravado</div><h3>Quando Entrar no Rádio</h3><p>Discernimento: a hora de instruir e a de confiar.</p></div>
+      <div class="card"><div class="tag">Aula 5 · Gravado</div><h3>Quando Chove</h3><p>Presença sob pressão: liderar quando a pista muda.</p></div>
+      <div class="card"><div class="tag">Aula 6 · Gravado</div><h3>Sangue Frio</h3><p>Controle emocional: liderar sem explodir quando a corrida aperta.</p></div>
+      <div class="card"><div class="tag">Aula 7 · Gravado</div><h3>O Pelotão</h3><p>Resistência: respeito se conquista roda a roda.</p></div>
+      <div class="card"><div class="tag">Aula 8 · Gravado</div><h3>A Conversa no Box</h3><p>Confiança: a verdade sem usar o poder do cargo.</p></div>
+      <div class="card"><div class="tag">Aula 9 · Gravado</div><h3>A Telemetria de Si</h3><p>Autoconsciência: enxergar o seu padrão número um.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap rowlist">
+    <p class="lab">O que muda na sua liderança</p>
+    <h2>No fim do treinamento, você sai sabendo o que <span class="accent">nunca</span> tinha olhado</h2>
+    <div class="row"><span class="ck">→</span><p>Enxerga, com clareza, <b>onde a sua liderança é sua</b> e onde ainda é emprestada do cargo.</p></div>
+    <div class="row"><span class="ck">→</span><p>Descobre <b>o padrão que te faz tropeçar sempre no mesmo lugar</b>, e para de ser pilotado por ele.</p></div>
+    <div class="row"><span class="ck">→</span><p>Para de reagir no impulso e <b>responde com sangue frio</b> quando a pressão aperta.</p></div>
+    <div class="row"><span class="ck">→</span><p>Para de ser só obedecido e <b>começa a ser seguido</b>.</p></div>
+    <div class="row"><span class="ck">→</span><p>Sai com um <b>plano honesto do que reconstruir primeiro</b>, no seu Mapa.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lab">Pra quem é</p>
+    <h2>Isto é pra você. Ou <span class="accent">não é</span>.</h2>
+    <div class="fw">
+      <div class="fwcol yes">
+        <p class="fwh">É pra você se</p>
+        <div class="row"><span class="ck">✓</span><p>Você comanda, mas sente que <b>te obedecem sem te seguir</b>.</p></div>
+        <div class="row"><span class="ck">✓</span><p>Você repete o mesmo erro de liderança e <b>não sabe por quê</b>.</p></div>
+        <div class="row"><span class="ck">✓</span><p>Você reage no impulso e quer <b>liderar com sangue frio</b>.</p></div>
+        <div class="row"><span class="ck">✓</span><p>Você quer liderar com <b>caráter e fé</b>, não com cargo.</p></div>
+      </div>
+      <div class="fwcol no">
+        <p class="fwh">Não é pra você se</p>
+        <div class="row"><span class="ck">✕</span><p>Você acha que o problema <b>é sempre o time</b>, nunca você.</p></div>
+        <div class="row"><span class="ck">✕</span><p>Você quer uma <b>fórmula mágica</b> sem olhar pra dentro.</p></div>
+        <div class="row"><span class="ck">✕</span><p>Você <b>não está disposto</b> a ser honesto consigo mesmo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção escondida até ter depoimentos REAIS. Pra reativar, remova o atributo hidden da linha abaixo. -->
+<section class="depo" hidden>
+  <div class="wrap">
+    <p class="lab c">Quem já fez</p>
+    <h2>O que estão dizendo</h2>
+    <!-- SUBSTITUA pelos depoimentos REAIS de alunos. NAO usar depoimento inventado. -->
+    <div class="g">
+      <div class="card ph"><div class="stars">★★★★★</div><p class="quote">Depoimento real de um aluno entra aqui, com as palavras dele.</p><p class="who">Nome do aluno, cidade</p></div>
+      <div class="card ph"><div class="stars">★★★★★</div><p class="quote">Depoimento real de um aluno entra aqui, com as palavras dele.</p><p class="who">Nome do aluno, cidade</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="author">
+  <div class="wrap">
+    <p class="lab">Quem conduz</p>
+    <div class="card">
+      <div class="aphoto"><img src="img/headshot.jpg" alt="Foto de J.C. Dias"></div>
+      <div class="abody">
+        <p class="name">J.C. Dias</p>
+        <p class="role">Empresário e diretor executivo no Reino Unido</p>
+        <div class="abio">
+        <p>Hoje, ele é um empresário estabelecido no Reino Unido, com mais de vinte anos à frente de equipes e operações, dois cursos superiores e uma carreira de posição e respeito.</p>
+        <p>Até que um acidente de carro tirou tudo dele de uma vez: a posição, o nome, a vida que ele tinha construído.</p>
+        <p>Passou <b>11 meses e 2 semanas preso</b>, despido até o osso. Sem cargo, sem título, sem nada que o mundo usa pra medir um homem.</p>
+        <p>Foi ali, sem nada, que ele descobriu o que sobra quando tiram tudo. E foi dali que ele reconstruiu, do zero e mais forte, erguendo <b>quatro negócios</b>.</p>
+        <p>O método que ele ensina não veio de um curso, veio de ter sido despido de tudo e encontrado, no fundo, o <b>caráter e a fé</b> que ninguém pode tirar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offerbox">
+      <div class="stamp"><b>Esgotado</b><span>Nova turma em breve</span></div>
+      <div><img class="ocov" src="img/curso.jpg" alt="Capa do treinamento STRIPPED · Liderando Sem Título"></div>
+      <div class="odet">
+        <p class="otag">O treinamento</p>
+        <p class="ttl">STRIPPED · Liderando Sem Título</p>
+        <p class="desc">O método gravado, em 9 aulas, no seu ritmo.</p>
+        <ul class="inc">
+          <li>As 9 aulas gravadas, uma lição por vez</li>
+          <li>O Caderno do Mapa de Identidade e Influência (PDF)</li>
+          <li>Acesso imediato, no seu ritmo, pra sempre</li>
+          <li>Garantia de 7 dias, risco zero</li>
+        </ul>
+        <div class="price"><small>R$</small>297</div>
+        <p class="parc">à vista no Pix, ou em até 12x no cartão</p>
+        <!-- Produto ainda sem checkout: botão em estado "nova turma em breve". Quando o produto existir na Hotmart, troque por: <a class="cta" href="LINK">Começar agora por R$297</a> -->
+        <span class="cta cta-off" role="status">Nova turma em breve</span>
+        <div class="otrust"><span>Acesso imediato</span><span>Garantia de 7 dias</span><span>Pagamento seguro pela Hotmart</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><span class="num">7</span><span class="lbl">dias</span></div>
+      <div>
+        <h3>Garantia de 7 dias</h3>
+        <p>Faça o treinamento e comece o seu Mapa. Se não enxergar nada de novo e honesto sobre a sua liderança, é só pedir, dentro de 7 dias, que a Hotmart devolve cada centavo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <p class="lab">Dúvidas</p>
+    <h2>Perguntas que todo mundo faz</h2>
+    <details><summary>É ao vivo ou gravado?</summary><p>Gravado. São 9 aulas curtas que você assiste no seu ritmo, quantas vezes quiser, e preenche o seu Mapa conforme avança.</p></details>
+    <details><summary>Como eu recebo depois de pagar?</summary><p>Na hora. Assim que o pagamento é aprovado, a Hotmart manda o acesso no seu e-mail.</p></details>
+    <details><summary>Quanto tempo leva?</summary><p>As aulas são curtas e dá pra fazer em poucos dias. Mas o Caderno é seu pra sempre, pra voltar quando quiser.</p></details>
+    <details><summary>Preciso ter lido o livro STRIPPED antes?</summary><p>Não. O treinamento funciona sozinho. Mas se você já leu o livro, ele aprofunda tudo na prática.</p></details>
+    <details><summary>Preciso ter cargo de chefia?</summary><p>Não. Serve tanto pra quem já lidera quanto pra quem quer começar sabendo quem já é.</p></details>
+    <details><summary>Posso parcelar?</summary><p>Pode. R$297 à vista no Pix, ou em até 12x no cartão pela Hotmart.</p></details>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="bg"><img src="img/palestra.jpg" alt=""></div>
+  <div class="inner">
+    <h2>Pare de adivinhar que líder você é</h2>
+    <p class="big">Leia os seus próprios dados, e comece a liderar pelo que é seu de verdade.</p>
+    <div style="margin-top:24px"><a class="cta" href="#oferta">Nova turma em breve</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="line">Liderança é caráter, não cargo</p>
+    <small>Escola de Líderes · método Líder Sem Título · J.C. Dias</small>
+    <p class="legal"><a href="termos.html">Termos e Condições</a> · <a href="privacidade.html">Política de Privacidade</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

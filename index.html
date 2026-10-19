@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>J. C. Dias</title>
-<meta name="description" content="Os livros, a coleção Do Escuro à Luz e o treinamento 30 Dias de Reconstrução de J. C. Dias. Escolha por onde começar.">
+<meta name="description" content="Liderança, livros, recomeço e fé com J. C. Dias. Escolha por onde começar.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://jcdias.com/">
-<meta name="theme-color" content="#0B1120">
+<meta name="theme-color" content="#F0EBE5">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="J. C. Dias">
 <meta property="og:title" content="J. C. Dias">
-<meta property="og:description" content="Os livros, a coleção Do Escuro à Luz e o treinamento 30 Dias de Reconstrução. Escolha por onde começar.">
+<meta property="og:description" content="Liderança, livros, recomeço e fé com J. C. Dias. Escolha por onde começar.">
 <meta property="og:url" content="https://jcdias.com/">
 <meta property="og:image" content="https://jcdias.com/assets/img/og-livros-jcdias.jpg">
 <meta property="og:locale" content="pt_BR">
@@ -24,47 +24,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0A0F1C; --bg2:#0E1526; --card:#131C31; --card2:#0F1728;
-  --line:rgba(213,184,121,.22);
-  --ink:#F4EFE6; --muted:#A7B0C4;
-  --gold:#D5B879; --gold-d:#B98B3E; --sand:#EBE0C8; --red:#C24B33;
+  --bg:#F0EBE5; --bg2:#FBF8F3; --card:#FFFFFF; --card2:#FBF8F3;
+  --line:#E4DED3;
+  --ink:#2A2829; --muted:#6A6156;
+  --gold:#B8893B; --gold-d:#9C7330; --blue:#263A99; --blue-d:#33489F; --red:#C24B33;
   --head:'Oswald',system-ui,sans-serif; --sans:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh}
+body{background:radial-gradient(130% 85% at 50% -8%, #FBF8F2 0%, var(--bg) 50%) fixed;color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh}
 .bgwrap{position:relative;overflow:hidden;min-height:100vh}
-.bgwrap::before{content:'';position:absolute;left:50%;top:-160px;transform:translateX(-50%);width:680px;height:520px;background:radial-gradient(ellipse at center,rgba(213,184,121,.16),rgba(213,184,121,0) 68%);pointer-events:none}
+.bgwrap::before{content:'';position:absolute;left:50%;top:-160px;transform:translateX(-50%);width:760px;height:520px;background:radial-gradient(ellipse at center,rgba(184,137,59,.10),rgba(184,137,59,0) 66%);pointer-events:none}
 .wrap{position:relative;max-width:500px;margin:0 auto;padding:40px 20px 48px}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
 .head{text-align:center;margin-bottom:26px}
-.head .logo{height:56px;width:auto;margin:0 auto 14px}
+.head .photo{width:122px;height:122px;border-radius:50%;object-fit:cover;margin:0 auto 16px;border:2px solid rgba(184,137,59,.55);box-shadow:0 0 0 7px rgba(184,137,59,.10),0 18px 36px -16px rgba(42,40,41,.28)}
 .head p{color:var(--muted);font-size:14.5px;max-width:34ch;margin:0 auto;letter-spacing:.01em}
-.head .name{font-family:var(--head);font-weight:600;letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:var(--gold);margin-bottom:12px}
+.head .name{font-family:var(--head);font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:12px}
+.head .hr{display:block;width:46px;height:2px;margin:0 auto 14px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.9;border-radius:2px}
 
-.card{display:block;background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:18px;box-shadow:0 20px 40px -24px rgba(0,0,0,.7);transition:transform .2s,border-color .2s,box-shadow .2s}
-.card:hover{transform:translateY(-3px);border-color:rgba(213,184,121,.5);box-shadow:0 26px 50px -24px rgba(0,0,0,.8)}
+.card{position:relative;display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:18px;box-shadow:0 18px 40px -28px rgba(42,40,41,.38);transition:transform .2s,border-color .2s,box-shadow .2s}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:4;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(184,137,59,.8),transparent);opacity:0;transition:opacity .25s}
+.card:hover{transform:translateY(-3px);border-color:rgba(184,137,59,.5);box-shadow:0 30px 56px -30px rgba(42,40,41,.5),0 0 0 1px rgba(184,137,59,.14)}
+.card:hover::before{opacity:1}
 .card:active{transform:translateY(-1px)}
-.media{position:relative;height:168px;overflow:hidden;background:#0b1120}
+.media{position:relative;height:168px;overflow:hidden;background:var(--bg2)}
 .media .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,28,.15) 0%,rgba(10,15,28,.55) 60%,rgba(15,23,40,.96) 100%)}
+.media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0) 58%,rgba(255,255,255,.55) 82%,rgba(255,255,255,.96) 100%)}
 /* faixa de capas (card livros) */
-.covers{position:absolute;inset:0;display:flex;gap:10px;align-items:center;justify-content:center;padding:0 14px}
-.covers img{height:128px;width:auto;border-radius:3px;box-shadow:0 12px 22px -10px rgba(0,0,0,.8)}
-.ytbadge{position:absolute;top:12px;right:12px;z-index:2;width:42px;height:30px;background:#FF0000;border-radius:7px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.45)}
+.media:has(.covers){height:200px;background:linear-gradient(180deg,#F3EEE4,#FBF8F3)}
+.media:has(.covers)::after{display:none}
+.covers{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 14px}
+.covers img{height:138px;width:auto;border-radius:3px;box-shadow:0 16px 28px -12px rgba(42,40,41,.55);margin-left:-30px;transform-origin:bottom center;transition:transform .25s}
+.covers img:first-child{margin-left:0}
+.covers img:nth-child(1){transform:rotate(-9deg) translateY(-2px)}
+.covers img:nth-child(2){transform:rotate(-3deg)}
+.covers img:nth-child(3){transform:rotate(3deg)}
+.covers img:nth-child(4){transform:rotate(9deg) translateY(-2px)}
+.card:hover .covers img:nth-child(1){transform:rotate(-12deg) translateY(-4px)}
+.card:hover .covers img:nth-child(4){transform:rotate(12deg) translateY(-4px)}
+.ytbadge{position:absolute;top:12px;right:12px;z-index:2;width:42px;height:30px;background:#FF0000;border-radius:7px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .ytbadge svg{width:22px;height:22px;fill:#fff}
 .body{padding:18px 20px 20px}
 .eyebrow{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:var(--gold)}
-.title{font-family:var(--head);font-weight:700;font-size:26px;line-height:1.05;margin:5px 0 6px;letter-spacing:.01em}
+.title{font-family:var(--head);font-weight:700;font-size:26px;line-height:1.05;margin:5px 0 6px;letter-spacing:.01em;color:var(--ink)}
 .desc{color:var(--muted);font-size:15px;margin-bottom:16px}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;font-family:var(--head);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:15px;padding:14px 18px;border-radius:11px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;font-family:var(--head);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:15px;padding:14px 18px;border-radius:11px;transition:background .2s}
 .btn .arw{font-family:var(--sans);font-weight:700}
-/* mesma cor (dourado), variando o brilho; o treino e o mais brilhante */
-.btn-1{background:#BE9C50;color:#241a09}
-.btn-2{background:#D8BB72;color:#241a09}
-.btn-3{background:#F2D688;color:#241a09;box-shadow:0 0 0 1px rgba(242,214,136,.7),0 10px 30px -6px rgba(213,184,121,.65)}
+/* azul de assinatura da marca; o card de lideranca ganha o tom mais forte */
+.btn-1{background:var(--blue);color:#fff}
+.btn-1:hover{background:var(--blue-d)}
+.btn-2{background:linear-gradient(180deg,#2C45B4,#223594);color:#fff;box-shadow:0 12px 28px -12px rgba(38,58,153,.6)}
+.btn-2:hover{background:#223594}
+.btn-3{background:var(--blue);color:#fff}
+.btn-3:hover{background:var(--blue-d)}
 
 .foot{margin-top:30px;text-align:center;color:var(--muted);font-size:12.5px}
 .foot nav{margin-bottom:8px}
@@ -73,7 +88,7 @@ a{text-decoration:none;color:inherit}
 .foot .cop{opacity:.7}
 .social{display:flex;justify-content:center;gap:14px;margin-bottom:18px}
 .social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0;border-radius:50%;border:1px solid var(--line);color:var(--muted);transition:color .2s,border-color .2s,transform .2s}
-.social a:hover{color:var(--gold);border-color:rgba(213,184,121,.55);transform:translateY(-2px)}
+.social a:hover{color:var(--gold);border-color:rgba(184,137,59,.55);transform:translateY(-2px)}
 .social svg{width:20px;height:20px;fill:currentColor}
 @media (max-width:380px){ .title{font-size:23px} .covers img{height:112px} }
 </style>
@@ -83,56 +98,57 @@ a{text-decoration:none;color:inherit}
 <div class="wrap">
 
   <header class="head">
-    <picture><source srcset="/assets/img/logo-jcdias.webp" type="image/webp"><img class="logo" src="/assets/img/logo-jcdias.png" alt="J. C. Dias" width="480" height="128"></picture>
+    <picture><source srcset="/assets/img/autor-avatar.webp" type="image/webp"><img class="photo" src="/assets/img/autor-avatar.jpg" alt="J. C. Dias" width="122" height="122"></picture>
     <p class="name">J. C. Dias</p>
-    <p>Escritor. Quatro livros escritos dentro de uma cela, sobre cair, atravessar o escuro e voltar inteiro.</p>
+    <span class="hr"></span>
+    <p>Autor e diretor executivo. Caiu, recomeçou do zero e reconstruiu mais forte. Hoje ensina a liderar por quem você é, não pelo cargo.</p>
   </header>
 
-  <!-- CARD 1: LIVROS INDIVIDUAIS -->
+  <!-- CARD 1: LIDERANÇA (livro + treino) -->
+  <a class="card" href="/lideranca/">
+    <div class="media">
+      <img class="cover" src="/liderando/img/palestra.jpg" alt="J. C. Dias liderando" loading="eager" style="object-position:center 26%">
+    </div>
+    <div class="body">
+      <span class="eyebrow">Liderança</span>
+      <h2 class="title">Lidere sem título</h2>
+      <p class="desc">O livro STRIPPED e o método gravado. Liderar por quem você é, não pelo cargo.</p>
+      <span class="btn btn-2">Ver liderança <span class="arw">&rarr;</span></span>
+    </div>
+  </a>
+
+  <!-- CARD 2: OS LIVROS (catálogo PT) -->
   <a class="card" href="/livros/">
     <div class="media">
       <div class="covers">
-        <img src="/assets/img/capa-rcp.jpg" alt="" loading="eager">
-        <img src="/assets/img/capa-qmpd.jpg" alt="" loading="eager">
-        <img src="/assets/img/capa-dvpn.jpg" alt="" loading="eager">
-        <img src="/assets/img/capa-caverna.jpg" alt="" loading="eager">
+        <img src="/assets/img/capa-rcp.jpg" alt="" loading="lazy">
+        <img src="/assets/img/capa-qmpd.jpg" alt="" loading="lazy">
+        <img src="/assets/img/capa-dvpn.jpg" alt="" loading="lazy">
+        <img src="/assets/img/capa-caverna.jpg" alt="" loading="lazy">
       </div>
     </div>
     <div class="body">
       <span class="eyebrow">A biblioteca</span>
       <h2 class="title">Os Livros</h2>
-      <p class="desc">Os quatro livros, cada um pro momento que você está vivendo. Ebook e edição física.</p>
+      <p class="desc">Os quatro livros, cada um pro momento que você está vivendo. Ou a coleção completa.</p>
       <span class="btn btn-1">Ver todos os livros <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
-  <!-- CARD 2: DO ESCURO A LUZ -->
-  <a class="card" href="/doescuroaluz/">
+  <!-- CARD 3: RECOMEÇAR -->
+  <a class="card" href="/recomecar/">
     <div class="media">
-      <picture><source srcset="/assets/img/capa-caverna.webp" type="image/webp"><img class="cover" src="/assets/img/capa-caverna.jpg" alt="" loading="lazy"></picture>
+      <picture><source srcset="/assets/img/caminho-chegada.webp" type="image/webp"><img class="cover" src="/assets/img/caminho-chegada.jpg" alt="O caminho até a luz" loading="lazy" style="object-position:center 50%"></picture>
     </div>
     <div class="body">
-      <span class="eyebrow">Coleção completa</span>
-      <h2 class="title">Do Escuro à Luz</h2>
-      <p class="desc">Os quatro livros digitais numa coleção só, por R$197. Acesso na hora, no seu celular.</p>
-      <span class="btn btn-2">Quero a coleção <span class="arw">&rarr;</span></span>
+      <span class="eyebrow">Recomeço</span>
+      <h2 class="title">Recomeçar com Propósito</h2>
+      <p class="desc">Você não apaga o que viveu. Mas ainda decide quem vai se tornar depois.</p>
+      <span class="btn btn-3">Ver o livro <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
-  <!-- CARD 3: TREINAMENTO -->
-  <a class="card" href="/reconstrucao/">
-    <div class="media">
-      <picture><source srcset="/assets/img/palco-1.webp" type="image/webp"><img class="cover" src="/assets/img/palco-1.jpg" alt="J. C. Dias palestrando" loading="lazy" style="object-position:42% 20%"></picture>
-    </div>
-    <div class="body">
-      <span class="eyebrow">Treinamento</span>
-      <h2 class="title">30 Dias de Reconstrução</h2>
-      <p class="desc">Reconstruir a sua vida do zero, com método, em 30 dias. Comigo, passo a passo.</p>
-      <span class="btn btn-3">Quero Saber Mais <span class="arw">&rarr;</span></span>
-    </div>
-  </a>
-
-  <!-- CARD 4: YOUTUBE -->
+  <!-- CARD 4: FÉ (YouTube) -->
   <a class="card" href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener">
     <div class="media">
       <picture><source srcset="/assets/img/desk-1.webp" type="image/webp"><img class="cover" src="/assets/img/desk-1.jpg" alt="J. C. Dias gravando vídeos" loading="lazy" style="object-position:center 32%"></picture>
@@ -141,14 +157,15 @@ a{text-decoration:none;color:inherit}
     <div class="body">
       <span class="eyebrow">No YouTube</span>
       <h2 class="title">Vídeos toda semana</h2>
-      <p class="desc">Um vídeo novo toda semana sobre recomeço, disciplina e reconstrução. Se inscreva e venha comigo.</p>
-      <span class="btn btn-1">Inscrever no canal <span class="arw">&rarr;</span></span>
+      <p class="desc">Um vídeo novo toda semana sobre liderança, caráter, fé e recomeço.</p>
+      <span class="btn btn-1">Ver no YouTube <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
   <footer class="foot">
     <nav>
       <a href="/livros/">Livros</a>
+      <a href="/lideranca/">Liderança</a>
       <a href="/artigos/">Artigos</a>
       <a href="/privacidade/">Privacidade</a>
       <a href="/termos/">Termos</a>

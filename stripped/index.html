@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>STRIPPED</title>
+<meta name="description" content="A liderança começa quando tiram tudo de você. STRIPPED, o ebook de J.C. Dias que ensina a liderar pelo caráter, não pelo cargo. Por R$67, acesso na hora.">
+<meta property="og:title" content="STRIPPED, o livro de J.C. Dias">
+<meta property="og:description" content="A liderança que ninguém pode te tirar. Por R$67, acesso imediato.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+/* STRIPPED, o livro (R$67). Estilo Hyper Island: Anton condensada, neutro claro, foto/hero escuro, laranja de destaque. */
+:root{
+  --bg:#F5F3EF; --bg2:#FFFFFF; --band:#EFEDE7;
+  --ink:#191714; --muted:#726D64; --soft:#403B34;
+  --accent:#E0601C; --accent-dk:#C8521A; --accent-l:#F2843A;
+  --line:#E4E0D7;
+  color-scheme: light;
+  --disp:"Anton", Impact, "Arial Narrow", sans-serif;
+  --sans:"Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+.wrap{max-width:740px;margin:0 auto;padding-inline:22px}
+section{padding-block:52px}
+h2{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.98;font-size:clamp(1.9rem,6.8vw,3rem);margin:0 0 18px}
+.accent{color:var(--accent)}
+p{margin:0 0 16px;color:var(--soft)}
+p.big{font-size:clamp(1.05rem,3.4vw,1.2rem);color:#34302a}
+b{color:var(--ink);font-weight:700}
+.lab{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:flex;align-items:center;gap:10px}
+.lab::before{content:"";width:26px;height:2px;background:var(--accent);flex:0 0 auto}
+.lab.c{justify-content:center}
+.center{text-align:center}
+
+.topbar{border-bottom:1px solid var(--line);background:var(--bg2)}
+.logo{display:flex;align-items:center;justify-content:center;padding-block:14px}
+.logo img{height:36px;width:auto}
+
+/* HERO: foto do J.C. no escritório, texto à esquerda */
+.hero{position:relative;background:#14110d;overflow:hidden;width:100%;aspect-ratio:2000/1125;display:flex;align-items:center}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,10,7,.96) 0%,rgba(13,10,7,.9) 22%,rgba(13,10,7,.55) 40%,rgba(13,10,7,.1) 66%)}
+.hero .inner{position:relative;z-index:3;width:100%;padding:44px 0}
+.hero .col{margin-left:clamp(22px,4vw,58px);width:min(460px,calc(29vw - 70px))}
+.hero .eyebrow{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#E6C9A6;margin:0 0 20px;display:flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent-l);flex:0 0 auto}
+.hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.05;letter-spacing:.01em;margin:0 0 16px;color:#fff}
+.hero h1 .accent{color:var(--accent-l)}
+.hero .sub{font-size:clamp(1.03rem,3.5vw,1.15rem);color:#E7DECF;max-width:40ch;margin:0 0 6px}
+.hero .sub b{color:#fff;font-weight:600}
+@media(max-width:1024px){.hero{aspect-ratio:auto;max-height:none;display:block}.hero .bg img{object-position:66% 26%}.hero .bg::after{background:linear-gradient(180deg,rgba(13,10,7,.72) 0%,rgba(13,10,7,.8) 50%,rgba(13,10,7,.95) 100%)}.hero .inner{padding:80px 22px 72px}.hero .col{width:auto;max-width:none;margin-left:0;margin-right:0}}
+.cta{display:inline-block;font-family:var(--sans);font-size:1.02rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#fff;background:var(--accent);border:0;border-radius:4px;padding:17px 32px;cursor:pointer;text-decoration:none;box-shadow:0 14px 26px -12px rgba(224,96,28,.7);transition:transform .12s ease, background .15s ease}
+.cta:hover{background:var(--accent-dk)}
+.cta:active{transform:translateY(1px)}
+.cta-note{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+.hero .cta-note{color:#B7A994}
+
+.showcase{background:var(--bg);border-bottom:1px solid var(--line)}
+.showcase .g{display:grid;grid-template-columns:1fr auto 1fr;gap:38px;align-items:center;max-width:1060px;margin:0 auto;padding-inline:22px}
+.showcase .cover{width:clamp(190px,22vw,268px)}
+.showcase .cover img{border-radius:4px;box-shadow:0 44px 72px -28px rgba(20,14,6,.55),0 0 0 1px rgba(0,0,0,.05)}
+.showcase .rev .stars{color:var(--accent);letter-spacing:5px;margin-bottom:12px}
+.showcase .rev .q{font-size:1.1rem;line-height:1.5;color:var(--ink);margin:0 0 12px;font-weight:500}
+.showcase .rev .who{font-weight:700;color:var(--ink);font-size:.95rem;margin:0}
+.showcase .rev .role{color:var(--muted);font-size:.84rem;margin:2px 0 0}
+.showcase .rev.right{text-align:right}
+.showcase .rev.ph{border:1px dashed #D9B778;background:#FBF6EC;border-radius:10px;padding:18px 20px}
+.showcase .rev.ph .q{color:#9a7a30}
+@media(max-width:860px){.showcase .g{grid-template-columns:1fr;gap:24px;max-width:460px}.showcase .cover{margin:0 auto;order:-1}.showcase .rev.right{text-align:left}}
+.trust{background:var(--bg2);border-bottom:1px solid var(--line)}
+.trust .th{margin:0 0 34px;max-width:640px}
+.trust .th h2{margin:0}
+.trust .g{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 0;border-top:1px solid var(--line);padding-top:34px}
+.trust .t{text-align:left;padding-left:22px;border-left:1px solid var(--line)}
+.trust .t:first-child{padding-left:0;border-left:none}
+.trust .big{font-family:var(--disp);font-weight:400;font-size:clamp(2.1rem,6.4vw,3rem);color:var(--accent);line-height:.95}
+.trust .lbl{font-size:.8rem;color:var(--soft);margin-top:10px;line-height:1.35;text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:520px){.trust .g{grid-template-columns:repeat(2,1fr);gap:26px 0}.trust .t:nth-child(odd){padding-left:0;border-left:none}.trust .t:nth-child(even){padding-left:22px}}
+
+.video{text-align:center;background:var(--band)}
+.vbox{position:relative;width:320px;max-width:84%;margin:16px auto 0;aspect-ratio:9/16;border-radius:10px;overflow:hidden;box-shadow:0 26px 50px -24px rgba(20,14,6,.5);background:#14110d}
+.vbox>img{width:100%;height:100%;object-fit:cover;display:block}
+.vbox .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,14,6,.2)}
+.vbox .play i{width:70px;height:70px;border-radius:50%;background:rgba(224,96,28,.95);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 26px -6px rgba(0,0,0,.55)}
+.vbox .play i::after{content:"";border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px}
+.video .vcap{font-size:.84rem;color:var(--muted);margin-top:14px}
+
+.live{background:var(--band)}
+.live figure{margin:0 0 20px}
+.live img{width:100%;border-radius:8px}
+.live .cap{font-size:.82rem;color:var(--muted);margin-top:8px;text-align:center;text-transform:uppercase;letter-spacing:.06em}
+.live .punch{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(1.6rem,5.6vw,2.4rem);line-height:1.02;color:var(--ink);margin:0}
+
+.parts .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+.parts .card{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:24px 20px}
+.parts .no{font-family:var(--disp);font-weight:400;font-size:2.2rem;color:var(--accent);line-height:.9}
+.parts h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.25rem;letter-spacing:.01em;margin:8px 0 7px;color:var(--ink)}
+.parts p{margin:0;font-size:.92rem}
+.teasers{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.teasers span{font-size:.82rem;color:var(--soft);background:var(--bg2);border:1px solid var(--line);border-radius:3px;padding:6px 12px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+@media (max-width:620px){.parts .grid{grid-template-columns:1fr}}
+
+.contrast{background:#14110d;color:#fff;text-align:center;position:relative;overflow:hidden}
+.contrast::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 0%, rgba(224,96,28,.16), transparent 60%)}
+.contrast .inner{position:relative;max-width:640px;margin:0 auto}
+.contrast .lab{color:var(--accent-l);justify-content:center}
+.contrast .lab::before{background:var(--accent-l)}
+.contrast h2{color:#fff}
+.contrast p{color:#D9CFBF;margin:0 auto 14px;max-width:46ch}
+.contrast .punchline{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(1.7rem,6vw,2.5rem);color:var(--accent-l);margin:22px 0 0;line-height:1}
+
+.rowlist .row{display:flex;gap:14px;align-items:flex-start;margin-bottom:15px}
+.rowlist .row:last-child{margin-bottom:0}
+.rowlist .ck{color:var(--accent);font-weight:800;flex:0 0 auto;font-size:1.1rem;line-height:1.5}
+.rowlist b{color:var(--ink)}
+.fw{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.fwcol{border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+.fwcol.yes{background:var(--bg2)}
+.fwcol.no{background:transparent}
+.fwh{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 18px}
+.fwcol.yes .fwh{color:var(--accent)}
+.fwcol.no .fwh{color:var(--muted)}
+.fwcol .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.fwcol .row:last-child{margin-bottom:0}
+.fwcol .ck{flex:0 0 auto;font-weight:800;font-size:1rem;line-height:1.5}
+.fwcol.yes .ck{color:var(--accent)}
+.fwcol.no .ck{color:var(--muted)}
+.fwcol p{margin:0;font-size:.95rem}
+.fwcol.no p{color:var(--muted)}
+@media(max-width:640px){.fw{grid-template-columns:1fr}}
+
+.depo{text-align:center;background:var(--band)}
+.depo .g{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;text-align:left}
+.depo .card{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px}
+.depo .stars{color:var(--accent);letter-spacing:3px;margin-bottom:10px}
+.depo .quote{font-size:1.02rem;color:var(--ink);margin:0 0 12px;line-height:1.5;font-weight:500}
+.depo .who{font-size:.85rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.depo .ph{border:1px dashed #D9B778;background:#FBF6EC}
+.depo .ph .quote{color:#9a7a30}
+@media (max-width:560px){.depo .g{grid-template-columns:1fr}}
+
+.author .card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:start}
+.author .aphoto img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
+.author .name{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.7rem;letter-spacing:.01em;color:var(--ink);margin:0}
+.author .role{color:var(--muted);font-size:.88rem;margin:4px 0 0;text-transform:uppercase;letter-spacing:.04em}
+.author .abio{margin-top:18px}
+.author .abio p{margin:0 0 14px;font-size:.99rem;color:var(--soft)}
+@media(max-width:640px){.author .card{grid-template-columns:1fr;gap:20px;padding:24px}.author .aphoto img{max-width:200px}}
+.author .abio p:last-child{margin-bottom:0}
+.author .abio b{color:var(--ink);font-weight:700}
+
+.editorial{position:relative;background:#14110d;overflow:hidden;line-height:0}
+.editorial img{width:100%;height:auto;display:block}
+.editorial .cap{position:absolute;left:0;right:0;bottom:0;padding:44px 22px;background:linear-gradient(0deg,rgba(13,10,7,.86),rgba(13,10,7,.2) 60%,transparent);text-align:center;line-height:1}
+.editorial .cap p{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(1.3rem,3.2vw,2.1rem);color:#fff;margin:0;letter-spacing:.01em;line-height:1.08}
+.editorial .cap .accent{color:var(--accent-l)}
+@media(max-width:640px){.editorial .cap{padding:26px 16px}}
+.praise{background:var(--bg2);border-block:1px solid var(--line)}
+.praise .pwrap{max-width:920px;margin:0 auto;padding-inline:22px}
+.praise .pg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.praise .pcard{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:24px}
+.praise .pcard .stars{color:var(--accent);letter-spacing:4px;margin-bottom:12px}
+.praise .pcard .q{font-size:1.04rem;line-height:1.55;color:var(--ink);margin:0 0 14px;font-weight:500}
+.praise .pcard .who{font-weight:700;color:var(--ink);font-size:.92rem;margin:0}
+.praise .pcard .role{color:var(--muted);font-size:.82rem;margin:2px 0 0}
+.praise .pcard.ph{border:1px dashed #D9B778;background:#FBF6EC}
+.praise .pcard.ph .q{color:#9a7a30}
+@media(max-width:640px){.praise .pg{grid-template-columns:1fr}}
+.offer{background:var(--band);border-block:1px solid var(--line)}
+.offerbox{position:relative;display:grid;grid-template-columns:258px 1fr;gap:44px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:42px;box-shadow:0 34px 64px -30px rgba(40,30,10,.42)}
+.stamp{position:absolute;top:22px;left:22px;z-index:6;transform:rotate(-11deg);background:rgba(178,58,46,.05);color:#B23A2E;border:3px solid #B23A2E;border-radius:10px;padding:9px 18px 7px;text-align:center;box-shadow:0 12px 26px -16px rgba(178,58,46,.6);pointer-events:none}
+.stamp b{display:block;font-family:var(--disp);font-weight:400;font-size:1.9rem;letter-spacing:.07em;line-height:.88;text-transform:uppercase;color:#B23A2E}
+.stamp span{display:block;font-family:var(--sans);font-weight:700;font-size:.6rem;letter-spacing:.17em;text-transform:uppercase;margin-top:6px;color:#B23A2E}
+.cta-off{background:#E6E2DA !important;color:#8A837A !important;cursor:default;box-shadow:none !important;pointer-events:none}
+@media(max-width:720px){.stamp{top:12px;left:12px;transform:rotate(-9deg)}.stamp b{font-size:1.5rem}}
+.offerbox .ocov{width:100%;border-radius:4px;box-shadow:0 34px 56px -22px rgba(0,0,0,.6),0 0 0 1px rgba(0,0,0,.05)}
+.offerbox .otag{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.offerbox .ttl{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:2rem;margin:0 0 6px;letter-spacing:.01em;line-height:1}
+.offerbox .desc{color:var(--muted);margin:0 0 20px;font-size:.98rem}
+.price{font-family:var(--disp);font-weight:400;font-size:3.3rem;color:var(--ink);line-height:.9}
+.price small{font-size:1.05rem;color:var(--muted);vertical-align:top;margin-right:2px}
+.parc{color:var(--muted);font-size:.9rem;margin:4px 0 20px}
+.inc{list-style:none;padding:0;margin:0 0 22px}
+.inc li{display:flex;gap:10px;padding:7px 0;color:var(--soft);font-size:.97rem;line-height:1.4}
+.inc li::before{content:"✓";color:var(--accent);font-weight:800;flex:0 0 auto}
+.offer .cta{width:100%;text-align:center}
+.otrust{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 0 0;font-size:.82rem;color:var(--soft)}
+.otrust span{display:flex;align-items:center}
+.otrust span::before{content:"✓";color:var(--accent);font-weight:800;margin-right:6px}
+@media(max-width:720px){.offerbox{grid-template-columns:1fr;gap:24px;padding:30px 24px;text-align:center}.offerbox .ocov{width:178px;margin:0 auto}.inc{text-align:left;max-width:360px;margin-inline:auto}.otrust{justify-content:center}}
+
+.guarantee{display:flex;gap:18px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px}
+.seal{flex:0 0 auto;width:66px;height:66px;border-radius:50%;border:2px solid var(--accent);color:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--disp);font-weight:400;line-height:1;text-align:center}
+.seal .num{font-size:1.7rem}
+.seal .lbl{font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+.guarantee h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.25rem;margin:0 0 5px;letter-spacing:.01em}
+.guarantee p{margin:0;font-size:.95rem}
+
+.faq details{border-top:1px solid var(--line);padding:16px 0}
+.faq details:first-of-type{border-top:0}
+.faq summary{font-weight:700;font-size:1.05rem;cursor:pointer;list-style:none;color:var(--ink);display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-weight:700;font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:12px 0 0}
+
+.closer{position:relative;background:#14110d;color:#fff;overflow:hidden;text-align:center}
+.closer .bg{position:absolute;inset:0}
+.closer .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.closer .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,14,9,.76),rgba(10,8,5,.93))}
+.closer .inner{position:relative;max-width:640px;margin:0 auto;padding:60px 22px}
+.closer h2{color:#fff;font-size:clamp(2.1rem,7vw,3.2rem)}
+.closer p{color:#E7DECF}
+
+footer{text-align:center;color:var(--muted);padding-block:40px;background:var(--bg2);border-top:1px solid var(--line)}
+footer .line{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.25rem;color:var(--ink);margin:0 0 8px;letter-spacing:.01em}
+footer small{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
+footer .legal{margin:16px 0 0;font-size:.82rem}
+footer .legal a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+footer .legal a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo"><img src="img/logo-preta.png" alt="J.C. Dias" width="145" height="36"></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="bg"><img src="img/hero-office.jpg" alt="J.C. Dias no escritório, com o livro STRIPPED sobre a mesa"></div>
+  <div class="inner">
+    <div class="col">
+      <p class="eyebrow">O livro · STRIPPED</p>
+      <h1>A liderança que ninguém pode te <span class="accent">tirar</span></h1>
+      <p class="sub">Escrito de dentro de uma cela, <b>STRIPPED</b> responde à pergunta que a carreira ensina você a evitar: quem é você quando ninguém é obrigado a te ouvir?</p>
+      <div style="margin-top:26px">
+        <a class="cta" href="#oferta">Em breve</a>
+        <p class="cta-note">Lançamento em breve. Em primeira mão por aqui.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BLOCO 2: capa + um review de 5 estrelas de cada lado (estilo Atomic Habits). Os .rev.ph sao PLACEHOLDERS: trocar pelos depoimentos REAIS que o JC enviar (remover a classe ph). -->
+<section class="showcase">
+  <div class="g">
+    <div class="rev">
+      <div class="stars">★★★★★</div>
+      <p class="q">"STRIPPED não é uma leitura confortável. É uma leitura que faz falta."</p>
+      <p class="who">Empresária e CEO</p>
+      <p class="role">Belo Horizonte, MG</p>
+    </div>
+    <div class="cover"><img src="img/cover.jpg" alt="Capa do livro STRIPPED, de J.C. Dias" width="268" height="398"></div>
+    <div class="rev right">
+      <div class="stars">★★★★★</div>
+      <p class="q">"Não terminei pensando em como ser um executivo melhor. Terminei pensando em como ser um líder melhor."</p>
+      <p class="who">Diretor Executivo</p>
+      <p class="role">São Paulo, SP</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="th">
+      <p class="lab">A transformação</p>
+      <h2>O que muda na sua liderança depois de <span class="accent">ler</span>.</h2>
+    </div>
+    <div class="g">
+      <div class="t"><div class="big">Clareza</div><div class="lbl">enxerga quem você é como líder, sem o cargo</div></div>
+      <div class="t"><div class="big">Coragem</div><div class="lbl">fala a verdade sem depender do poder da cadeira</div></div>
+      <div class="t"><div class="big">Influência</div><div class="lbl">as pessoas passam a te seguir, não só a obedecer</div></div>
+      <div class="t"><div class="big">Legado</div><div class="lbl">forma quem vem depois em vez de criar dependência</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lab">O problema</p>
+    <h2>Você manda. Mas será que te <span class="accent">seguem?</span></h2>
+    <p class="big">Faz a conta honesta: se amanhã tirassem o seu título, quantos dos que hoje te obedecem ainda te procurariam pra pedir um conselho?</p>
+    <p>Essa pergunta separa o chefe do líder, e quase ninguém tem coragem de se fazer. <b>Autoridade</b> é o poder de obrigar, emprestado pelo cargo. <b>Influência</b> é quando a pessoa faz porque confia em você. Uma some no dia em que o crachá sai. A outra te segue pra onde você for.</p>
+    <p>Eu aprendi isso do pior jeito: perdendo tudo de uma vez. O cargo, o nome, o respeito que vinha de graça com a posição. E foi exatamente ali, sem nada, que eu descobri o que é liderar de verdade. STRIPPED é o caminho inteiro, do fundo de volta à liderança que importa.</p>
+  </div>
+</section>
+
+<section class="live">
+  <div class="wrap">
+    <figure>
+      <img src="img/palco.jpg" alt="J.C. Dias falando em público no palco">
+      <figcaption class="cap">J.C. Dias, no palco</figcaption>
+    </figure>
+    <p class="punch">Isto não é teoria de sala de aula. É o que eu vivi, nos dois lados: no topo e no chão.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap rowlist">
+    <p class="lab">O que você vai aprender</p>
+    <h2>O que STRIPPED <span class="accent">te ensina</span></h2>
+    <div class="row"><span class="ck">→</span><p>Como parar de liderar pela <b>autoridade do cargo</b> e começar a liderar pela <b>influência que ninguém te tira</b>.</p></div>
+    <div class="row"><span class="ck">→</span><p>Por que <b>quem mais fala costuma ser menos ouvido</b>, e como o silêncio e a consistência constroem respeito.</p></div>
+    <div class="row"><span class="ck">→</span><p>Como <b>manter a firmeza quando a sala perde o controle</b>, sem absorver nem espalhar a tensão.</p></div>
+    <div class="row"><span class="ck">→</span><p>A hora de agir e a hora de <b>segurar o espaço</b>: por que nem todo momento é seu pra resolver.</p></div>
+    <div class="row"><span class="ck">→</span><p>Como <b>dizer a verdade difícil com cuidado</b>, em vez de "administrar" a conversa pra fugir do desconforto.</p></div>
+    <div class="row"><span class="ck">→</span><p>O <b>ritual diário</b> que decide quem comanda você antes de o dia começar.</p></div>
+    <div class="row"><span class="ck">→</span><p>Como construir uma liderança que <b>não depende de você estar na sala</b>, e o que você deixa nas pessoas.</p></div>
+    <div class="row"><span class="ck">→</span><p>A pergunta que revela quem você é de verdade: <b>quem é você quando ninguém é obrigado a te ouvir?</b></p></div>
+  </div>
+</section>
+
+<section class="parts">
+  <div class="wrap">
+    <p class="lab">Por dentro do livro</p>
+    <h2>O livro inteiro, em três <span class="accent">partes</span></h2>
+    <p>STRIPPED é uma jornada em três movimentos: despir, reconstruir e liberar. Cada parte responde a uma pergunta que a carreira ensina você a evitar.</p>
+    <div class="grid">
+      <div class="card"><div class="no">01</div><h3>Despido</h3><p>Quem é você quando ninguém é obrigado a te ouvir? Identidade, silêncio e a diferença entre autoridade e influência.</p></div>
+      <div class="card"><div class="no">02</div><h3>Reconstruído</h3><p>Por que você lidera? Propósito, coragem de falar a verdade e a influência que é sua, não emprestada do cargo.</p></div>
+      <div class="card"><div class="no">03</div><h3>Liberto</h3><p>O que você vai construir? Cultura, resiliência e o que você deixa nas pessoas quando sai da sala.</p></div>
+    </div>
+    <div class="teasers" aria-label="Alguns capítulos">
+      <span>O Uniforme</span><span>A Educação do Silêncio</span><span>O Atalho</span><span>A Conversa</span><span>O Espelho</span><span>A Palavra Honesta</span><span>O Custo de se Importar</span><span>O que Você Deixa nas Pessoas</span>
+    </div>
+  </div>
+</section>
+
+<section class="editorial">
+  <img src="img/editorial.jpg" alt="O livro STRIPPED, de J.C. Dias, sobre a mesa">
+  <div class="cap"><p>A liderança começa quando <span class="accent">tiram tudo</span> de você.</p></div>
+</section>
+
+<section class="contrast">
+  <div class="wrap inner">
+    <p class="lab">Antes de servir, despir</p>
+    <h2>Talvez você conheça O Monge e o Executivo</h2>
+    <p class="big">A mensagem dele é poderosa: liderar é servir. STRIPPED trata do passo que vem antes, e quase ninguém fala dele.</p>
+    <p>Pra servir de verdade, você primeiro precisa se despir. Do cargo. Da vaidade. Do ego. Do medo de perder a posição. Ninguém serve de coração enquanto ainda está agarrado ao que o título dá.</p>
+    <p class="punchline">Despir vem primeiro. Servir vem depois.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lab">Pra quem é</p>
+    <h2>Este livro é pra você. Ou <span class="accent">não é</span>.</h2>
+    <div class="fw">
+      <div class="fwcol yes">
+        <p class="fwh">É pra você se</p>
+        <div class="row"><span class="ck">✓</span><p><b>Você caiu</b> e quer voltar inteiro, com uma liderança que não depende de crachá.</p></div>
+        <div class="row"><span class="ck">✓</span><p><b>Você ainda não tem o título</b>, mas quer gente andando junto, não só obedecendo.</p></div>
+        <div class="row"><span class="ck">✓</span><p>Você sente que <b>te obedecem</b>, mas não sabe se te seguiriam sem o cargo.</p></div>
+        <div class="row"><span class="ck">✓</span><p>Você quer liderar com <b>caráter e fé</b>, não com o poder da cadeira.</p></div>
+      </div>
+      <div class="fwcol no">
+        <p class="fwh">Não é pra você se</p>
+        <div class="row"><span class="ck">✕</span><p>Pra você, liderar é <b>só o cargo</b> e o poder de mandar.</p></div>
+        <div class="row"><span class="ck">✕</span><p>Você quer uma <b>fórmula pronta</b> sem olhar pra dentro.</p></div>
+        <div class="row"><span class="ck">✕</span><p>Você <b>não quer</b> encarar quem você é sem o título.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="author">
+  <div class="wrap">
+    <p class="lab">Quem escreveu</p>
+    <div class="card">
+      <div class="aphoto"><img src="img/headshot.jpg" alt="Foto de J.C. Dias"></div>
+      <div class="abody">
+        <p class="name">J.C. Dias</p>
+        <p class="role">Empresário e diretor executivo no Reino Unido</p>
+        <div class="abio">
+        <p>Hoje, ele é um empresário estabelecido no Reino Unido, com mais de vinte anos à frente de equipes e operações, dois cursos superiores e uma carreira de posição e respeito.</p>
+        <p>Até que um acidente de carro tirou tudo dele de uma vez: a posição, o nome, a vida que ele tinha construído.</p>
+        <p>Passou <b>11 meses e 2 semanas preso</b>, despido até o osso. Sem cargo, sem título, sem nada que o mundo usa pra medir um homem.</p>
+        <p>Foi ali, sem nada, que ele descobriu o que sobra quando tiram tudo. E foi dali que ele reconstruiu, do zero e mais forte, erguendo <b>quatro negócios</b>.</p>
+        <p>A liderança que ele ensina não veio de um curso, veio de ter sido despido de tudo e encontrado, no fundo, o <b>caráter e a fé</b> que ninguém pode tirar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELOGIOS AO LIVRO: trocar os .pcard.ph pelos depoimentos REAIS (remover a classe ph). Pode ter de 4 a 8; apague os que sobrarem. -->
+<section class="praise">
+  <div class="pwrap">
+    <p class="lab c">Elogios ao livro</p>
+    <h2 class="center">O que estão dizendo sobre o <span class="accent">STRIPPED</span></h2>
+    <div class="pg">
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"Sempre acreditei que um bom líder precisava ter respostas rápidas e resolver todos os problemas. O capítulo sobre a intervenção me fez enxergar que, muitas vezes, eu não ajudava minha equipe a crescer porque precisava ser aquele que resolvia tudo. Uma leitura desconfortável, mas necessária."</p><p class="who">Gerente Industrial</p><p class="role">Curitiba, PR</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"O que mais me marcou foi a reflexão sobre a cultura que deixamos nas pessoas. Ela é construída nas pequenas atitudes de cada dia, e o livro mostra isso de uma forma muito humana. Gostaria de ver essa leitura nas mãos de todos os gestores da empresa."</p><p class="who">Diretor de Recursos Humanos</p><p class="role">Porto Alegre, RS</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"O livro me fez olhar para uma questão que eu sempre evitava: como me comporto quando ninguém está me observando? A parte sobre integridade e os pequenos atalhos do dia a dia foi especialmente forte. Recomendo pra quem já lidera e acha que não tem mais nada a aprender."</p><p class="who">Gerente Comercial</p><p class="role">Rio de Janeiro, RJ</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"O autor transforma situações extremas em reflexões que se aplicam direto à rotina de quem lidera. O capítulo sobre o silêncio me fez perceber quantas vezes eu ocupava todo o espaço nas reuniões sem deixar minha equipe pensar. É um livro que pretendo reler."</p><p class="who">Diretor de Operações</p><p class="role">Joinville, SC</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"Depois de um acidente gravíssimo, o primeiro pensamento do autor foi sobre uma reunião de trabalho. Quantas vezes fazemos o mesmo, colocando o trabalho acima de tudo? Esse livro me fez pensar na minha empresa, mas principalmente na minha esposa e nos meus filhos."</p><p class="who">Empresário</p><p class="role">Goiânia, GO</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"A leitura me ajudou a perceber que autoridade não precisa ser demonstrada a cada reunião. Ela também é construída pela consistência, pela escuta e pelo respeito. Foi importante encontrar um livro que fala de liderança sem romantizar o poder."</p><p class="who">Coordenadora de Equipes</p><p class="role">Recife, PE</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"O autor não tenta vender uma fórmula pronta. Ele apresenta as próprias contradições, erros e descobertas, e isso traz muita credibilidade. A discussão sobre construir uma equipe que não dependa o tempo inteiro do líder me fez repensar como estou estruturando minha empresa."</p><p class="who">CEO e Fundador de Startup</p><p class="role">Florianópolis, SC</p></div>
+      <div class="pcard"><div class="stars">★★★★★</div><p class="q">"Depois de quase três décadas em posições de liderança, achei que já tinha uma compreensão sólida do assunto. STRIPPED me mostrou perguntas que eu nunca tinha feito a mim mesmo. Cargos acabam, empresas mudam e resultados são esquecidos. O impacto que deixamos nas pessoas permanece."</p><p class="who">Presidente de Empresa</p><p class="role">Campinas, SP</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offerbox">
+      <div class="stamp"><b>Em breve</b><span>Lançamento em breve</span></div>
+      <div><img class="ocov" src="img/cover.jpg" alt="Capa do ebook STRIPPED, de J.C. Dias"></div>
+      <div class="odet">
+        <p class="otag">O livro</p>
+        <p class="ttl">STRIPPED</p>
+        <p class="desc">A liderança que ninguém pode te tirar, em eBook.</p>
+        <ul class="inc">
+          <li>O livro completo: as 3 partes e os 18 capítulos</li>
+          <li>A pergunta-espelho ao fim de cada capítulo, pra aplicar na sua liderança</li>
+          <li>eBook pra ler no celular, tablet ou computador, quando quiser</li>
+          <li>Acesso na hora, direto no seu e-mail</li>
+        </ul>
+        <div class="price"><small>R$</small>67</div>
+        <p class="parc">à vista no Pix, ou em até 12x no cartão</p>
+        <!-- Produto ainda sem checkout: botão em estado "em breve". Quando o produto existir na Hotmart, troque por: <a class="cta" href="LINK">Quero o livro por R$67</a> -->
+        <span class="cta cta-off" role="status">Em breve</span>
+        <div class="otrust"><span>Acesso imediato</span><span>Garantia de 7 dias</span><span>Pagamento seguro pela Hotmart</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><span class="num">7</span><span class="lbl">dias</span></div>
+      <div>
+        <h3>Garantia de 7 dias</h3>
+        <p>Leu e sentiu que não era pra você? É só pedir, dentro de 7 dias, que a Hotmart devolve cada centavo. O risco é meu, não seu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <p class="lab">Dúvidas</p>
+    <h2>Perguntas que todo mundo faz</h2>
+    <details><summary>É livro físico ou digital?</summary><p>Digital, um eBook. Você lê no celular, no tablet ou no computador, onde e quando quiser. Assim o acesso é na hora e o preço fica justo.</p></details>
+    <details><summary>Como eu recebo depois de pagar?</summary><p>Na hora. Assim que o pagamento é aprovado, a Hotmart manda o acesso no seu e-mail.</p></details>
+    <details><summary>Preciso ter cargo de chefia pra aproveitar?</summary><p>Não. O livro serve tanto pra quem já lidera e quer voltar mais forte, quanto pra quem ainda não tem o título.</p></details>
+    <details><summary>Quanto tempo leva pra ler?</summary><p>Dá pra ler em poucos dias, um capítulo por vez. Mas é um livro pra voltar sempre, porque cada capítulo termina com uma pergunta pra você aplicar na vida real.</p></details>
+    <details><summary>Posso parcelar?</summary><p>Pode. R$67 à vista no Pix, ou em até 12x no cartão pela Hotmart.</p></details>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="bg"><img src="img/palco.jpg" alt=""></div>
+  <div class="inner">
+    <h2>A sua liderança não é o seu cargo</h2>
+    <p class="big">É quem você é quando ninguém é obrigado a te ouvir. Comece a construir isso hoje, por R$67.</p>
+    <div style="margin-top:24px"><a class="cta" href="#oferta">Em breve</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="line">Liderança é caráter, não cargo</p>
+    <small>Escola de Líderes · método Líder Sem Título · J.C. Dias</small>
+    <p class="legal"><a href="termos.html">Termos e Condições</a> · <a href="privacidade.html">Política de Privacidade</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
