@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Líder Sem Título · Turma 01</title>
-<meta name="description" content="A Turma 01 do Líder Sem Título: 90 dias, ao vivo com J.C. Dias, para você construir a liderança que não depende de cargo nenhum. Caráter, não competência. 10 vagas founding.">
-<meta property="og:title" content="Líder Sem Título · Turma 01, com J.C. Dias">
+<title>Líder Sem Título · O Núcleo</title>
+<meta name="description" content="O Núcleo do Líder Sem Título: a imersão de 90 dias, ao vivo com J.C. Dias, para se tornar o líder que as pessoas escolhem seguir. Turma founding de 10 vagas.">
+<meta property="og:title" content="Líder Sem Título · O Núcleo, com J.C. Dias">
 <meta property="og:description" content="90 dias, ao vivo, para se tornar o líder que as pessoas seguem por vontade. Turma founding de 10 vagas.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jcdias.com/turma01/">
@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
 <style>
-/* Líder Sem Título · Turma 01 (R$1.997, núcleo ao vivo). Estilo Hyper Island: Anton condensada, neutro claro, foto escura no hero, laranja de destaque. SEM kart. */
+/* Líder Sem Título · O Núcleo (R$1.997, high-ticket ao vivo). Estilo Hyper Island, SEM kart.
+   Estrutura própria, focada em VALOR (transformação, entregáveis, value stack). Sem bio longa. */
 :root{
   --bg:#F5F3EF; --bg2:#FFFFFF; --band:#EFEDE7;
   --ink:#191714; --muted:#726D64; --soft:#403B34;
@@ -39,6 +40,8 @@ b{color:var(--ink);font-weight:700}
 .lab{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:flex;align-items:center;gap:10px}
 .lab::before{content:"";width:26px;height:2px;background:var(--accent);flex:0 0 auto}
 .lab.c{justify-content:center}
+.center{text-align:center}
+.band{background:var(--band)}
 
 .topbar{border-bottom:1px solid var(--line);background:var(--bg2)}
 .logo{display:flex;align-items:center;justify-content:center;padding-block:14px}
@@ -48,121 +51,77 @@ b{color:var(--ink);font-weight:700}
 .hero{position:relative;background:#14110d;overflow:hidden}
 .hero .bg{position:absolute;inset:0}
 .hero .bg img{width:100%;height:100%;object-fit:cover;object-position:58% 20%}
-.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,11,.42) 0%,rgba(18,15,11,.6) 46%,rgba(12,10,7,.9) 100%);z-index:1}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,11,.42) 0%,rgba(18,15,11,.62) 46%,rgba(12,10,7,.92) 100%);z-index:1}
 .hero .inner{position:relative;z-index:3;max-width:1160px;margin:0 auto;padding:88px 22px 56px}
-.hero .col{max-width:520px}
+.hero .col{max-width:560px}
 @media (min-width:880px){
   .hero .bg img{transform:scale(1.1);transform-origin:66% 18%}
-  .hero .bg::after{background:linear-gradient(95deg,rgba(14,11,7,.92) 0%,rgba(14,11,7,.62) 36%,rgba(14,11,7,.2) 64%,rgba(14,11,7,.06) 100%)}
+  .hero .bg::after{background:linear-gradient(95deg,rgba(14,11,7,.93) 0%,rgba(14,11,7,.66) 38%,rgba(14,11,7,.22) 66%,rgba(14,11,7,.06) 100%)}
 }
 @media (max-width:879px){.hero .col{max-width:none}}
 .hero .eyebrow{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#E6C9A6;margin:0 0 22px;display:flex;align-items:center;gap:10px}
 .hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent-l);flex:0 0 auto}
-.hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(2.7rem,10.5vw,5rem);line-height:1.02;letter-spacing:.01em;margin:0 0 22px;color:#fff}
+.hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,9.5vw,4.6rem);line-height:1.02;letter-spacing:.01em;margin:0 0 22px;color:#fff}
 .hero h1 .accent{color:var(--accent-l)}
-.hero .sub{font-size:clamp(1.04rem,3.5vw,1.2rem);color:#E7DECF;max-width:48ch;margin:0 0 32px}
+.hero .sub{font-size:clamp(1.04rem,3.5vw,1.2rem);color:#E7DECF;max-width:50ch;margin:0 0 32px}
 .hero .sub b{color:#fff;font-weight:600}
 .cta{display:inline-block;font-family:var(--sans);font-size:1.02rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#fff;background:var(--accent);border:0;border-radius:4px;padding:17px 32px;cursor:pointer;text-decoration:none;box-shadow:0 14px 26px -12px rgba(224,96,28,.7);transition:transform .12s ease, background .15s ease}
 .cta:hover{background:var(--accent-dk)}
 .cta:active{transform:translateY(1px)}
 .cta-note{font-size:.85rem;color:var(--muted);margin:12px 0 0}
 .hero .cta-note{color:#B7A994}
-.center{text-align:center}
 
-/* autoridade */
-.trust{background:var(--bg2);border-bottom:1px solid var(--line)}
-.trust .th{margin:0 0 34px;max-width:640px}
-.trust .th h2{margin:0}
-.trust .g{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 0;border-top:1px solid var(--line);padding-top:34px}
-.trust .t{text-align:left;padding-left:22px;border-left:1px solid var(--line)}
-.trust .t:first-child{padding-left:0;border-left:none}
-.trust .big{font-family:var(--disp);font-weight:400;font-size:clamp(2.1rem,6.4vw,3rem);color:var(--accent);line-height:.95}
-.trust .lbl{font-size:.8rem;color:var(--soft);margin-top:10px;line-height:1.35;text-transform:uppercase;letter-spacing:.04em}
-@media (max-width:520px){.trust .g{grid-template-columns:repeat(2,1fr);gap:26px 0}.trust .t:nth-child(odd){padding-left:0;border-left:none}.trust .t:nth-child(even){padding-left:22px}}
+/* antes / depois */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.bacol{border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+.bacol.out{background:var(--bg2);border-color:var(--accent);box-shadow:0 26px 50px -30px rgba(40,30,10,.4)}
+.bah{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 18px}
+.bacol.in .bah{color:var(--muted)}
+.bacol.out .bah{color:var(--accent)}
+.bacol .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.bacol .row:last-child{margin-bottom:0}
+.bacol .ic{flex:0 0 auto;font-weight:800;font-size:1rem;line-height:1.5}
+.bacol.in .ic{color:var(--muted)}
+.bacol.out .ic{color:var(--accent)}
+.bacol p{margin:0;font-size:.95rem}
+.bacol.in p{color:var(--muted)}
+@media(max-width:640px){.ba{grid-template-columns:1fr}}
 
-/* jornada / marcos */
-.trilha .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
-.trilha .step{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:24px 20px;position:relative}
-.trilha .step.on{border-color:var(--accent);border-width:2px}
-.trilha .no{font-family:var(--disp);font-weight:400;font-size:2.4rem;color:var(--accent);line-height:.9}
-.trilha h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.3rem;letter-spacing:.01em;margin:8px 0 8px;color:var(--ink)}
-.trilha p{margin:0 0 14px;font-size:.92rem}
-.trilha .mk{display:block;border-top:1px solid var(--line);padding-top:12px;font-size:.82rem;color:var(--soft)}
-.trilha .mk b{color:var(--ink)}
-.trilha .mk .dl{display:block;font-family:var(--disp);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
-@media (max-width:620px){.trilha .steps{grid-template-columns:1fr}}
-.methodline{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);display:flex;gap:28px;flex-wrap:wrap}
-.methodline div{display:flex;flex-direction:column}
-.methodline b{font-family:var(--disp);font-weight:400;font-size:1.9rem;color:var(--accent);line-height:1}
-.methodline span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+/* marcos / entregaveis */
+.marcos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+.marco{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+.marco .mn{font-family:var(--disp);font-weight:400;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.marco h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.3rem;letter-spacing:.01em;margin:8px 0 8px;color:var(--ink);line-height:1}
+.marco p{margin:0;font-size:.92rem}
+@media(max-width:620px){.marcos{grid-template-columns:1fr}}
 
 /* listas */
 .rowlist .row{display:flex;gap:14px;align-items:flex-start;margin-bottom:15px}
 .rowlist .row:last-child{margin-bottom:0}
 .rowlist .ck{color:var(--accent);font-weight:800;flex:0 0 auto;font-size:1.1rem;line-height:1.5}
 .rowlist b{color:var(--ink)}
-.band{background:var(--band)}
 
-/* bonus */
-.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
-.bcard{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px 20px;display:flex;flex-direction:column}
-.bcard .btag{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
-.bcard h3{font-family:var(--sans);font-weight:700;font-size:1.05rem;margin:0 0 6px;color:var(--ink)}
-.bcard p{margin:0 0 14px;font-size:.9rem}
-.bcard .bval{margin-top:auto;font-family:var(--disp);font-weight:400;font-size:1.05rem;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
-@media(max-width:620px){.bgrid{grid-template-columns:1fr}}
+/* value stack */
+.stack{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,5vw,38px) clamp(22px,4vw,34px);box-shadow:0 34px 64px -30px rgba(40,30,10,.45);max-width:640px;margin:0 auto}
+.srow{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
+.srow:first-of-type{border-top:0}
+.srow .sn{color:var(--soft);font-size:.98rem}
+.srow .sn b{color:var(--ink)}
+.srow .sv{color:var(--muted);font-size:.92rem;white-space:nowrap}
+.srow.bonus .sn b{color:var(--accent-dk)}
+.ssum{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:16px;border-top:2px solid var(--ink)}
+.ssum .l{font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.04em;font-size:.86rem}
+.ssum .v{font-family:var(--disp);font-weight:400;font-size:1.7rem;color:var(--muted);text-decoration:line-through}
+.pay{text-align:center;margin-top:26px}
+.pay .plab{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700}
+.pay .price{font-family:var(--disp);font-weight:400;font-size:clamp(3rem,10vw,4rem);color:var(--ink);line-height:.92;margin-top:8px}
+.pay .price small{font-size:1.2rem;color:var(--muted);vertical-align:top;margin-right:3px}
+.pay .parc{color:var(--muted);font-size:.92rem;margin-top:4px}
+.stack .cta{display:block;width:100%;text-align:center;margin-top:22px}
+.scar{text-align:center;color:var(--muted);font-size:.9rem;margin:16px auto 0;max-width:460px}
+.scar b{color:var(--accent-dk)}
 
-/* pra quem */
-.fw{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
-.fwcol{border:1px solid var(--line);border-radius:12px;padding:26px 24px}
-.fwcol.yes{background:var(--bg2)}
-.fwcol.no{background:transparent}
-.fwh{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 18px}
-.fwcol.yes .fwh{color:var(--accent)}
-.fwcol.no .fwh{color:var(--muted)}
-.fwcol .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
-.fwcol .row:last-child{margin-bottom:0}
-.fwcol .ck{flex:0 0 auto;font-weight:800;font-size:1rem;line-height:1.5}
-.fwcol.yes .ck{color:var(--accent)}
-.fwcol.no .ck{color:var(--muted)}
-.fwcol p{margin:0;font-size:.95rem}
-.fwcol.no p{color:var(--muted)}
-@media(max-width:640px){.fw{grid-template-columns:1fr}}
-
-/* autor */
-.author .card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:start}
-.author .aphoto img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
-.author .name{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.7rem;letter-spacing:.01em;color:var(--ink);margin:0}
-.author .role{color:var(--muted);font-size:.88rem;margin:4px 0 0;text-transform:uppercase;letter-spacing:.04em}
-.author .abio{margin-top:18px}
-.author .abio p{margin:0 0 14px;font-size:.99rem;color:var(--soft)}
-.author .abio p:last-child{margin-bottom:0}
-.author .abio b{color:var(--ink);font-weight:700}
-@media(max-width:640px){.author .card{grid-template-columns:1fr;gap:20px;padding:24px}.author .aphoto img{max-width:200px}}
-
-/* oferta */
-.offer{background:var(--band);border-block:1px solid var(--line)}
-.offerbox{position:relative;display:grid;grid-template-columns:258px 1fr;gap:44px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:42px;box-shadow:0 34px 64px -30px rgba(40,30,10,.42)}
-.offerbox .ocov{width:100%;border-radius:8px;object-fit:cover;aspect-ratio:4/5;box-shadow:0 34px 56px -22px rgba(0,0,0,.6),0 0 0 1px rgba(0,0,0,.05)}
-.offerbox .otag{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
-.offerbox .ttl{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:1.9rem;margin:0 0 6px;letter-spacing:.01em;line-height:1}
-.offerbox .desc{color:var(--muted);margin:0 0 20px;font-size:.98rem}
-.price{font-family:var(--disp);font-weight:400;font-size:3.3rem;color:var(--ink);line-height:.9}
-.price small{font-size:1.05rem;color:var(--muted);vertical-align:top;margin-right:2px}
-.parc{color:var(--muted);font-size:.9rem;margin:4px 0 8px}
-.anchor{font-size:.9rem;color:var(--soft);margin:0 0 20px}
-.anchor b{color:var(--ink)}
-.inc{list-style:none;padding:0;margin:0 0 22px}
-.inc li{display:flex;gap:10px;padding:7px 0;color:var(--soft);font-size:.97rem;line-height:1.4}
-.inc li::before{content:"✓";color:var(--accent);font-weight:800;flex:0 0 auto}
-.inc li.bonus::before{content:"+";color:var(--accent-l)}
-.offer .cta{width:100%;text-align:center}
-.otrust{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 0 0;font-size:.82rem;color:var(--soft)}
-.otrust span{display:flex;align-items:center}
-.otrust span::before{content:"✓";color:var(--accent);font-weight:800;margin-right:6px}
-@media(max-width:720px){.offerbox{grid-template-columns:1fr;gap:24px;padding:30px 24px;text-align:center}.offerbox .ocov{width:200px;margin:0 auto}.inc{text-align:left;max-width:380px;margin-inline:auto}.otrust{justify-content:center}}
-.scar{background:#FBEEDD;border:1px solid #EFCE9C;border-radius:8px;padding:12px 16px;font-size:.92rem;color:#7a5a16;margin:0 auto 22px;max-width:460px;text-align:center}
-
+/* garantia */
 .guarantee{display:flex;gap:18px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:22px}
 .seal{flex:0 0 auto;width:66px;height:66px;border-radius:50%;border:2px solid var(--accent);color:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--disp);font-weight:400;line-height:1;text-align:center}
 .seal .num{font-size:1.7rem}
@@ -182,7 +141,7 @@ b{color:var(--ink);font-weight:700}
 .closer{position:relative;background:#14110d;color:#fff;overflow:hidden;text-align:center}
 .closer .bg{position:absolute;inset:0}
 .closer .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
-.closer .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,14,9,.75),rgba(10,8,5,.92))}
+.closer .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,14,9,.78),rgba(10,8,5,.93))}
 .closer .inner{position:relative;max-width:640px;margin:0 auto;padding:60px 22px}
 .closer h2{color:#fff;font-size:clamp(2.1rem,7vw,3.2rem)}
 .closer p{color:#E7DECF}
@@ -209,167 +168,109 @@ footer .legal a:hover{color:var(--accent)}
   </div>
   <div class="inner">
     <div class="col">
-      <p class="eyebrow">Líder Sem Título · Turma 01</p>
-      <h1>Seja seguido por <span class="accent">vontade</span>, não por obrigação.</h1>
-      <p class="sub">A Turma 01 é a travessia de <b>90 dias, ao vivo comigo</b>, para você construir a liderança que não depende de cargo nenhum. Caráter, não competência. Turma founding de <b>10 vagas</b>.</p>
+      <p class="eyebrow">Líder Sem Título · O Núcleo</p>
+      <h1>Em 90 dias, torne-se o líder que as pessoas <span class="accent">escolhem</span> seguir.</h1>
+      <p class="sub">O Núcleo é a imersão de <b>90 dias, ao vivo comigo</b>, para reconstruir a sua liderança sobre o que ninguém pode te tirar: o seu caráter. <b>Apenas 10 pessoas</b> por turma.</p>
       <a class="cta" href="/teste/">Entrar na lista de espera</a>
-      <p class="cta-note">As inscrições abrem em breve. Entre na lista e seja avisado em primeira mão, com a condição founding.</p>
+      <p class="cta-note">Turma founding. As vagas abrem em breve, em primeira mão para quem está na lista.</p>
     </div>
   </div>
 </header>
 
-<section class="trust">
-  <div class="wrap">
-    <div class="th">
-      <p class="lab">Trajetória</p>
-      <h2>De diretor executivo à queda. Da queda, <span class="accent">reconstruiu tudo</span>.</h2>
-    </div>
-    <div class="g">
-      <div class="t"><div class="big">26</div><div class="lbl">anos de liderança no Brasil e na Europa</div></div>
-      <div class="t"><div class="big">4</div><div class="lbl">empresas construídas depois da prisão</div></div>
-      <div class="t"><div class="big">6</div><div class="lbl">livros publicados</div></div>
-      <div class="t"><div class="big">Fé</div><div class="lbl">a base de toda a reconstrução</div></div>
-    </div>
-  </div>
-</section>
-
 <section>
   <div class="wrap">
-    <p class="lab">O que está em jogo</p>
-    <h2>Você tem o cargo. Mas eles te <span class="accent">seguem</span>?</h2>
-    <p class="big">Dá pra ter o título, a sala e a assinatura, e ainda assim liderar uma equipe que só obedece. Que cumpre o combinado enquanto você olha, e desacelera no minuto em que você sai.</p>
-    <p>A diferença entre ser obedecido e ser seguido não está no seu cargo. Está em quem você é quando ninguém é obrigado a te ouvir. E isso não se resolve com mais uma técnica solta: se resolve com um método, aplicado, com acompanhamento de perto, até virar quem você é.</p>
-    <p>A Turma 01 é esse caminho. Noventa dias para despir a liderança que você pegou emprestada do cargo, reconstruir a sua sobre caráter, e liberar o líder que as pessoas seguem por escolha.</p>
-  </div>
-</section>
-
-<section class="trilha band">
-  <div class="wrap">
-    <p class="lab">O método</p>
-    <h2>Três fases. Noventa dias. Um líder <span class="accent">diferente</span> no fim.</h2>
-    <p>A espinha é o livro STRIPPED: 3 fases, 18 lições, cada fase termina com um marco concreto na sua mão.</p>
-    <div class="steps">
-      <div class="step on">
-        <div class="no">01</div>
-        <h3>Despir</h3>
-        <p>Quem você é sem o cargo. Identidade, autoconsciência e como você se comporta sob pressão.</p>
-        <span class="mk"><span class="dl">Marco 1</span><b>Mapa de Identidade e Influência</b></span>
-      </div>
-      <div class="step on">
-        <div class="no">02</div>
-        <h3>Reconstruir</h3>
-        <p>Por que você lidera. Propósito, influência sem autoridade e a confiança do time.</p>
-        <span class="mk"><span class="dl">Marco 2</span><b>Código Pessoal de Liderança</b></span>
-      </div>
-      <div class="step on">
-        <div class="no">03</div>
-        <h3>Liberar</h3>
-        <p>O que você constrói e deixa nas pessoas. Cultura, resiliência e formar quem vem depois.</p>
-        <span class="mk"><span class="dl">Marco 3</span><b>Plano de Liderança de 90 Dias</b></span>
-      </div>
-    </div>
-    <div class="methodline">
-      <div><b>3</b><span>fases</span></div>
-      <div><b>18</b><span>lições</span></div>
-      <div><b>90</b><span>dias de aplicação</span></div>
-      <div><b>10</b><span>vagas founding</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="rowlist">
-  <div class="wrap">
-    <p class="lab">O que você recebe</p>
-    <h2>Tudo que a Turma 01 <span class="accent">entrega</span></h2>
-    <div class="row"><span class="ck">→</span><p>O <b>programa completo de 90 dias</b> nas 3 fases, com as aulas na minha voz.</p></div>
-    <div class="row"><span class="ck">→</span><p>Os <b>3 Marcos entregues</b>: Mapa de Identidade e Influência, Código Pessoal de Liderança e Plano de Liderança de 90 Dias.</p></div>
-    <div class="row"><span class="ck">→</span><p><b>Encontros ao vivo quinzenais comigo</b>, em grupo pequeno, pra destravar o que trava na sua liderança real.</p></div>
-    <div class="row"><span class="ck">→</span><p>A <b>Mesa de Líderes</b>: o grupo da turma, pra você atravessar os 90 dias acompanhado, não sozinho.</p></div>
-    <div class="row"><span class="ck">→</span><p>O <b>Caderno do Líder Sem Título</b>: o workbook que guia a aplicação de ponta a ponta.</p></div>
+    <p class="lab">Se você chegou até aqui</p>
+    <h2>Você já sabe quem eu sou. A pergunta agora é <span class="accent">outra</span>.</h2>
+    <p class="big">Se você está nesta página, já leu, já assistiu, já acompanha o meu trabalho. Então eu vou pular a parte de me apresentar.</p>
+    <p>A verdade é esta: mais um curso não vai te transformar. Informação você já tem de sobra. O que muda um líder de verdade não é saber mais, é ser levado por um processo, com acompanhamento de perto, até aquilo virar quem você é.</p>
+    <p>O Núcleo é esse processo. Não é um treinamento pra assistir no sofá. É uma travessia de 90 dias, ao vivo, com um grupo pequeno, pra você sair outro líder do outro lado.</p>
   </div>
 </section>
 
 <section class="band">
   <div class="wrap">
-    <p class="lab">Os bônus</p>
-    <h2>Três bônus que derrubam as suas <span class="accent">desculpas</span></h2>
-    <div class="bgrid">
-      <div class="bcard"><div class="btag">Bônus 1</div><h3>As Conversas Difíceis</h3><p>Os roteiros das 5 conversas que o líder foge de ter, do feedback duro à demissão.</p><div class="bval">Valor R$297</div></div>
-      <div class="bcard"><div class="btag">Bônus 2</div><h3>O Protocolo da Pressão</h3><p>Como não quebrar, nem explodir, quando tudo aperta ao mesmo tempo.</p><div class="bval">Valor R$197</div></div>
-      <div class="bcard"><div class="btag">Bônus 3</div><h3>Por Que Você Já Tentou e Não Mudou</h3><p>Desarma a objeção que trava toda mudança real de liderança antes dela começar.</p><div class="bval">Valor R$147</div></div>
+    <p class="lab">A transformação</p>
+    <h2>O líder que entra. O líder que <span class="accent">sai</span>.</h2>
+    <div class="ba">
+      <div class="bacol in">
+        <p class="bah">Quem entra</p>
+        <div class="row"><span class="ic">—</span><p>Lidera pelo cargo e pela cobrança.</p></div>
+        <div class="row"><span class="ic">—</span><p>É obedecido, mas não seguido.</p></div>
+        <div class="row"><span class="ic">—</span><p>Reage no impulso: explode ou foge da conversa difícil.</p></div>
+        <div class="row"><span class="ic">—</span><p>Carrega tudo sozinho, porque não confia.</p></div>
+        <div class="row"><span class="ic">—</span><p>Repete o mesmo erro sem saber qual é o próprio padrão.</p></div>
+      </div>
+      <div class="bacol out">
+        <p class="bah">Quem sai</p>
+        <div class="row"><span class="ic">→</span><p>Lidera pelo caráter e pela influência que é sua.</p></div>
+        <div class="row"><span class="ic">→</span><p>É seguido por vontade, mesmo sem precisar mandar.</p></div>
+        <div class="row"><span class="ic">→</span><p>Responde com sangue frio quando a pressão aperta.</p></div>
+        <div class="row"><span class="ic">→</span><p>Delega e constrói um time que anda sem ele na sala.</p></div>
+        <div class="row"><span class="ic">→</span><p>Conhece o próprio padrão e tem um plano pra aplicar.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <p class="lab">Pra quem é</p>
-    <h2>Isto é pra você. Ou <span class="accent">não é</span>.</h2>
-    <div class="fw">
-      <div class="fwcol yes">
-        <p class="fwh">É pra você se</p>
-        <div class="row"><span class="ck">✓</span><p>Você comanda, mas sente que <b>te obedecem sem te seguir</b>.</p></div>
-        <div class="row"><span class="ck">✓</span><p>Você caiu, ou teme cair, e quer <b>voltar liderando pelo que é seu</b>.</p></div>
-        <div class="row"><span class="ck">✓</span><p>Você quer liderar com <b>caráter e fé</b>, não com cargo.</p></div>
-        <div class="row"><span class="ck">✓</span><p>Você topa <b>90 dias de aplicação</b> e encontros ao vivo, não só assistir aula.</p></div>
-      </div>
-      <div class="fwcol no">
-        <p class="fwh">Não é pra você se</p>
-        <div class="row"><span class="ck">✕</span><p>Você acha que o problema <b>é sempre o time</b>, nunca você.</p></div>
-        <div class="row"><span class="ck">✕</span><p>Você quer uma <b>fórmula mágica</b> sem olhar pra dentro.</p></div>
-        <div class="row"><span class="ck">✕</span><p>Você <b>não tem 90 dias</b> pra se dedicar de verdade agora.</p></div>
-      </div>
+    <p class="lab">O que fica com você</p>
+    <h2>Três entregáveis que você leva <span class="accent">pra vida</span></h2>
+    <p>Não são certificados de parede. São três ferramentas que você constrói durante os 90 dias e usa pra sempre, em qualquer cargo, em qualquer empresa.</p>
+    <div class="marcos">
+      <div class="marco"><div class="mn">Marco 1</div><h3>Mapa de Identidade e Influência</h3><p>Quem você é como líder, sem o cargo. O ponto de partida honesto.</p></div>
+      <div class="marco"><div class="mn">Marco 2</div><h3>Código Pessoal de Liderança</h3><p>As suas regras inegociáveis. Como você decide quando aperta.</p></div>
+      <div class="marco"><div class="mn">Marco 3</div><h3>Plano de Liderança de 90 Dias</h3><p>O que você vai construir e mudar, dia após dia, depois do programa.</p></div>
     </div>
   </div>
 </section>
 
-<section class="author">
+<section class="band rowlist">
   <div class="wrap">
-    <p class="lab">Quem conduz</p>
-    <div class="card">
-      <div class="aphoto"><img src="img/headshot.jpg" alt="Foto de J.C. Dias"></div>
-      <div class="abody">
-        <p class="name">J.C. Dias</p>
-        <p class="role">Empresário e diretor executivo no Reino Unido</p>
-        <div class="abio">
-        <p>Hoje, ele é um empresário estabelecido no Reino Unido, com mais de vinte anos à frente de equipes e operações, dois cursos superiores e uma carreira de posição e respeito.</p>
-        <p>Até que um acidente de carro tirou tudo dele de uma vez: a posição, o nome, a vida que ele tinha construído.</p>
-        <p>Passou <b>11 meses e 2 semanas preso</b>, despido até o osso. Sem cargo, sem título, sem nada que o mundo usa pra medir um homem.</p>
-        <p>Foi ali, sem nada, que ele descobriu o que sobra quando tiram tudo. E foi dali que ele reconstruiu, do zero e mais forte, erguendo <b>quatro negócios</b>.</p>
-        <p>Na Turma 01, ele conduz pessoalmente cada encontro. O método não veio de um curso, veio de ter sido despido de tudo e encontrado, no fundo, o <b>caráter e a fé</b> que ninguém pode tirar.</p>
-        </div>
-      </div>
-    </div>
+    <p class="lab">Como funciona</p>
+    <h2>90 dias, três fases, ao vivo <span class="accent">comigo</span></h2>
+    <div class="row"><span class="ck">→</span><p><b>Três fases:</b> Despir (quem você é sem o cargo), Reconstruir (por que você lidera) e Liberar (o que você constrói e deixa nas pessoas).</p></div>
+    <div class="row"><span class="ck">→</span><p><b>Encontros ao vivo quinzenais comigo</b>, em grupo pequeno, pra destravar a sua liderança real, não a teórica.</p></div>
+    <div class="row"><span class="ck">→</span><p><b>A Mesa de Líderes:</b> a comunidade da turma, pra você atravessar os 90 dias acompanhado, não sozinho.</p></div>
+    <div class="row"><span class="ck">→</span><p><b>O Caderno do Líder Sem Título</b>, o workbook que guia a aplicação do começo ao fim.</p></div>
+    <div class="row"><span class="ck">→</span><p><b>Três bônus</b> que derrubam as desculpas: As Conversas Difíceis, O Protocolo da Pressão e Por Que Você Já Tentou e Não Mudou.</p></div>
   </div>
 </section>
 
-<section class="offer" id="oferta">
+<section>
   <div class="wrap">
-    <div class="offerbox">
-      <div><img class="ocov" src="img/palco.jpg" alt="J.C. Dias conduzindo a turma"></div>
-      <div class="odet">
-        <p class="otag">O núcleo · Turma 01</p>
-        <p class="ttl">Líder Sem Título · Turma 01</p>
-        <p class="desc">90 dias, ao vivo comigo. Turma founding de 10 vagas.</p>
-        <ul class="inc">
-          <li>Programa completo de 90 dias, nas 3 fases</li>
-          <li>Os 3 Marcos: Mapa, Código e Plano de 90 Dias</li>
-          <li>Encontros ao vivo quinzenais comigo, em grupo pequeno</li>
-          <li>A Mesa de Líderes, o grupo da turma</li>
-          <li>O Caderno do Líder Sem Título (workbook)</li>
-          <li class="bonus">Bônus: As Conversas Difíceis</li>
-          <li class="bonus">Bônus: O Protocolo da Pressão</li>
-          <li class="bonus">Bônus: Por Que Você Já Tentou e Não Mudou</li>
-        </ul>
+    <p class="lab">Exclusividade real</p>
+    <h2>Por que só <span class="accent">10 vagas</span></h2>
+    <p class="big">Isto não é escassez de marketing. É o número de pessoas que eu consigo acompanhar de perto, ao vivo, em 90 dias, sem transformar os encontros em plateia.</p>
+    <p>Quem entra na primeira turma entra como <b>founding</b>: a menor condição que este programa vai ter, e acesso direto a mim enquanto o grupo ainda é pequeno. Nas próximas turmas, o preço sobe.</p>
+  </div>
+</section>
+
+<section class="offer band" id="oferta">
+  <div class="wrap">
+    <p class="lab c center">O investimento</p>
+    <h2 class="center">Tudo que está incluído, e o que <span class="accent">vale</span></h2>
+    <div class="stack">
+      <div class="srow"><span class="sn"><b>Imersão de 90 dias</b> · 3 fases, aulas na minha voz</span><span class="sv">R$1.997</span></div>
+      <div class="srow"><span class="sn"><b>6 encontros ao vivo comigo</b>, em grupo pequeno</span><span class="sv">R$2.400</span></div>
+      <div class="srow"><span class="sn">Marco 1 · Mapa de Identidade e Influência</span><span class="sv">R$300</span></div>
+      <div class="srow"><span class="sn">Marco 2 · Código Pessoal de Liderança</span><span class="sv">R$300</span></div>
+      <div class="srow"><span class="sn">Marco 3 · Plano de Liderança de 90 Dias</span><span class="sv">R$300</span></div>
+      <div class="srow"><span class="sn">Mesa de Líderes · comunidade da turma</span><span class="sv">R$600</span></div>
+      <div class="srow"><span class="sn">Caderno do Líder Sem Título</span><span class="sv">R$200</span></div>
+      <div class="srow bonus"><span class="sn"><b>Bônus</b> · As Conversas Difíceis</span><span class="sv">R$297</span></div>
+      <div class="srow bonus"><span class="sn"><b>Bônus</b> · O Protocolo da Pressão</span><span class="sv">R$197</span></div>
+      <div class="srow bonus"><span class="sn"><b>Bônus</b> · Por Que Você Já Tentou e Não Mudou</span><span class="sv">R$147</span></div>
+      <div class="ssum"><span class="l">Valor somado</span><span class="v">R$6.738</span></div>
+      <div class="pay">
+        <div class="plab">O seu investimento · condição founding</div>
         <div class="price"><small>R$</small>1.997</div>
-        <p class="parc">à vista, ou em até 12x no cartão</p>
-        <p class="anchor">Valor somado acima de <b>R$5 mil</b>. Esta é a condição founding da Turma 01.</p>
-        <div class="scar">10 vagas de verdade, por causa dos encontros ao vivo. O preço sobe na Turma 02.</div>
-        <!-- Pré-lançamento: a entrada é pela lista de espera (a isca /teste/). Quando as inscrições abrirem com checkout, troque o href pelo link de pagamento. -->
-        <a class="cta" href="/teste/">Entrar na lista de espera</a>
-        <div class="otrust"><span>10 vagas · founding</span><span>Encontros ao vivo comigo</span><span>Garantia do Primeiro Marco</span></div>
+        <div class="parc">à vista, ou em até 12x no cartão</div>
       </div>
+      <!-- Pré-lançamento: entrada pela lista de espera (isca /teste/). Quando abrir inscrição com checkout, troque o href pelo link de pagamento. -->
+      <a class="cta" href="/teste/">Entrar na lista de espera</a>
     </div>
+    <p class="scar"><b>10 vagas.</b> O preço sobe na próxima turma, quando já houver depoimentos.</p>
   </div>
 </section>
 
@@ -389,12 +290,11 @@ footer .legal a:hover{color:var(--accent)}
   <div class="wrap">
     <p class="lab">Dúvidas</p>
     <h2>Perguntas que todo mundo faz</h2>
-    <details><summary>É ao vivo mesmo?</summary><p>Sim. Além das aulas gravadas na minha voz, a Turma 01 tem encontros ao vivo quinzenais comigo, em grupo pequeno. É o que diferencia o núcleo do treinamento gravado.</p></details>
-    <details><summary>Quantas vagas são?</summary><p>Dez. É uma turma founding, limitada de verdade por causa dos encontros ao vivo, pra eu conseguir acompanhar cada pessoa de perto.</p></details>
-    <details><summary>Quando começa?</summary><p>A data da primeira turma é definida junto com a lista de espera. Quem entra na lista é avisado em primeira mão e tem prioridade nas vagas, com a condição founding.</p></details>
-    <details><summary>E se eu não puder num encontro ao vivo?</summary><p>Os encontros ficam gravados pra você assistir depois. Mas o valor maior está em participar ao vivo, então a gente monta o calendário com antecedência.</p></details>
-    <details><summary>Preciso ter cargo de chefia?</summary><p>Não. Serve pra quem já lidera e pra quem quer se tornar líder, com ou sem cargo. O nome é Líder Sem Título por isso.</p></details>
-    <details><summary>Como é o investimento?</summary><p>R$1.997, à vista ou em até 12x no cartão. É a condição founding da Turma 01, que sobe nas próximas turmas, quando já houver depoimentos.</p></details>
+    <details><summary>É ao vivo mesmo?</summary><p>Sim. Além do conteúdo gravado na minha voz, o Núcleo tem encontros ao vivo quinzenais comigo, em grupo pequeno. É o que faz dele uma travessia, e não mais um curso pra assistir.</p></details>
+    <details><summary>Quantas vagas são?</summary><p>Dez. É uma turma founding, limitada de verdade pra eu conseguir acompanhar cada pessoa de perto. Não é escassez de marketing, é o limite real dos encontros ao vivo.</p></details>
+    <details><summary>Quando começa?</summary><p>A data da primeira turma é definida junto com a lista de espera. Quem entra na lista é avisado em primeira mão, tem prioridade nas vagas e a condição founding.</p></details>
+    <details><summary>E se eu não puder num encontro ao vivo?</summary><p>Os encontros ficam gravados pra você assistir depois. Mas o valor maior está em participar ao vivo, então o calendário é combinado com antecedência.</p></details>
+    <details><summary>Como é o investimento?</summary><p>R$1.997, à vista ou em até 12x no cartão. É a condição founding da primeira turma, que sobe nas próximas, quando já houver depoimentos.</p></details>
   </div>
 </section>
 
@@ -402,7 +302,7 @@ footer .legal a:hover{color:var(--accent)}
   <div class="bg"><img src="img/palestra.jpg" alt=""></div>
   <div class="inner">
     <h2>A sua liderança não precisa do cargo pra existir</h2>
-    <p class="big">Entre na lista de espera da Turma 01 e seja o primeiro a saber quando as 10 vagas abrirem.</p>
+    <p class="big">Entre na lista de espera e seja o primeiro a saber quando as 10 vagas abrirem.</p>
     <div style="margin-top:24px"><a class="cta" href="/teste/">Entrar na lista de espera</a></div>
   </div>
 </section>
