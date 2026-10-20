@@ -84,18 +84,30 @@ a{text-decoration:none;color:inherit}
 .ytbadge{position:absolute;top:12px;right:12px;z-index:2;width:42px;height:30px;background:#FF0000;border-radius:7px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .ytbadge svg{width:22px;height:22px;fill:#fff}
 .body{padding:18px 20px 20px}
-.eyebrow{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:var(--gold)}
+.eyebrow{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:var(--c,var(--gold))}
 .title{font-family:var(--head);font-weight:700;font-size:26px;line-height:1.05;margin:5px 0 6px;letter-spacing:.01em;color:var(--ink)}
 .desc{color:var(--muted);font-size:15px;margin-bottom:16px}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;font-family:var(--head);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:15px;padding:14px 18px;border-radius:11px;transition:background .2s}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;font-family:var(--head);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:15px;padding:14px 18px;border-radius:11px;background:var(--c,var(--blue));color:#fff;border:1.6px solid var(--c,var(--blue));transition:filter .2s,background .2s,color .2s}
+.btn:hover{filter:brightness(.93)}
 .btn .arw{font-family:var(--sans);font-weight:700}
-/* azul de assinatura da marca; o card de lideranca ganha o tom mais forte */
-.btn-1{background:var(--blue);color:#fff}
-.btn-1:hover{background:var(--blue-d)}
-.btn-2{background:linear-gradient(180deg,#2C45B4,#223594);color:#fff;box-shadow:0 12px 28px -12px rgba(38,58,153,.6)}
-.btn-2:hover{background:#223594}
-.btn-3{background:var(--blue);color:#fff}
-.btn-3:hover{background:var(--blue-d)}
+.btn.ghost{background:transparent;color:var(--c,var(--blue))}
+.btn.ghost:hover{background:var(--c,var(--blue));color:#fff;filter:none}
+.btns{display:flex;flex-direction:column;gap:9px}
+/* cada card herda a cor da pagina para onde o botao leva */
+.c-lead{--c:#E0601C}
+.c-recomecar{--c:#A9792A}
+.c-livros{--c:#263A99}
+.c-youtube{--c:#C72C20}
+.c-empresas{--c:#9C7330}
+/* card empresas: vitrine escura com os tres negocios */
+.media.coscard{height:176px;background:linear-gradient(145deg,#2A2829,#403b39);display:flex;align-items:center;justify-content:center;gap:11px;padding:0 18px}
+.media.coscard::after{display:none}
+.cochip{flex:1;max-width:118px;padding:17px 8px;border-radius:13px;background:rgba(255,255,255,.055);border:1px solid rgba(184,137,59,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:transform .25s,border-color .25s}
+.card:hover .cochip{border-color:rgba(184,137,59,.6)}
+.card:hover .cochip:nth-child(1){transform:translateY(-4px)}
+.card:hover .cochip:nth-child(3){transform:translateY(-4px)}
+.cochip b{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:#F3EEE6;text-align:center;line-height:1.1}
+.cochip span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
 
 .foot{margin-top:30px;text-align:center;color:var(--muted);font-size:12.5px}
 .foot nav{margin-bottom:8px}
@@ -120,24 +132,41 @@ a{text-decoration:none;color:inherit}
     <p>Autor e diretor executivo. Caiu, recomeçou do zero e reconstruiu mais forte. Hoje ensina a liderar por quem você é, não pelo cargo.</p>
   </header>
 
-  <!-- CARD 1: LIDERANÇA (livro + treino) -->
-  <a class="card" href="/lideranca/">
+  <!-- CARD 1: LIDERANCA (teste gratis + treino + livro, direto) -->
+  <article class="card c-lead">
     <div class="media">
       <div class="duo">
+        <img src="/liderando/img/curso.jpg" alt="Treinamento de liderança" loading="eager">
         <img src="/stripped/img/cover.jpg" alt="Livro STRIPPED" loading="eager">
-        <img src="/liderando/img/curso.jpg" alt="Treinamento Liderando Sem Título" loading="eager">
       </div>
     </div>
     <div class="body">
       <span class="eyebrow">Liderança</span>
       <h2 class="title">Lidere sem título</h2>
-      <p class="desc">O livro STRIPPED e o método gravado. Liderar por quem você é, não pelo cargo.</p>
-      <span class="btn btn-2">Ver liderança <span class="arw">&rarr;</span></span>
+      <p class="desc">Liderar por quem você é, não pelo cargo. Comece pelo teste gratuito e siga pro treinamento ou pelo livro.</p>
+      <div class="btns">
+        <a class="btn" href="/teste/">Fazer o teste grátis <span class="arw">&rarr;</span></a>
+        <a class="btn ghost" href="/liderando/">Ver o treinamento <span class="arw">&rarr;</span></a>
+        <a class="btn ghost" href="/stripped/">Ver o livro STRIPPED <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </article>
+
+  <!-- CARD 2: RECOMEÇAR -->
+  <a class="card c-recomecar" href="https://jornada.jcdias.com/recomecar/" target="_blank" rel="noopener">
+    <div class="media">
+      <picture><source srcset="/assets/img/caminho-chegada.webp" type="image/webp"><img class="cover" src="/assets/img/caminho-chegada.jpg" alt="O caminho até a luz" loading="lazy" style="object-position:center 14%"></picture>
+    </div>
+    <div class="body">
+      <span class="eyebrow">Recomeço</span>
+      <h2 class="title">Recomeçar com Propósito</h2>
+      <p class="desc">Você não apaga o que viveu. Mas ainda decide quem vai se tornar depois.</p>
+      <span class="btn">Começar agora <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
-  <!-- CARD 2: OS LIVROS (catálogo PT) -->
-  <a class="card" href="/livros/">
+  <!-- CARD 3: OS LIVROS (catálogo PT) -->
+  <a class="card c-livros" href="/livros/">
     <div class="media">
       <div class="covers">
         <img src="/assets/img/capa-rcp.jpg" alt="" loading="lazy">
@@ -150,25 +179,12 @@ a{text-decoration:none;color:inherit}
       <span class="eyebrow">A biblioteca</span>
       <h2 class="title">Os Livros</h2>
       <p class="desc">Os quatro livros, cada um pro momento que você está vivendo. Ou a coleção completa.</p>
-      <span class="btn btn-1">Ver todos os livros <span class="arw">&rarr;</span></span>
+      <span class="btn">Ver todos os livros <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
-  <!-- CARD 3: RECOMEÇAR -->
-  <a class="card" href="/recomecar/">
-    <div class="media">
-      <picture><source srcset="/assets/img/caminho-chegada.webp" type="image/webp"><img class="cover" src="/assets/img/caminho-chegada.jpg" alt="O caminho até a luz" loading="lazy" style="object-position:center 14%"></picture>
-    </div>
-    <div class="body">
-      <span class="eyebrow">Recomeço</span>
-      <h2 class="title">Recomeçar com Propósito</h2>
-      <p class="desc">Você não apaga o que viveu. Mas ainda decide quem vai se tornar depois.</p>
-      <span class="btn btn-3">Ver o livro <span class="arw">&rarr;</span></span>
-    </div>
-  </a>
-
-  <!-- CARD 4: FÉ (YouTube) -->
-  <a class="card" href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener">
+  <!-- CARD 4: YOUTUBE -->
+  <a class="card c-youtube" href="https://www.youtube.com/@jcdiasautor" target="_blank" rel="noopener">
     <div class="media">
       <picture><source srcset="/assets/img/yt-banner.webp" type="image/webp"><img class="cover" src="/assets/img/yt-banner.jpg" alt="Canal de J. C. Dias no YouTube: Líder sem título" loading="lazy" style="object-position:center 50%"></picture>
       <span class="ytbadge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></span>
@@ -177,14 +193,30 @@ a{text-decoration:none;color:inherit}
       <span class="eyebrow">No YouTube</span>
       <h2 class="title">Vídeos toda semana</h2>
       <p class="desc">Um vídeo novo toda semana sobre liderança, caráter, fé e recomeço.</p>
-      <span class="btn btn-1">Ver no YouTube <span class="arw">&rarr;</span></span>
+      <span class="btn">Ver no YouTube <span class="arw">&rarr;</span></span>
+    </div>
+  </a>
+
+  <!-- CARD 5: EMPRESAS -->
+  <a class="card c-empresas" href="/empresas/">
+    <div class="media coscard">
+      <div class="cochip"><b>Solta</b><span>Lingerie</span></div>
+      <div class="cochip"><b>Eden Ink</b><span>Fé</span></div>
+      <div class="cochip"><b>ED07</b><span>Esporte</span></div>
+    </div>
+    <div class="body">
+      <span class="eyebrow">Bastidores</span>
+      <h2 class="title">As empresas que construí</h2>
+      <p class="desc">Liderança aqui não é teoria. Conheça os negócios que eu toco todos os dias.</p>
+      <span class="btn">Ver as empresas <span class="arw">&rarr;</span></span>
     </div>
   </a>
 
   <footer class="foot">
     <nav>
       <a href="/livros/">Livros</a>
-      <a href="/lideranca/">Liderança</a>
+      <a href="/liderando/">Liderança</a>
+      <a href="/empresas/">Empresas</a>
       <a href="/artigos/">Artigos</a>
       <a href="/privacidade/">Privacidade</a>
       <a href="/termos/">Termos</a>
