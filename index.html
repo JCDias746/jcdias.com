@@ -99,15 +99,21 @@ a{text-decoration:none;color:inherit}
 .c-livros{--c:#263A99}
 .c-youtube{--c:#C72C20}
 .c-empresas{--c:#9C7330}
-/* card empresas: vitrine escura com os tres negocios */
-.media.coscard{height:176px;background:linear-gradient(145deg,#2A2829,#403b39);display:flex;align-items:center;justify-content:center;gap:11px;padding:0 18px}
-.media.coscard::after{display:none}
-.cochip{flex:1;max-width:118px;padding:17px 8px;border-radius:13px;background:rgba(255,255,255,.055);border:1px solid rgba(184,137,59,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:transform .25s,border-color .25s}
-.card:hover .cochip{border-color:rgba(184,137,59,.6)}
-.card:hover .cochip:nth-child(1){transform:translateY(-4px)}
-.card:hover .cochip:nth-child(3){transform:translateY(-4px)}
-.cochip b{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:#F3EEE6;text-align:center;line-height:1.1}
-.cochip span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+/* card empresas: cada negocio e um mini-card com link direto pro site */
+.minis{display:flex;flex-direction:column;gap:9px}
+.mini{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card2);transition:border-color .2s,background .2s,transform .2s}
+.mini::before{content:'';width:4px;align-self:stretch;border-radius:3px;background:var(--mc)}
+.mini .mn{display:flex;flex-direction:column;flex:1;min-width:0}
+.mini .mn b{font-family:var(--head);font-weight:600;font-size:15.5px;letter-spacing:.02em;color:var(--ink);line-height:1.15}
+.mini .mn .sec{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mc);margin-top:2px}
+.mini .marw{font-family:var(--sans);font-weight:700;color:var(--mc);transition:transform .2s}
+.mini:hover{border-color:var(--mc);background:#fff;transform:translateX(2px)}
+.mini:hover .marw{transform:translateX(3px)}
+.m-solta{--mc:#B24A6B}
+.m-eden{--mc:#3E8E7E}
+.m-ed07{--mc:#E0601C}
+.allco{display:block;text-align:center;margin-top:13px;font-family:var(--head);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--gold-d)}
+.allco:hover{color:var(--gold)}
 
 .foot{margin-top:30px;text-align:center;color:var(--muted);font-size:12.5px}
 .foot nav{margin-bottom:8px}
@@ -197,20 +203,29 @@ a{text-decoration:none;color:inherit}
     </div>
   </a>
 
-  <!-- CARD 5: EMPRESAS -->
-  <a class="card c-empresas" href="/empresas/">
-    <div class="media coscard">
-      <div class="cochip"><b>Solta</b><span>Lingerie</span></div>
-      <div class="cochip"><b>Eden Ink</b><span>Fé</span></div>
-      <div class="cochip"><b>ED07</b><span>Esporte</span></div>
-    </div>
+  <!-- CARD 5: EMPRESAS (mini-cards com link direto pra cada site) -->
+  <article class="card c-empresas">
     <div class="body">
       <span class="eyebrow">Bastidores</span>
       <h2 class="title">As empresas que construí</h2>
-      <p class="desc">Liderança aqui não é teoria. Conheça os negócios que eu toco todos os dias.</p>
-      <span class="btn">Ver as empresas <span class="arw">&rarr;</span></span>
+      <p class="desc">Liderança aqui não é teoria. São os negócios que eu toco todos os dias.</p>
+      <div class="minis">
+        <a class="mini m-solta" href="https://soltalingerie.com" target="_blank" rel="noopener">
+          <span class="mn"><b>Solta Lingerie</b><span class="sec">Moda &middot; Reino Unido</span></span>
+          <span class="marw">&rarr;</span>
+        </a>
+        <a class="mini m-eden" href="https://edenink.jcdias.com" target="_blank" rel="noopener">
+          <span class="mn"><b>Eden Ink</b><span class="sec">Fé &middot; Devocionais</span></span>
+          <span class="marw">&rarr;</span>
+        </a>
+        <a class="mini m-ed07" href="https://www.ed07.com" target="_blank" rel="noopener">
+          <span class="mn"><b>ED07</b><span class="sec">Esporte &middot; Automobilismo</span></span>
+          <span class="marw">&rarr;</span>
+        </a>
+      </div>
+      <a class="allco" href="/empresas/">Ver a página das empresas &rarr;</a>
     </div>
-  </a>
+  </article>
 
   <footer class="foot">
     <nav>
