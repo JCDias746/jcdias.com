@@ -101,8 +101,9 @@ a{text-decoration:none;color:inherit}
 .c-empresas{--c:#9C7330}
 /* card empresas: cada negocio e um mini-card com link direto pro site */
 .minis{display:flex;flex-direction:column;gap:9px}
-.mini{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card2);transition:border-color .2s,background .2s,transform .2s}
-.mini::before{content:'';width:4px;align-self:stretch;border-radius:3px;background:var(--mc)}
+.mini{display:flex;align-items:center;gap:13px;padding:10px 14px 10px 10px;border-radius:12px;border:1px solid var(--line);background:var(--card2);transition:border-color .2s,background .2s,transform .2s}
+.mini .logo{flex:0 0 76px;height:50px;background:#fff;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;padding:7px}
+.mini .logo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 .mini .mn{display:flex;flex-direction:column;flex:1;min-width:0}
 .mini .mn b{font-family:var(--head);font-weight:600;font-size:15.5px;letter-spacing:.02em;color:var(--ink);line-height:1.15}
 .mini .mn .sec{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mc);margin-top:2px}
@@ -211,14 +212,17 @@ a{text-decoration:none;color:inherit}
       <p class="desc">Liderança aqui não é teoria. São os negócios que eu toco todos os dias.</p>
       <div class="minis">
         <a class="mini m-solta" href="https://soltalingerie.com" target="_blank" rel="noopener">
+          <span class="logo"><img src="/assets/img/empresas/solta.png" alt="Solta Lingerie" loading="lazy"></span>
           <span class="mn"><b>Solta Lingerie</b><span class="sec">Moda &middot; Reino Unido</span></span>
           <span class="marw">&rarr;</span>
         </a>
         <a class="mini m-eden" href="https://edenink.jcdias.com" target="_blank" rel="noopener">
+          <span class="logo"><img src="/assets/img/empresas/edenink.png" alt="Eden Ink" loading="lazy"></span>
           <span class="mn"><b>Eden Ink</b><span class="sec">Fé &middot; Devocionais</span></span>
           <span class="marw">&rarr;</span>
         </a>
         <a class="mini m-ed07" href="https://www.ed07.com" target="_blank" rel="noopener">
+          <span class="logo"><img src="/assets/img/empresas/ed07.png" alt="ED07" loading="lazy"></span>
           <span class="mn"><b>ED07</b><span class="sec">Esporte &middot; Automobilismo</span></span>
           <span class="marw">&rarr;</span>
         </a>
