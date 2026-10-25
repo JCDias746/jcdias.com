@@ -151,12 +151,10 @@ footer small{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;colo
 
     <section class="card" aria-label="Receber o Teste">
       <!--
-        ===== CONECTAR A MAILERLITE AQUI =====
-        Quando a conta da MailerLite estiver criada, esta parte vira o formulário dela:
-        ou troca o action do <form> pela URL do formulário da MailerLite (campos name e
-        email), ou cola o bloco de inscricao da MailerLite no lugar deste <form>.
-        O script abaixo so cuida da previa. Em producao a MailerLite guarda o e-mail,
-        entrega o audio + o PDF e coloca a pessoa na lista de espera.
+        ===== LIGADO NA MAILERLITE (2026-10-25) =====
+        O formulario abaixo envia nome + e-mail pro form embedded da MailerLite
+        (grupo "Teste Lider Sem Titulo"). A automacao "O Teste do Lider Sem Titulo
+        Workflow" dispara o e-mail com o audio + o PDF. Endpoint no script no fim da pagina.
       -->
       <div id="formView">
         <h2>Receba o Teste agora</h2>
@@ -205,19 +203,29 @@ footer small{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;colo
   var done=document.getElementById('done');
   if(!form) return;
   function valid(email){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);}
+  function show(){
+    formView.hidden=true;
+    done.classList.add('show');
+    done.setAttribute('tabindex','-1');
+    done.focus();
+  }
   form.addEventListener('submit',function(e){
-    // Em producao com a MailerLite, deixe o envio acontecer (remova o preventDefault
-    // ou use o formulario embutido da MailerLite). Aqui, previa: mostramos o sucesso.
     e.preventDefault();
     err.textContent='';
     var nome=document.getElementById('nome').value.trim();
     var email=document.getElementById('email').value.trim();
     if(!nome){err.textContent='Escreve o seu nome, por favor.';return;}
     if(!valid(email)){err.textContent='Confere o e-mail, parece que faltou algo.';return;}
-    formView.hidden=true;
-    done.classList.add('show');
-    done.setAttribute('tabindex','-1');
-    done.focus();
+    var btn=form.querySelector('button[type=submit]');
+    if(btn){btn.disabled=true;btn.textContent='Enviando...';}
+    var fd=new FormData();
+    fd.append('fields[name]',nome);
+    fd.append('fields[email]',email);
+    fd.append('ml-submit','1');
+    fd.append('anticsrf','true');
+    fetch('https://assets.mailerlite.com/jsonp/2328624/forms/202311824513697052/subscribe',{
+      method:'POST',body:fd,mode:'no-cors'
+    }).then(show).catch(show);
   });
 })();
 </script>
