@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Art From Captivity | Two Original Works by J. C. Dias</title>
+<meta name="description" content="Discover two original works created by J. C. Dias during imprisonment: an unfinished painting and a handwritten countdown to freedom, presented for private collector enquiries.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="J. C. Dias">
+<link rel="canonical" href="https://jcdias.com/art/">
+<meta name="theme-color" content="#161411">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="J. C. Dias">
+<meta property="og:title" content="Art From Captivity | Two Original Works by J. C. Dias">
+<meta property="og:description" content="Two original works created during imprisonment: an unfinished painting and a handwritten countdown to freedom. Presented for private collector enquiries.">
+<meta property="og:url" content="https://jcdias.com/art/">
+<meta property="og:image" content="https://jcdias.com/art/images/work01-original.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+  /* Layout concept: a dark, cinematic gallery at night — committed single theme.
+     Lit artworks on deep charcoal walls, antique-gold hairlines, ivory wall text. */
+  :root{
+    --charcoal:#161411;      /* base wall */
+    --charcoal-2:#1d1a16;     /* raised panel */
+    --walnut:#332B26;         /* frame / divider */
+    --gold:#B89B69;           /* antique gold accent */
+    --gold-soft:#cdb389;      /* lighter gold for small text on dark */
+    --ivory:#E9E2D6;          /* primary reading text */
+    --ivory-dim:#b6ad9e;      /* secondary text */
+    --white:#F8F5EF;          /* highest-contrast headlines */
+    --line:rgba(184,155,105,.28);
+    --maxw:1180px;
+    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0;
+    background:var(--charcoal);
+    color:var(--ivory);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+  p{margin:0}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+
+  .wrap{max-width:var(--maxw);margin-inline:auto;
+    padding-left:max(22px, env(safe-area-inset-left,0px));
+    padding-right:max(22px, env(safe-area-inset-right,0px));}
+  .eyebrow{font-family:var(--sans);font-weight:500;font-size:.72rem;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--gold-soft)}
+  .rule{width:46px;height:1px;background:var(--gold);opacity:.8}
+
+  /* ---------- top bar ---------- */
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);
+    z-index:60;background:rgba(14,12,10,.96)}
+  header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+    background:rgba(14,12,10,.72);backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(184,155,105,.14)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;
+    min-height:60px;}
+  .brand{font-family:var(--serif);font-size:1.05rem;letter-spacing:.14em;color:var(--white);
+    text-transform:uppercase;text-decoration:none;white-space:nowrap}
+  .brand small{display:block;font-family:var(--sans);font-size:.52rem;letter-spacing:.34em;
+    color:var(--gold-soft);margin-top:3px}
+  .brand-logo{height:30px;width:auto;display:block}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{font-size:.78rem;letter-spacing:.06em;color:var(--ivory-dim);text-decoration:none;
+    transition:color .25s}
+  .nav-links a:hover{color:var(--white)}
+  .btn{display:inline-block;font-family:var(--sans);font-weight:500;font-size:.78rem;
+    letter-spacing:.08em;text-decoration:none;cursor:pointer;border-radius:1px;
+    padding:11px 20px;transition:background .25s,color .25s,border-color .25s;
+    border:1px solid var(--gold);background:transparent;color:var(--gold-soft)}
+  .btn:hover{background:var(--gold);color:#17120b}
+  .btn-solid{background:var(--gold);color:#17120b;border-color:var(--gold)}
+  .btn-solid:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+  .nav .btn{padding:9px 16px}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ivory);
+    border-radius:2px;padding:8px 10px;cursor:pointer;font-size:.9rem;line-height:1}
+  .mobile-menu{display:none}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:min(86vh,780px);display:flex;align-items:flex-end;
+    background:#0c0a08}
+  .hero-img{position:absolute;inset:0;overflow:hidden}
+  .hero-img img{width:100%;height:100%;object-fit:cover;object-position:62% center}
+  .hero-shade{position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(10,8,6,.88) 0%,rgba(10,8,6,.62) 38%,rgba(10,8,6,.18) 72%,rgba(10,8,6,.42) 100%),
+      linear-gradient(0deg,rgba(10,8,6,.75) 0%,rgba(10,8,6,0) 45%)}
+  .hero-in{position:relative;z-index:2;padding-block:48px 72px;max-width:640px}
+  .hero h1{font-size:clamp(3rem,9vw,6rem);font-weight:300;letter-spacing:.02em;color:var(--white);
+    margin:18px 0 0}
+  .hero .lede{font-family:var(--serif);font-size:clamp(1.25rem,3.4vw,1.9rem);font-weight:300;
+    color:var(--ivory);margin-top:16px;line-height:1.3}
+  .hero .quote{font-family:var(--serif);font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--gold-soft);
+    margin-top:26px;max-width:30ch;line-height:1.35}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;
+    font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory-dim);
+    display:flex;flex-direction:column;align-items:center;gap:8px}
+  .scroll-hint span{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);
+    animation:drop 2.4s ease-in-out infinite}
+  @keyframes drop{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+  @media (prefers-reduced-motion: reduce){.scroll-hint span{animation:none}}
+
+  /* ---------- generic section ---------- */
+  section{padding-block:clamp(64px,9vw,120px)}
+  .section-head{display:flex;flex-direction:column;gap:16px;max-width:60ch}
+  .section-head h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--white)}
+  .body-text{font-size:1.08rem;color:var(--ivory);max-width:62ch;display:flex;
+    flex-direction:column;gap:20px;margin-top:30px}
+  .body-text.dim p{color:var(--ivory-dim)}
+
+  .impact{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.8vw,2.3rem);
+    color:var(--gold-soft);line-height:1.28;max-width:24ch;margin:0}
+
+  /* story band slightly raised */
+  .band{background:var(--charcoal-2);border-block:1px solid rgba(184,155,105,.12)}
+
+  /* ---------- work blocks ---------- */
+  .work-tag{display:flex;align-items:center;gap:16px;margin-bottom:8px}
+  .work-tag .n{font-family:var(--serif);font-size:1.1rem;color:var(--gold);letter-spacing:.2em}
+  .work-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,64px);
+    align-items:start;margin-top:40px}
+  .figure{margin:0}
+  .figure .frame{background:#0c0a08;border:1px solid var(--line);padding:14px;
+    box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+  .figure.clickable .frame{cursor:zoom-in}
+  .figure figcaption{font-size:.74rem;letter-spacing:.04em;color:var(--ivory-dim);margin-top:12px;
+    display:flex;gap:8px;align-items:baseline}
+  .tag-mock{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft);
+    border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap}
+  .work-side h3{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:400;color:var(--white);margin-bottom:22px}
+  .work-side .body-text{margin-top:0}
+
+  .meta{margin-top:30px;border-top:1px solid var(--line)}
+  .meta div{display:flex;justify-content:space-between;gap:18px;padding:11px 0;
+    border-bottom:1px solid rgba(184,155,105,.14);font-size:.86rem}
+  .meta dt{color:var(--gold-soft);letter-spacing:.04em;flex:0 0 auto}
+  .meta dd{margin:0;color:var(--ivory);text-align:right}
+  .meta .tbc{color:var(--ivory-dim);font-style:normal}
+
+  .work-cta{margin-top:30px}
+  .second-shot{margin-top:46px}
+
+  /* front / reverse toggle */
+  .toggle{display:inline-flex;border:1px solid var(--line);border-radius:2px;overflow:hidden;margin-bottom:18px}
+  .toggle button{background:transparent;border:0;color:var(--ivory-dim);font-family:var(--sans);
+    font-size:.76rem;letter-spacing:.08em;padding:9px 18px;cursor:pointer;transition:all .2s}
+  .toggle button[aria-pressed="true"]{background:var(--gold);color:#17120b}
+  .doc-note{font-size:.82rem;color:var(--ivory-dim);max-width:60ch;margin-top:16px}
+
+  /* ---------- connection ---------- */
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+  .pair .card{background:var(--charcoal-2);border:1px solid var(--line);padding:30px}
+  .pair .card .n{font-family:var(--serif);color:var(--gold);letter-spacing:.2em;font-size:.95rem}
+  .pair .card h3{font-size:1.5rem;margin:10px 0 12px;color:var(--white)}
+  .pair .card p{color:var(--ivory-dim);font-size:.98rem}
+  .center-note{max-width:60ch;margin:40px auto 0;text-align:center;color:var(--ivory)}
+  .center-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px}
+
+  /* ---------- artist ---------- */
+  .artist-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,60px);align-items:center;margin-top:40px}
+  .portrait{aspect-ratio:4/5;border:1px solid var(--line);overflow:hidden;background:var(--charcoal-2);margin:0}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block}
+
+  /* ---------- provenance ---------- */
+  .prov-list{margin-top:36px;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+    background:rgba(184,155,105,.14);border:1px solid var(--line)}
+  .prov-list .item{background:var(--charcoal);padding:22px 24px}
+  .prov-list .item .k{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+  .prov-list .item .v{margin-top:8px;color:var(--ivory);font-size:.96rem}
+  .prov-list .item .v.tbc{color:var(--ivory-dim)}
+  .disclaimer{margin-top:28px;font-size:.84rem;color:var(--ivory-dim);max-width:70ch}
+
+  /* ---------- enquiry ---------- */
+  #enquiry{background:
+    radial-gradient(120% 90% at 80% 0%,rgba(184,155,105,.10),transparent 60%),#0e0c0a;
+    border-top:1px solid var(--line)}
+  .enq-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:start;margin-top:12px}
+  .enq-intro h2{font-size:clamp(2rem,5vw,3rem);color:var(--white);font-weight:300}
+  form .row{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+  form .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  label{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-soft)}
+  label .opt{text-transform:none;letter-spacing:0;color:var(--ivory-dim);font-size:.72rem}
+  input,select,textarea{font-family:var(--sans);font-size:.95rem;font-weight:300;color:var(--ivory);
+    background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:2px;padding:12px 14px;
+    width:100%;transition:border-color .2s,background .2s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.06)}
+  textarea{resize:vertical;min-height:96px}
+  select{appearance:none;background-image:
+    linear-gradient(45deg,transparent 50%,var(--gold-soft) 50%),linear-gradient(135deg,var(--gold-soft) 50%,transparent 50%);
+    background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+  .consent{flex-direction:row;align-items:flex-start;gap:11px}
+  .consent input{width:16px;height:16px;margin-top:3px;flex:0 0 auto}
+  .consent label{text-transform:none;letter-spacing:0;color:var(--ivory-dim);font-size:.82rem}
+  form button[type=submit]{margin-top:6px;width:100%;padding:15px;font-size:.82rem}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+  .success{display:none;border:1px solid var(--line);background:var(--charcoal-2);padding:34px 30px;border-radius:2px}
+  .success h3{font-size:1.9rem;color:var(--white);margin-bottom:14px}
+  .success p{color:var(--ivory-dim);margin-bottom:14px}
+  .mail-line{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px;
+    border-top:1px solid var(--line);padding-top:18px}
+  .mail-line .addr{font-family:var(--sans);color:var(--gold-soft);font-size:1rem;user-select:all}
+  .copy-btn{font-size:.72rem;padding:7px 12px}
+
+  /* ---------- footer ---------- */
+  footer{background:#0b0906;border-top:1px solid rgba(184,155,105,.14);padding-block:56px 40px}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px}
+  footer .brand-lg{font-family:var(--serif);font-size:1.8rem;letter-spacing:.08em;color:var(--white);text-transform:uppercase}
+  footer .tag{color:var(--gold-soft);font-family:var(--serif);font-size:1.1rem;margin-top:8px}
+  footer .q{color:var(--ivory-dim);margin-top:6px;max-width:34ch}
+  .foot-links{display:flex;flex-direction:column;gap:9px;font-size:.84rem}
+  .foot-links a{color:var(--ivory-dim);text-decoration:none}
+  .foot-links a:hover{color:var(--ivory)}
+  .foot-logo{height:22px;width:auto;vertical-align:middle;opacity:.92}
+  .foot-copy{display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .foot-fine{margin-top:40px;padding-top:22px;border-top:1px solid rgba(184,155,105,.12);
+    font-size:.76rem;color:var(--ivory-dim);display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+  .foot-fine p{max-width:66ch}
+
+  details.privacy{margin-top:16px;border:1px solid var(--line);border-radius:2px;background:var(--charcoal)}
+  details.privacy summary{cursor:pointer;padding:14px 18px;font-size:.84rem;color:var(--gold-soft);letter-spacing:.06em;list-style:none}
+  details.privacy summary::-webkit-details-marker{display:none}
+  details.privacy[open] summary{border-bottom:1px solid var(--line)}
+  details.privacy .pc{padding:18px;font-size:.84rem;color:var(--ivory-dim);display:flex;flex-direction:column;gap:12px}
+
+  /* ---------- lightbox ---------- */
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(6,5,4,.94);display:none;
+    align-items:center;justify-content:center;padding:28px}
+  .lb.open{display:flex}
+  .lb img{max-width:min(94vw,1100px);max-height:86vh;object-fit:contain;border:1px solid var(--line)}
+  .lb .cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:var(--ivory-dim);font-size:.8rem;padding-inline:20px}
+  .lb .close{position:absolute;top:18px;right:20px;background:none;border:1px solid var(--line);color:var(--ivory);
+    width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.2rem;line-height:1}
+
+  /* reveal (enhancement only; page is complete at rest) */
+  body.anim .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
+  body.anim .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){body.anim .reveal{opacity:1!important;transform:none!important;transition:none}}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:860px){
+    .nav-links{display:none}
+    .menu-btn{display:inline-flex;align-items:center;gap:8px}
+    .brand-logo{height:26px}
+    .mobile-menu.show{display:block;border-top:1px solid var(--line);background:rgba(14,12,10,.98)}
+    .mobile-menu .wrap{display:flex;flex-direction:column;gap:2px;padding-block:10px}
+    .mobile-menu a{padding:11px 2px;font-size:.92rem;color:var(--ivory);text-decoration:none;
+      border-bottom:1px solid rgba(184,155,105,.1)}
+    .work-grid{grid-template-columns:1fr}
+    .artist-grid{grid-template-columns:1fr;max-width:460px}
+    .enq-grid{grid-template-columns:1fr}
+    .pair{grid-template-columns:1fr}
+    .prov-list{grid-template-columns:1fr}
+    .hero-img img{object-position:66% center}
+    .hero-shade{background:linear-gradient(0deg,rgba(10,8,6,.9) 8%,rgba(10,8,6,.3) 60%,rgba(10,8,6,.5) 100%)}
+  }
+  @media (max-width:520px){
+    form .two{grid-template-columns:1fr}
+    .meta div{flex-direction:column;gap:2px}
+    .meta dd{text-align:left}
+    .foot-fine{flex-direction:column;gap:12px}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#story" style="position:absolute;left:-9999px">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="J. C. Dias, Private Collection">
+      <img class="brand-logo" src="images/logo-jcdias.webp" width="480" height="110" alt="J. C. Dias">
+      <small>Private Collection</small>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#collection">The Collection</a>
+      <a href="#story">The Story</a>
+      <a href="#work-01">Work 01</a>
+      <a href="#work-02">Work 02</a>
+      <a href="#artist">The Artist</a>
+      <a href="#enquiry">Enquiries</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="#enquiry" class="btn btn-solid">Register Your Interest</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="wrap">
+      <a href="#collection">The Collection</a>
+      <a href="#story">The Story</a>
+      <a href="#work-01">Work 01 — The Unfinished Freedom</a>
+      <a href="#work-02">Work 02 — 34 Days to Freedom</a>
+      <a href="#artist">The Artist</a>
+      <a href="#enquiry">Private Enquiries</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-img">
+      <img src="images/hero-gallery.webp" alt="A visitor in a wheelchair pauses before a framed drawing on a gallery wall." fetchpriority="high">
+    </div>
+    <div class="hero-shade"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">J. C. Dias · Private Collection</p>
+      <h1>Art From<br>Captivity</h1>
+      <p class="lede">Two original works. One journey from captivity to freedom.</p>
+      <p class="quote">"I wasn't trying to create art. I was trying to get home."</p>
+      <div class="hero-cta">
+        <a href="#story" class="btn btn-solid">Discover the Collection</a>
+        <a href="#enquiry" class="btn">Private Collector Enquiry</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">Scroll<span></span></div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Story Behind the Works</p>
+        <div class="rule"></div>
+        <h2>Some works are created to be seen. Others are created to survive.</h2>
+      </div>
+      <div class="body-text reveal">
+        <p>I never went to prison intending to create art.</p>
+        <p>But during one of the most difficult periods of my life, I created two works that would eventually become witnesses to a chapter I could never have imagined living through.</p>
+        <p>One was interrupted before it could be finished.</p>
+        <p>The other began as a cry to God and became a handwritten countdown to the day I hoped to return home.</p>
+        <p>Neither was created for an exhibition. Neither was created to be sold.</p>
+        <p>Today, both remain as reminders of a time when my freedom was restricted, but my hope of returning to my family remained.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK 01 -->
+  <section id="work-01">
+    <div class="wrap">
+      <div class="work-tag reveal"><span class="n">Work 01</span><div class="rule"></div></div>
+      <div class="section-head reveal">
+        <h2>The painting that will never be finished.</h2>
+        <p class="eyebrow" style="color:var(--ivory-dim)">The Unfinished Freedom</p>
+      </div>
+
+      <div class="work-grid">
+        <figure class="figure clickable reveal" data-full="images/work01-original.jpg"
+          data-cap="The Unfinished Freedom — the original acrylic painting on wood, begun in a prison painting class and left unfinished after a transfer.">
+          <div class="frame">
+            <img src="images/work01-original.jpg" loading="lazy"
+              alt="An unfinished acrylic painting of a vivid sunset over a mountainous coastline, with a small hilltop figure and a bird in flight.">
+          </div>
+          <figcaption>The Unfinished Freedom · original acrylic on wood, unframed</figcaption>
+        </figure>
+
+        <div class="work-side reveal">
+          <div class="body-text" style="gap:16px">
+            <p>During my imprisonment, I attended painting classes. For a brief period, I was able to create something colourful in a place where so much of my life felt uncertain.</p>
+            <p>I began painting a landscape. Before I had the opportunity to complete it, I was transferred to another prison. I left without finishing the work.</p>
+            <p>I have since made the decision that I will never paint again. This painting will therefore remain unfinished. Not because it has no ending, but because the interruption itself became part of its story.</p>
+          </div>
+
+          <dl class="meta">
+            <div><dt>Artist</dt><dd>J. C. Dias</dd></div>
+            <div><dt>Date</dt><dd>January 2025</dd></div>
+            <div><dt>Medium</dt><dd>Acrylic on wood</dd></div>
+            <div><dt>Dimensions</dt><dd>50 × 80 cm (height × width)</dd></div>
+            <div><dt>Place</dt><dd>HMP Standford Hill</dd></div>
+            <div><dt>Status</dt><dd>Original · unfinished</dd></div>
+            <div><dt>Availability</dt><dd>Private enquiries</dd></div>
+          </dl>
+
+          <div class="work-cta">
+            <a href="#enquiry" class="btn btn-solid" data-work="Work 01 — The Unfinished Freedom">Enquire About This Work</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="impact reveal" style="margin-top:56px">Some things remain unfinished because life changes before we are ready.</p>
+
+      <figure class="figure clickable second-shot reveal" data-full="images/work01-interior.webp"
+        data-cap="Presentation visualisation — how the painting could be shown. This is not a photograph of a real exhibition.">
+        <div class="frame">
+          <img src="images/work01-interior.webp" loading="lazy"
+            alt="The sunset painting shown in a gilt frame on the wall of a furnished room.">
+        </div>
+        <figcaption>Imagined in a collector's interior <span class="tag-mock">Presentation visualisation</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WORK 02 -->
+  <section id="work-02" class="band">
+    <div class="wrap">
+      <div class="work-tag reveal"><span class="n">Work 02</span><div class="rule"></div></div>
+      <div class="section-head reveal">
+        <h2>The paper that counted the days.</h2>
+        <p class="eyebrow" style="color:var(--ivory-dim)">34 Days to Freedom</p>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-side reveal" style="order:2">
+          <div class="body-text" style="gap:16px">
+            <p>When I arrived at another prison, my family did not even know I had been transferred. I had no television and no telephone available to speak to them. I did not know when I would be able to explain where I was.</p>
+            <p>I took a sheet of paper, the reverse of an official prison document, and began to draw. On that paper, I wrote a question to God. "Why? Why? Why don't You listen to me?" And I wrote another sentence: "My body might be in prison, but my mind is free."</p>
+            <p>Later, I used the same sheet to count the remaining days until I could go home. Every mark recorded another day that had passed. A drawing became a calendar. An ordinary piece of paper became a personal record of waiting for freedom.</p>
+          </div>
+
+          <dl class="meta">
+            <div><dt>Artist</dt><dd>J. C. Dias</dd></div>
+            <div><dt>Year</dt><dd>2025</dd></div>
+            <div><dt>Medium</dt><dd>Black ballpoint pen on paper</dd></div>
+            <div><dt>Format</dt><dd>A4 (210 × 297 mm)</dd></div>
+            <div><dt>Context</dt><dd>Reverse of an official prison document</dd></div>
+            <div><dt>Availability</dt><dd>Private enquiries</dd></div>
+          </dl>
+
+          <div class="work-cta">
+            <a href="#enquiry" class="btn btn-solid" data-work="Work 02 — 34 Days to Freedom">Enquire About This Work</a>
+          </div>
+        </div>
+
+        <div class="reveal" style="order:1">
+          <div class="toggle" role="group" aria-label="View the drawing or the document">
+            <button type="button" id="tgDraw" aria-pressed="true">The drawing</button>
+            <button type="button" id="tgDoc" aria-pressed="false">The document</button>
+          </div>
+          <figure class="figure clickable" id="work02fig" data-full="images/work02-original.jpg"
+            data-cap="34 Days to Freedom — the original drawing in black pen on A4 paper, 2025.">
+            <div class="frame">
+              <img id="work02img" src="images/work02-original.jpg" loading="lazy"
+                alt="A sheet of cream A4 paper showing hand-drawn calendars, a countdown of days to go home, a question to God, and a landscape with a cross and a city skyline.">
+            </div>
+            <figcaption id="work02cap">34 Days to Freedom · original drawing, unframed</figcaption>
+          </figure>
+          <p class="doc-note">The drawing was made on the reverse of an official prison document. The document establishes where and when the work was created. The framed and interior photographs on this site are presentation visualisations, not records of an exhibition. The original handwriting has not been altered in any way.</p>
+          <figure class="figure clickable second-shot" data-full="images/work02-framed.webp"
+            data-cap="Presentation visualisation — how the drawing could be framed and shown. This is not a photograph of a real exhibition.">
+            <div class="frame">
+              <img src="images/work02-framed.webp" loading="lazy"
+                alt="The countdown drawing shown in an ornate frame on a wall.">
+            </div>
+            <figcaption>Imagined framed for display <span class="tag-mock">Presentation visualisation</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECTION -->
+  <section id="collection">
+    <div class="wrap">
+      <div class="section-head reveal" style="max-width:none">
+        <p class="eyebrow">The Collection</p>
+        <div class="rule"></div>
+        <h2>Two works. Two moments. One journey.</h2>
+      </div>
+      <div class="pair">
+        <div class="card reveal">
+          <span class="n">Work 01</span>
+          <h3>The Unfinished Freedom</h3>
+          <p>A painting interrupted by a prison transfer. It marks the moment something was taken away.</p>
+        </div>
+        <div class="card reveal">
+          <span class="n">Work 02</span>
+          <h3>34 Days to Freedom</h3>
+          <p>A handwritten countdown created after that transfer. It records the days spent waiting to return home.</p>
+        </div>
+      </div>
+      <p class="center-note reveal">One work marks the moment something was taken away. The other records the days spent waiting to return home. Together, they tell a story that neither could tell alone.</p>
+      <div class="center-actions reveal">
+        <a href="#enquiry" class="btn btn-solid" data-work="Both Works">Enquire About Both Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIST -->
+  <section id="artist" class="band">
+    <div class="wrap">
+      <div class="artist-grid">
+        <figure class="portrait reveal">
+          <picture>
+            <source srcset="/assets/img/autor.webp" type="image/webp">
+            <img src="/assets/img/autor.jpg" alt="Portrait of J. C. Dias" width="900" height="900">
+          </picture>
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow">Behind the Works</p>
+          <div class="rule" style="margin:14px 0"></div>
+          <h2 style="font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:300;color:var(--white)">I left prison. I left painting behind.</h2>
+          <div class="body-text">
+            <p>J. C. Dias is a Brazilian-born author and business leader based in the United Kingdom. During a period of imprisonment, he created two original works that recorded different moments of an intensely personal journey.</p>
+            <p>His experiences have since informed his writing and reflections on adversity, leadership, faith and rebuilding life.</p>
+            <p>These works are not the beginning of a conventional painting career. They are surviving objects from a chapter of his life that has ended.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVENANCE -->
+  <section id="provenance">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Provenance &amp; Authenticity</p>
+        <div class="rule"></div>
+        <h2>The originals. The documents. The story.</h2>
+      </div>
+      <div class="prov-list reveal">
+        <div class="item"><div class="k">Date &amp; place of creation</div><div class="v">Painting: January 2025, HMP Standford Hill. Drawing: 2025, following a transfer to HMP Rochester.</div></div>
+        <div class="item"><div class="k">Original medium &amp; dimensions</div><div class="v">Painting: acrylic on wood, 50 × 80 cm. Drawing: black ballpoint pen on A4 paper.</div></div>
+        <div class="item"><div class="k">Front &amp; reverse photographs</div><div class="v">Available, including the official document behind Work 02</div></div>
+        <div class="item"><div class="k">Documentary relationship</div><div class="v">Work 02 was created on the reverse of a prison transfer document</div></div>
+        <div class="item"><div class="k">Artist's account of creation</div><div class="v">A signed written account can be provided to serious collectors</div></div>
+        <div class="item"><div class="k">Condition &amp; conservation</div><div class="v tbc">Details available on request</div></div>
+      </div>
+      <p class="disclaimer reveal">Full provenance documentation is offered privately to serious collectors. These works are presented as original, autobiographical pieces with documentary context. They are not described as museum-certified, independently authenticated or historically recognised; any authenticity documentation shared will reflect only what can be genuinely supported.</p>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section id="enquiry">
+    <div class="wrap">
+      <div class="enq-grid">
+        <div class="enq-intro reveal">
+          <p class="eyebrow">Private Collector Enquiry</p>
+          <div class="rule" style="margin:16px 0"></div>
+          <h2>Some objects hold a story that cannot be recreated.</h2>
+          <div class="body-text dim">
+            <p>These two original works are being presented for consideration by private collectors.</p>
+            <p>If either work resonates with you, you are invited to register your interest in a confidential acquisition conversation.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form id="enqForm" novalidate>
+            <div class="two">
+              <div class="row">
+                <label for="f-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" required autocomplete="name">
+              </div>
+              <div class="row">
+                <label for="f-email">Email address <span aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="two">
+              <div class="row">
+                <label for="f-country">Country <span aria-hidden="true">*</span></label>
+                <input id="f-country" name="country" type="text" required autocomplete="country-name">
+              </div>
+              <div class="row">
+                <label for="f-work">Work of interest</label>
+                <select id="f-work" name="work">
+                  <option>Work 01 — The Unfinished Freedom</option>
+                  <option>Work 02 — 34 Days to Freedom</option>
+                  <option>Both Works</option>
+                  <option>Undecided</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <label for="f-type">Collector type <span class="opt">(optional)</span></label>
+              <select id="f-type" name="collectorType">
+                <option value="">Select one</option>
+                <option>Private Collector</option>
+                <option>Gallery</option>
+                <option>Curator</option>
+                <option>Institution</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="f-msg">Personal message <span class="opt">(optional)</span></label>
+              <textarea id="f-msg" name="message"></textarea>
+            </div>
+            <div class="row consent">
+              <input id="f-consent" name="consent" type="checkbox">
+              <label for="f-consent">I would like to receive occasional updates about this collection. Your details are used only to respond to your enquiry.</label>
+            </div>
+            <button type="submit" class="btn btn-solid">Register Your Interest</button>
+          </form>
+
+          <div class="success" id="success" tabindex="-1" role="status" aria-live="polite">
+            <h3>Thank you for your interest.</h3>
+            <p id="successLine">Your enquiry has been noted. Relevant information about the collection may be shared with you privately.</p>
+            <div class="mail-line">
+              <span>You are also welcome to write directly to</span>
+              <span class="addr" id="contactAddr">jc@jcdias.com</span>
+              <button type="button" class="btn copy-btn" id="copyMail">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand-lg">Art From Captivity</div>
+        <p class="tag">Two original works. One journey from captivity to freedom.</p>
+        <p class="q">"I wasn't trying to create art. I was trying to get home."</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#collection">The Collection</a>
+        <a href="#work-01">The Unfinished Freedom</a>
+        <a href="#work-02">34 Days to Freedom</a>
+        <a href="#artist">The Artist</a>
+        <a href="#provenance">Provenance</a>
+        <a href="#enquiry">Private Enquiries</a>
+      </nav>
+    </div>
+
+    <details class="privacy" id="privacy">
+      <summary>Privacy &amp; your data</summary>
+      <div class="pc">
+        <p>This is a draft privacy note, to be reviewed before the site goes live.</p>
+        <p>Information you submit through the enquiry form (your name, email, country and any message) is used only to respond to your enquiry about this collection and to hold a confidential acquisition conversation. It is not sold or shared with unrelated third parties.</p>
+        <p>You may ask for your details to be updated or deleted at any time by writing to the contact address above. Under UK GDPR you have the right to access, correct and erase the personal data held about you.</p>
+      </div>
+    </details>
+
+    <div class="foot-fine">
+      <p>The furnished-interior and gallery photographs shown on this site are presentation visualisations created to imagine how the works could be displayed. They are not records of a real exhibition. The original artworks and handwriting are shown and described without alteration.</p>
+      <p class="foot-copy"><img class="foot-logo" src="images/logo-jcdias.webp" alt="J. C. Dias"> · Private Collection · © <span id="yr"></span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Artwork, enlarged">
+  <button class="close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" src="" alt="">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // year
+  var yr = document.getElementById("yr"); if(yr) yr.textContent = new Date().getFullYear();
+
+  // mobile menu
+  var mb = document.getElementById("menuBtn"), mm = document.getElementById("mobileMenu");
+  if(mb && mm){
+    mb.addEventListener("click", function(){
+      var open = mm.classList.toggle("show");
+      mb.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    mm.addEventListener("click", function(e){ if(e.target.tagName==="A"){ mm.classList.remove("show"); mb.setAttribute("aria-expanded","false"); } });
+  }
+
+  // reveal on scroll (enhancement; content is visible without it)
+  if(!reduce && "IntersectionObserver" in window){
+    document.body.classList.add("anim");
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.08});
+    document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+  }
+
+  // preselect work in the form when an "Enquire" button is used
+  var workSel = document.getElementById("f-work");
+  document.querySelectorAll("[data-work]").forEach(function(a){
+    a.addEventListener("click", function(){
+      var w = a.getAttribute("data-work");
+      if(!workSel) return;
+      for(var i=0;i<workSel.options.length;i++){
+        if(workSel.options[i].value.indexOf(w)===0 || workSel.options[i].text.indexOf(w)===0){ workSel.selectedIndex=i; break; }
+      }
+    });
+  });
+
+  // Work 02 drawing / document toggle
+  var tgDraw=document.getElementById("tgDraw"), tgDoc=document.getElementById("tgDoc"),
+      w2img=document.getElementById("work02img"), w2fig=document.getElementById("work02fig"),
+      w2cap=document.getElementById("work02cap");
+  function setView(which){
+    var drawing = which==="draw";
+    tgDraw.setAttribute("aria-pressed", drawing?"true":"false");
+    tgDoc.setAttribute("aria-pressed", drawing?"false":"true");
+    if(drawing){
+      w2img.src="images/work02-original.jpg";
+      w2img.alt="A sheet of cream A4 paper showing hand-drawn calendars, a countdown of days to go home, a question to God, and a landscape with a cross and a city skyline.";
+      w2cap.textContent="34 Days to Freedom · original drawing, unframed";
+      w2fig.setAttribute("data-full","images/work02-original.jpg");
+      w2fig.setAttribute("data-cap","34 Days to Freedom — the original drawing in black pen on A4 paper, 2025.");
+    }else{
+      w2img.src="images/work02-document.jpg";
+      w2img.alt="The official prison categorisation document on whose reverse the drawing was made.";
+      w2cap.textContent="The official document behind the drawing";
+      w2fig.setAttribute("data-full","images/work02-document.jpg");
+      w2fig.setAttribute("data-cap","The reverse of the artwork: the official prison document that dates and places its creation.");
+    }
+  }
+  if(tgDraw && tgDoc){ tgDraw.addEventListener("click",function(){setView("draw");}); tgDoc.addEventListener("click",function(){setView("doc");}); }
+
+  // lightbox
+  var lb=document.getElementById("lb"), lbImg=document.getElementById("lbImg"),
+      lbCap=document.getElementById("lbCap"), lbClose=document.getElementById("lbClose"), lastFocus=null;
+  function openLB(src,cap,alt){
+    lastFocus=document.activeElement;
+    lbImg.src=src; lbImg.alt=alt||""; lbCap.textContent=cap||"";
+    lb.classList.add("open"); lbClose.focus();
+  }
+  function closeLB(){ lb.classList.remove("open"); lbImg.src=""; if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+  document.querySelectorAll(".figure.clickable").forEach(function(fig){
+    var img=fig.querySelector("img");
+    function go(){ openLB(fig.getAttribute("data-full"), fig.getAttribute("data-cap"), img?img.alt:""); }
+    fig.addEventListener("click", go);
+    fig.setAttribute("tabindex","0"); fig.setAttribute("role","button");
+    fig.setAttribute("aria-label","Enlarge artwork");
+    fig.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); go(); } });
+  });
+  if(lbClose) lbClose.addEventListener("click", closeLB);
+  if(lb) lb.addEventListener("click", function(e){ if(e.target===lb) closeLB(); });
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && lb.classList.contains("open")) closeLB(); });
+
+  // enquiry form
+  var form=document.getElementById("enqForm"), success=document.getElementById("success"),
+      successLine=document.getElementById("successLine");
+
+  // Preview build has no backend: enquiries are handled via the contact address
+  // shown on success. A CRM/form backend is wired when the site is deployed.
+  async function store(){ return false; }
+
+  if(form){
+    form.addEventListener("submit", async function(e){
+      e.preventDefault();
+      if(!form.reportValidity()) return;
+      var data={
+        name:form.name.value.trim(),
+        email:form.email.value.trim(),
+        country:form.country.value.trim(),
+        work:form.work.value,
+        collectorType:form.collectorType.value,
+        message:form.message.value.trim(),
+        consent:form.consent.checked,
+        createdAt:new Date().toISOString()
+      };
+      var stored = await store(data);
+      if(stored){
+        successLine.textContent="Your enquiry has been received. Relevant information about the collection may be shared with you privately.";
+      }
+      form.hidden=true;
+      success.style.display="block";
+      success.focus();
+      success.scrollIntoView({behavior: reduce?"auto":"smooth", block:"center"});
+    });
+  }
+
+  // copy contact address
+  var copyBtn=document.getElementById("copyMail"), addr=document.getElementById("contactAddr");
+  if(copyBtn && addr){
+    copyBtn.addEventListener("click", function(){
+      var txt=addr.textContent;
+      function done(){ copyBtn.textContent="Copied"; setTimeout(function(){copyBtn.textContent="Copy";},1600); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done).catch(function(){ selectText(addr); });
+      } else { selectText(addr); }
+    });
+  }
+  function selectText(el){ try{ var r=document.createRange(); r.selectNodeContents(el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); }catch(e){} }
+})();
+</script>
+</body>
+</html>
