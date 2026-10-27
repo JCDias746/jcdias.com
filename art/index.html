@@ -560,6 +560,10 @@
 
         <div class="reveal">
           <form id="enqForm" novalidate>
+            <input type="hidden" name="_subject" value="New Art From Captivity enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="two">
               <div class="row">
                 <label for="f-name">Full name <span aria-hidden="true">*</span></label>
@@ -604,17 +608,13 @@
               <input id="f-consent" name="consent" type="checkbox">
               <label for="f-consent">I would like to receive occasional updates about this collection. Your details are used only to respond to your enquiry.</label>
             </div>
+            <p id="formErr" hidden style="color:#e6a07f;font-size:.85rem;margin:0 0 10px">Your enquiry could not be sent just now. Please try again in a moment.</p>
             <button type="submit" class="btn btn-solid">Register Your Interest</button>
           </form>
 
           <div class="success" id="success" tabindex="-1" role="status" aria-live="polite">
             <h3>Thank you for your interest.</h3>
-            <p id="successLine">Your enquiry has been noted. Relevant information about the collection may be shared with you privately.</p>
-            <div class="mail-line">
-              <span>You are also welcome to write directly to</span>
-              <span class="addr" id="contactAddr">jc@jcdias.com</span>
-              <button type="button" class="btn copy-btn" id="copyMail">Copy</button>
-            </div>
+            <p id="successLine">Your enquiry has been received. We will be in touch privately.</p>
           </div>
         </div>
       </div>
@@ -750,32 +750,27 @@
   var form=document.getElementById("enqForm"), success=document.getElementById("success"),
       successLine=document.getElementById("successLine");
 
-  // Preview build has no backend: enquiries are handled via the contact address
-  // shown on success. A CRM/form backend is wired when the site is deployed.
-  async function store(){ return false; }
-
+  var ENDPOINT="https://formsubmit.co/ajax/jeand746@gmail.com";
   if(form){
     form.addEventListener("submit", async function(e){
       e.preventDefault();
       if(!form.reportValidity()) return;
-      var data={
-        name:form.name.value.trim(),
-        email:form.email.value.trim(),
-        country:form.country.value.trim(),
-        work:form.work.value,
-        collectorType:form.collectorType.value,
-        message:form.message.value.trim(),
-        consent:form.consent.checked,
-        createdAt:new Date().toISOString()
-      };
-      var stored = await store(data);
-      if(stored){
-        successLine.textContent="Your enquiry has been received. Relevant information about the collection may be shared with you privately.";
+      var btn=form.querySelector("button[type=submit]"), label=btn?btn.textContent:"", formErr=document.getElementById("formErr");
+      if(formErr) formErr.hidden=true;
+      if(btn){ btn.disabled=true; btn.textContent="Sending..."; }
+      try{
+        var res=await fetch(ENDPOINT,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(form)});
+        var data=await res.json().catch(function(){return {};});
+        if(res.ok && (data.success===true || data.success==="true")){
+          form.hidden=true; success.style.display="block"; success.focus();
+          success.scrollIntoView({behavior: reduce?"auto":"smooth", block:"center"});
+          return;
+        }
+        throw new Error((data&&data.message)||"send failed");
+      }catch(err){
+        if(formErr) formErr.hidden=false;
+        if(btn){ btn.disabled=false; btn.textContent=label; }
       }
-      form.hidden=true;
-      success.style.display="block";
-      success.focus();
-      success.scrollIntoView({behavior: reduce?"auto":"smooth", block:"center"});
     });
   }
 
