@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
 <style>
   /* Layout concept: a dark, cinematic gallery at night — committed single theme.
      Lit artworks on deep charcoal walls, antique-gold hairlines, ivory wall text. */
@@ -37,8 +37,8 @@
     --white:#F8F5EF;          /* highest-contrast headlines */
     --line:rgba(184,155,105,.36);
     --maxw:1180px;
-    --serif:"Oswald", system-ui, sans-serif;   /* brand display font, matches the J. C. Dias logo */
-    --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif:"Anton", Impact, "Arial Narrow", sans-serif;   /* brand display font (Anton), same as the sales pages */
+    --sans:"Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color-scheme: dark;
   }
   *{box-sizing:border-box}
@@ -108,10 +108,10 @@
   .hero-in{position:relative;z-index:2;padding-block:48px 72px;max-width:640px}
   .hero h1{font-size:clamp(3rem,9vw,6rem);font-weight:300;letter-spacing:.02em;color:var(--white);
     margin:18px 0 0}
-  .hero .lede{font-family:var(--serif);font-size:clamp(1.25rem,3.4vw,1.9rem);font-weight:300;
-    color:var(--ivory);margin-top:16px;line-height:1.3}
-  .hero .quote{font-family:var(--serif);font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--gold-soft);
-    margin-top:26px;max-width:30ch;line-height:1.35}
+  .hero .lede{font-family:var(--sans);font-size:clamp(1.15rem,3vw,1.55rem);font-weight:400;
+    color:var(--ivory);margin-top:18px;line-height:1.45}
+  .hero .quote{font-family:var(--sans);font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--gold-soft);font-weight:500;
+    margin-top:26px;max-width:34ch;line-height:1.45}
   .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
   .scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;
     font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory-dim);
@@ -228,7 +228,7 @@
   footer{background:#262019;border-top:1px solid rgba(184,155,105,.2);padding-block:56px 40px}
   .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px}
   footer .brand-lg{font-family:var(--serif);font-size:1.8rem;letter-spacing:.08em;color:var(--white);text-transform:uppercase}
-  footer .tag{color:var(--gold-soft);font-family:var(--serif);font-size:1.1rem;margin-top:8px}
+  footer .tag{color:var(--gold-soft);font-family:var(--sans);font-size:1rem;font-weight:500;margin-top:8px}
   footer .q{color:var(--ivory-dim);margin-top:6px;max-width:34ch}
   .foot-links{display:flex;flex-direction:column;gap:9px;font-size:.84rem}
   .foot-links a{color:var(--ivory-dim);text-decoration:none}
