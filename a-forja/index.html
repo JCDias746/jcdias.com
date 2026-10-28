@@ -97,10 +97,11 @@ b{color:var(--ink);font-weight:700}
 
 /* sobre o autor */
 .author{display:grid;grid-template-columns:1fr;gap:26px}
-.aphoto img{width:100%;border-radius:12px;border:1px solid var(--line)}
+.aphoto img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:42% 22%;border-radius:12px;border:1px solid var(--line)}
 @media(min-width:720px){
-  .author{grid-template-columns:300px 1fr;gap:36px;align-items:start}
+  .author{grid-template-columns:320px 1fr;gap:36px;align-items:start}
   .aphoto{position:sticky;top:24px}
+  .aphoto img{aspect-ratio:4/5}
 }
 
 /* listas */
@@ -187,7 +188,7 @@ footer .legal a:hover{color:var(--accent)}
 
 <section>
   <div class="wrap author">
-    <div class="aphoto"><img src="img/headshot.jpg" alt="J.C. Dias" width="800" height="800"></div>
+    <div class="aphoto"><img src="img/palco.jpg" alt="J.C. Dias" width="1440" height="960"></div>
     <div class="atext">
       <p class="lab">Quem conduz</p>
       <h2>Eu não aprendi liderança na teoria. Aprendi quando tiraram <span class="accent">tudo</span> de mim.</h2>
