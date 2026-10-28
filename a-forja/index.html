@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Líder Sem Título · A Forja</title>
-<meta name="description" content="A Forja é a imersão de 90 dias, ao vivo com J.C. Dias, para se tornar o líder que as pessoas escolhem seguir. Turma founding de 10 vagas, encontros semanais.">
+<meta name="description" content="A Forja é a mentoria em grupo de 90 dias, ao vivo com J.C. Dias, para se tornar o líder que as pessoas escolhem seguir. Turma founding de 10 vagas.">
 <meta property="og:title" content="Líder Sem Título · A Forja, com J.C. Dias">
 <meta property="og:description" content="90 dias, ao vivo, para se tornar o líder que as pessoas seguem por vontade. Turma founding de 10 vagas.">
 <meta property="og:type" content="website">
@@ -95,6 +95,14 @@ b{color:var(--ink);font-weight:700}
 .marco p{margin:0;font-size:.92rem}
 @media(max-width:620px){.marcos{grid-template-columns:1fr}}
 
+/* sobre o autor */
+.author{display:grid;grid-template-columns:1fr;gap:26px}
+.aphoto img{width:100%;border-radius:12px;border:1px solid var(--line)}
+@media(min-width:720px){
+  .author{grid-template-columns:300px 1fr;gap:36px;align-items:start}
+  .aphoto{position:sticky;top:24px}
+}
+
 /* listas */
 .rowlist .row{display:flex;gap:14px;align-items:flex-start;margin-bottom:15px}
 .rowlist .row:last-child{margin-bottom:0}
@@ -170,7 +178,7 @@ footer .legal a:hover{color:var(--accent)}
     <div class="col">
       <p class="eyebrow">Líder Sem Título · A Forja</p>
       <h1>Em 90 dias, torne-se o líder que as pessoas <span class="accent">escolhem</span> seguir.</h1>
-      <p class="sub"><b>A Forja</b> é a imersão de <b>90 dias, ao vivo comigo</b>, para reconstruir a sua liderança sobre o que ninguém pode te tirar: o seu caráter. <b>Apenas 10 pessoas</b> por turma.</p>
+      <p class="sub"><b>A Forja</b> é a mentoria de <b>90 dias, ao vivo comigo</b>, para reconstruir a sua liderança sobre o que ninguém pode te tirar: o seu caráter. <b>Apenas 10 pessoas</b> por turma.</p>
       <a class="cta" href="/teste/">Entrar na lista de espera</a>
       <p class="cta-note">Turma founding. As vagas abrem em breve, em primeira mão para quem está na lista.</p>
     </div>
@@ -178,12 +186,16 @@ footer .legal a:hover{color:var(--accent)}
 </header>
 
 <section>
-  <div class="wrap">
-    <p class="lab">Se você chegou até aqui</p>
-    <h2>Você já sabe quem eu sou. A pergunta agora é <span class="accent">outra</span>.</h2>
-    <p class="big">Se você está nesta página, já leu, já assistiu, já acompanha o meu trabalho. Então eu vou pular a parte de me apresentar.</p>
-    <p>A verdade é esta: mais um curso não vai te transformar. Informação você já tem de sobra. O que muda um líder de verdade não é saber mais, é ser levado por um processo, com acompanhamento de perto, até aquilo virar quem você é.</p>
-    <p>A Forja é esse processo. Não é um treinamento pra assistir no sofá. É uma travessia de 90 dias, ao vivo, com um grupo pequeno, pra você sair outro líder do outro lado.</p>
+  <div class="wrap author">
+    <div class="aphoto"><img src="img/headshot.jpg" alt="J.C. Dias" width="800" height="800"></div>
+    <div class="atext">
+      <p class="lab">Quem conduz</p>
+      <h2>Eu não aprendi liderança na teoria. Aprendi quando tiraram <span class="accent">tudo</span> de mim.</h2>
+      <p class="big">Eu tinha cargo, nome e uma vida construída. Perdi tudo. Fui parar no lugar mais duro que existe, onde não sobra título, nem crachá, nem discurso. Só sobra quem você é de verdade.</p>
+      <p>Foi ali, sem nada pra me esconder atrás, que eu entendi o que é liderança: não é o que te entregam quando você chega, é o que permanece quando tiram tudo de você. Em vez de afundar, eu reconstruí. Escrevi, um livro atrás do outro, o que hoje virou este método. Saí e levantei quatro negócios do zero.</p>
+      <p>A Forja é esse caminho destilado. Não é teoria de quem leu sobre reconstrução, é o processo de quem foi obrigado a reconstruir, e reconstruiu.</p>
+      <p>Por isso eu não vendo mais um curso. Informação você já tem de sobra. O que muda um líder não é saber mais, é ser levado por um processo, com acompanhamento de perto, até virar quem você é. A Forja não é treinamento pra assistir no sofá, é uma mentoria de 90 dias, ao vivo, com um grupo pequeno, pra você sair outro líder do outro lado.</p>
+    </div>
   </div>
 </section>
 
@@ -203,11 +215,11 @@ footer .legal a:hover{color:var(--accent)}
     <div class="ba">
       <div class="bacol in">
         <p class="bah">Quem entra</p>
-        <div class="row"><span class="ic">—</span><p>Lidera pelo cargo e pela cobrança.</p></div>
-        <div class="row"><span class="ic">—</span><p>É obedecido, mas não seguido.</p></div>
-        <div class="row"><span class="ic">—</span><p>Reage no impulso: explode ou foge da conversa difícil.</p></div>
-        <div class="row"><span class="ic">—</span><p>Carrega tudo sozinho, porque não confia.</p></div>
-        <div class="row"><span class="ic">—</span><p>Repete o mesmo erro sem saber qual é o próprio padrão.</p></div>
+        <div class="row"><span class="ic">×</span><p>Lidera pelo cargo e pela cobrança.</p></div>
+        <div class="row"><span class="ic">×</span><p>É obedecido, mas não seguido.</p></div>
+        <div class="row"><span class="ic">×</span><p>Reage no impulso: explode ou foge da conversa difícil.</p></div>
+        <div class="row"><span class="ic">×</span><p>Carrega tudo sozinho, porque não confia.</p></div>
+        <div class="row"><span class="ic">×</span><p>Repete o mesmo erro sem saber qual é o próprio padrão.</p></div>
       </div>
       <div class="bacol out">
         <p class="bah">Quem sai</p>
@@ -237,11 +249,12 @@ footer .legal a:hover{color:var(--accent)}
 <section class="band rowlist">
   <div class="wrap">
     <p class="lab">Como funciona</p>
-    <h2>90 dias, três fases, ao vivo <span class="accent">comigo</span></h2>
+    <h2>90 dias, seis sessões ao vivo <span class="accent">comigo</span></h2>
+    <p>A Forja é uma mentoria em grupo. Você atravessa os 90 dias comigo e com uma turma de no máximo dez pessoas, assim:</p>
+    <div class="row"><span class="ck">→</span><p><b>Seis sessões de mentoria ao vivo comigo</b>, uma a cada quinze dias, em grupo pequeno. Você entra com o seu caso real e eu resolvo ao vivo, na frente da turma: a cadeira quente, onde todo mundo aprende no caso do outro.</p></div>
     <div class="row"><span class="ck">→</span><p><b>Três fases:</b> Despir (quem você é sem o cargo), Reconstruir (por que você lidera) e Liberar (o que você constrói e deixa nas pessoas).</p></div>
-    <div class="row"><span class="ck">→</span><p><b>Um encontro ao vivo a cada quinze dias, comigo</b>, em grupo pequeno, pra destravar a sua liderança real, não a teórica.</p></div>
-    <div class="row"><span class="ck">→</span><p><b>A Mesa de Líderes:</b> o grupo exclusivo da turma no WhatsApp, pra você atravessar os 90 dias acompanhado por mim e pelo grupo todo dia, não só nos encontros.</p></div>
-    <div class="row"><span class="ck">→</span><p><b>O Caderno do Líder Sem Título</b>, o workbook que guia a aplicação do começo ao fim.</p></div>
+    <div class="row"><span class="ck">→</span><p><b>A Mesa de Líderes:</b> o grupo exclusivo da turma no WhatsApp, pra você perguntar no dia a dia, direto comigo e com o grupo, não só nos encontros. Toda sessão ao vivo abre respondendo as perguntas que você trouxe na quinzena.</p></div>
+    <div class="row"><span class="ck">→</span><p><b>O Caderno do Líder Sem Título</b>, o workbook que guia a aplicação do começo ao fim, uma atividade por semana.</p></div>
     <div class="row"><span class="ck">→</span><p><b>Três bônus</b> que derrubam as desculpas: As Conversas Difíceis, O Protocolo da Pressão e Por Que Você Já Tentou e Não Mudou.</p></div>
   </div>
 </section>
@@ -269,7 +282,7 @@ footer .legal a:hover{color:var(--accent)}
     <p class="lab c center">O investimento</p>
     <h2 class="center">Tudo que está incluído, e o que <span class="accent">vale</span></h2>
     <div class="stack">
-      <div class="srow"><span class="sn"><b>Imersão de 90 dias</b> · 3 fases, aulas na minha voz</span><span class="sv">R$1.997</span></div>
+      <div class="srow"><span class="sn"><b>Mentoria ao vivo de 90 dias</b> · 3 fases, conduzida por mim</span><span class="sv">R$1.997</span></div>
       <div class="srow"><span class="sn"><b>6 encontros ao vivo comigo</b> · um a cada 15 dias</span><span class="sv">R$3.600</span></div>
       <div class="srow"><span class="sn">Marco 1 · Mapa de Identidade e Influência</span><span class="sv">R$300</span></div>
       <div class="srow"><span class="sn">Marco 2 · Código Pessoal de Liderança</span><span class="sv">R$300</span></div>
@@ -308,7 +321,7 @@ footer .legal a:hover{color:var(--accent)}
   <div class="wrap">
     <p class="lab">Dúvidas</p>
     <h2>Perguntas que todo mundo faz</h2>
-    <details><summary>É ao vivo mesmo?</summary><p>Sim. Além do conteúdo gravado na minha voz, A Forja tem um encontro ao vivo a cada quinze dias comigo, em grupo pequeno, e o grupo exclusivo no WhatsApp pra falar comigo e com a turma entre um encontro e outro. É o que faz dela uma travessia, e não mais um curso pra assistir.</p></details>
+    <details><summary>É ao vivo mesmo?</summary><p>Sim, do começo ao fim. A Forja são seis sessões de mentoria ao vivo comigo, uma a cada quinze dias, em grupo pequeno, mais a Mesa de Líderes no WhatsApp pra falar comigo e com a turma entre um encontro e outro. Não é curso gravado pra assistir sozinho. É mentoria ao vivo, e é isso que faz dela uma travessia.</p></details>
     <details><summary>Por que R$1.997, se mentorias assim custam muito mais?</summary><p>Porque esta é a primeira turma e eu ainda não tenho depoimentos dela pra mostrar. R$1.997 é a condição founding, a menor que A Forja vai ter. Nas próximas turmas, o preço sobe.</p></details>
     <details><summary>Quantas vagas são?</summary><p>Dez. É uma turma founding, limitada de verdade pra eu conseguir acompanhar cada pessoa de perto. A entrada é por lista de espera, e eu falo com cada um antes.</p></details>
     <details><summary>Quando começa?</summary><p>A data da primeira turma é definida junto com a lista de espera. Quem entra na lista é avisado em primeira mão, tem prioridade nas vagas e a condição founding.</p></details>
